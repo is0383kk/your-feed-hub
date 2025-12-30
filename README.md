@@ -105,8 +105,8 @@ env:
 
 ### ■ ワークフローの実行
 
-`categories.json` を編集してコミット・プッシュすると、GitHub Actions が自動実行されます。
-または、**Actions > feed-collector-and-poster > Run workflow** でワークフローを手動実行することも可能です。
+`categories.json` を編集してコミット・プッシュすると、GitHub Actions が自動実行されます。  
+または、**Actions > feed-collector-and-poster > Run workflow** でワークフローを手動実行することも可能です。  
 ワークフロー実行後、GitHub Pages 上にデプロイされた WEB ページを確認します。
 
 ## ４．ローカル環境下での動作確認
