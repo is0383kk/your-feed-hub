@@ -42,49 +42,25 @@ my-feed-hub/
 - `post-history.json` はプロジェクト直下に配置され、GitHub Pages では公開されません
 - 記事データと投稿履歴は両方とも 90 日間のみ保持され、リポジトリ肥大化を防ぎます
 
-## ３．セットアップ
+## ３．使い方
 
-### ■ リリースページからモジュールをダウンロード
+### ■ リポジトリをフォーク
 
-[リリースページ](https://github.com/is0383kk/my-feed-hub/releases)からモジュールをダウンロードしてください。
+このリポジトリをフォークして、自分の GitHub アカウントにコピーします。
 
-### ■ リポジトリの作成＆GitHub Pages の有効化
+### ■ GitHub Pages の有効化
 
-GitHub リポジトリを作成してください  
-作成後、GitHub リポジトリの**Settings > Pages**で以下を設定します：
+フォークしたリポジトリの **Settings > Pages** で以下を設定します：
 
 - Source: GitHub Actions
 
-### ■ 環境変数の設定（オプション）
-
-リリースモジュール側の設定を行います  
-Discord に通知させる場合は、GitHub リポジトリの **Settings > Secrets and variables > Actions** で新しいシークレットを追加します。
-
-- Name: `DISCORD_WEBHOOK_AWS`
-- Secret: Discord Webhook URL
-
-`.github/workflows/collect.yml` 上で シークレットを参照できるようにします。
-
-```yaml
-env:
-  DISCORD_WEBHOOK_AWS: ${{ secrets.DISCORD_WEBHOOK_AWS }}
-  DISCORD_WEBHOOK_TECH_GENERAL: ${{ secrets.DISCORD_WEBHOOK_TECH_GENERAL }}
-```
-
 ### ■ カテゴリの設定
 
-リリースモジュール側の設定を行います
-まず、`categories.example.json` をコピーして `categories.json` を作成します
+フォークしたリポジトリの `categories.json` を編集して、収集したい RSS フィードを設定します。
 
-```bash
-# Linuxの場合
-cp categories.example.json categories.json
+**注意:** リポジトリには `categories.json` がサンプルとして含まれていますが、これは`is0383kk`の個人設定です。必ず自分の RSS フィードに編集してください。
 
-# Windowsの場合
-copy categories.example.json categories.json
-```
-
-その後、`categories.json` でカテゴリと RSS フィードを修正します
+#### `categories.json` の例
 
 ```json
 {
@@ -112,13 +88,26 @@ copy categories.example.json categories.json
 - `feedUrl`: RSS フィードの URL
 - `webhookEnvKey`: Discord Webhook 用環境変数の名前（オプション）
 
-**注意:** `categories.json` は `.gitignore` に含まれており、Git 管理されません。各ユーザーが自分の RSS フィードを設定できます。
+### ■ 環境変数の設定（オプション）
 
-### ■ 修正したリリースモジュールをプッシュしワークフローを実行する
+Discord に通知させる場合は、フォークしたリポジトリの **Settings > Secrets and variables > Actions** で新しいシークレットを追加します。
 
-リリースモジュールをリポジトリにプッシュします  
-ワークフローは自動実行されますが、**Actions > feed-collector-and-poster > Run workflow** でワークフローを手動で実行することも可能です  
-ワークフロー実行後、GitHub Pages 上にデプロイされた WEB ページを確認します
+- Name: `DISCORD_WEBHOOK_AWS`
+- Secret: Discord Webhook URL
+
+`.github/workflows/collect.yml` 上で シークレットを参照できるようにします。
+
+```yaml
+env:
+  DISCORD_WEBHOOK_AWS: ${{ secrets.DISCORD_WEBHOOK_AWS }}
+  DISCORD_WEBHOOK_GENERAL: ${{ secrets.DISCORD_WEBHOOK_GENERAL }}
+```
+
+### ■ ワークフローの実行
+
+`categories.json` を編集してコミット・プッシュすると、GitHub Actions が自動実行されます。
+または、**Actions > feed-collector-and-poster > Run workflow** でワークフローを手動実行することも可能です。
+ワークフロー実行後、GitHub Pages 上にデプロイされた WEB ページを確認します。
 
 ## ４．ローカル環境下での動作確認
 
