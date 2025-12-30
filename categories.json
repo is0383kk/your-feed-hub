@@ -11,6 +11,12 @@
       "id": "aws",
       "feedUrl": "https://aws.amazon.com/jp/about-aws/whats-new/recent/feed/",
       "webhookEnvKey": "DISCORD_WEBHOOK_AWS"
+    },
+    {
+      "name": "ゲーム",
+      "id": "game",
+      "feedUrl": "https://automaton-media.com/feed/",
+      "webhookEnvKey": ""
     }
   ]
 }
