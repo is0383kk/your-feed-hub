@@ -2,6 +2,8 @@
 let currentCategory = null;
 let categoriesData = [];
 let articlesData = {};
+let isSearchMode = false;
+let searchKeyword = '';
 
 // 初期化
 async function init() {
@@ -29,6 +31,9 @@ async function init() {
     if (categoriesData.length > 0) {
       selectCategory(categoriesData[0].id);
     }
+
+    // 検索機能のイベントリスナーを設定
+    setupSearchListeners();
   } catch (error) {
     console.error('初期化エラー:', error);
     showError('データの読み込みに失敗しました');
@@ -128,7 +133,7 @@ function renderArticles(articles) {
 }
 
 // 記事カードを作成
-function createArticleCard(article) {
+function createArticleCard(article, showCategory = false) {
   const card = document.createElement('article');
   card.className = 'article-card';
 
@@ -155,7 +160,14 @@ function createArticleCard(article) {
     day: 'numeric'
   });
 
-  meta.innerHTML = `<span>公開日: ${dateStr}</span>`;
+  let metaHtml = `<span>公開日: ${dateStr}</span>`;
+
+  // 検索結果の場合はカテゴリバッジを表示
+  if (showCategory && article.categoryName) {
+    metaHtml += ` <span class="category-badge">${article.categoryName}</span>`;
+  }
+
+  meta.innerHTML = metaHtml;
   card.appendChild(meta);
 
   // 概要
@@ -173,6 +185,173 @@ function createArticleCard(article) {
 function showError(message) {
   const articlesListEl = document.getElementById('articlesList');
   articlesListEl.innerHTML = `<p class="error">${message}</p>`;
+}
+
+// 検索機能のイベントリスナーを設定
+function setupSearchListeners() {
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('clearSearch');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', handleSearch);
+  }
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', clearSearch);
+  }
+}
+
+// 検索処理
+async function handleSearch(event) {
+  const keyword = event.target.value.trim();
+  searchKeyword = keyword;
+
+  const clearBtn = document.getElementById('clearSearch');
+
+  if (keyword === '') {
+    // 検索キーワードが空の場合は通常モードに戻る
+    isSearchMode = false;
+    if (clearBtn) clearBtn.style.display = 'none';
+
+    // 現在のカテゴリを再表示
+    if (currentCategory) {
+      selectCategory(currentCategory);
+    }
+    return;
+  }
+
+  // クリアボタンを表示
+  if (clearBtn) clearBtn.style.display = 'block';
+
+  // 検索モードに切り替え
+  isSearchMode = true;
+
+  // カテゴリタブの選択状態を解除
+  document.querySelectorAll('.category-tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  // タイトルを更新
+  const titleEl = document.getElementById('categoryTitle');
+  if (titleEl) {
+    titleEl.textContent = `検索結果: "${keyword}"`;
+  }
+
+  // 全カテゴリのデータを読み込んで検索
+  await performSearch(keyword);
+}
+
+// 検索をクリア
+function clearSearch() {
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('clearSearch');
+
+  if (searchInput) {
+    searchInput.value = '';
+  }
+  if (clearBtn) {
+    clearBtn.style.display = 'none';
+  }
+
+  searchKeyword = '';
+  isSearchMode = false;
+
+  // 現在のカテゴリを再表示
+  if (currentCategory) {
+    selectCategory(currentCategory);
+  }
+}
+
+// 全カテゴリのデータを読み込む
+async function loadAllCategories() {
+  const promises = categoriesData.map(async (category) => {
+    if (!articlesData[category.id]) {
+      try {
+        const response = await fetch(`./data/${category.dataFile}`);
+        if (response.ok) {
+          const data = await response.json();
+          articlesData[category.id] = data.articles || [];
+        }
+      } catch (error) {
+        console.error(`カテゴリ ${category.id} の読み込みエラー:`, error);
+      }
+    }
+  });
+
+  await Promise.all(promises);
+}
+
+// 検索を実行
+async function performSearch(keyword) {
+  const articlesListEl = document.getElementById('articlesList');
+  articlesListEl.innerHTML = '<p class="loading">検索しています...</p>';
+
+  try {
+    // 全カテゴリのデータを読み込む
+    await loadAllCategories();
+
+    // 検索を実行
+    const results = searchArticles(keyword);
+
+    // 記事数を更新
+    const countEl = document.getElementById('articlesCount');
+    if (countEl) {
+      countEl.textContent = `${results.length}件の記事`;
+    }
+
+    // 検索結果を表示
+    renderSearchResults(results);
+  } catch (error) {
+    console.error('検索エラー:', error);
+    showError('検索に失敗しました');
+  }
+}
+
+// 記事を検索してフィルタリング
+function searchArticles(keyword) {
+  const results = [];
+  const lowerKeyword = keyword.toLowerCase();
+
+  categoriesData.forEach(category => {
+    const articles = articlesData[category.id] || [];
+
+    articles.forEach(article => {
+      // タイトルと概要を対象に検索
+      const titleMatch = article.title.toLowerCase().includes(lowerKeyword);
+      const snippetMatch = article.contentSnippet &&
+        article.contentSnippet.toLowerCase().includes(lowerKeyword);
+
+      if (titleMatch || snippetMatch) {
+        results.push({
+          ...article,
+          categoryId: category.id,
+          categoryName: category.name
+        });
+      }
+    });
+  });
+
+  // 日付の降順でソート
+  results.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
+  return results;
+}
+
+// 検索結果を表示
+function renderSearchResults(results) {
+  const articlesListEl = document.getElementById('articlesList');
+
+  if (results.length === 0) {
+    articlesListEl.innerHTML = '<p class="no-articles">検索結果が見つかりませんでした</p>';
+    return;
+  }
+
+  articlesListEl.innerHTML = '';
+
+  results.forEach(article => {
+    const card = createArticleCard(article, true);
+    articlesListEl.appendChild(card);
+  });
 }
 
 // ページ読み込み時に初期化

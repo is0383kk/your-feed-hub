@@ -21,6 +21,18 @@
 
   <main class="main">
     <div class="container">
+      <!-- 検索ボックス -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="キーワードで記事を検索... (全カテゴリ対象)"
+          aria-label="記事を検索"
+        />
+        <button id="clearSearch" class="clear-search-btn" aria-label="検索をクリア" style="display: none;">✕</button>
+      </div>
+
       <!-- カテゴリタブ -->
       <nav class="category-tabs" id="categoryTabs">
         <!-- JavaScriptで動的に生成 -->
