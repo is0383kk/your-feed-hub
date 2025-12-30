@@ -4,9 +4,9 @@
 <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
 </sub></div>
 
-A tool for automatically collecting articles from RSS feeds and displaying them on GitHub Pages.
-
 ## 1. Features
+
+A tool for automatically collecting articles from RSS feeds and displaying them on GitHub Pages.
 
 - Automatic article collection from RSS feeds
 - Article list display on GitHub Pages
@@ -43,7 +43,6 @@ my-feed-hub/
 **Important Points:**
 
 - Only the `docs/` directory is published on GitHub Pages
-- `post-history.json` is placed in the project root and is not published on GitHub Pages
 - Both article data and post history are retained for only 90 days to prevent repository bloat
 
 ## 3. Setup

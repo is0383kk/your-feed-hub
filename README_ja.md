@@ -4,9 +4,9 @@
 <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
 </sub></div>
 
-RSS フィードから自動収集した記事を GitHub Pages で一覧表示するツールです。
-
 ## １．機能概要
+
+RSS フィードから自動収集した記事を GitHub Pages で一覧表示するツールです。
 
 - RSS フィードから記事を自動収集
 - GitHub Pages での記事一覧表示
@@ -43,7 +43,6 @@ my-feed-hub/
 **重要なポイント:**
 
 - `docs/` 配下のみが GitHub Pages で公開されます
-- `post-history.json` はプロジェクト直下に配置され、GitHub Pages では公開されません
 - 記事データと投稿履歴は両方とも 90 日間のみ保持され、リポジトリ肥大化を防ぎます
 
 ## ３．使い方
