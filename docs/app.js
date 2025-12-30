@@ -5,8 +5,67 @@ let articlesData = {};
 let isSearchMode = false;
 let searchKeyword = '';
 
+// ダークモード管理
+function initTheme() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const sunIcon = document.querySelector('.sun-icon');
+  const moonIcon = document.querySelector('.moon-icon');
+
+  if (!themeToggle || !sunIcon || !moonIcon) {
+    console.warn('テーマ切り替え要素が見つかりません');
+    return;
+  }
+
+  // システムのカラースキーム設定を取得
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // 保存されたテーマまたはシステム設定から初期テーマを決定
+  const savedTheme = localStorage.getItem('theme');
+  const initialTheme = savedTheme || (systemPrefersDark.matches ? 'dark' : 'light');
+
+  // 初期テーマを適用
+  setTheme(initialTheme);
+
+  // トグルボタンのクリックイベント
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+
+  // システムのカラースキーム変更を監視(ユーザーが明示的に設定していない場合のみ)
+  systemPrefersDark.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+}
+
+// テーマを設定
+function setTheme(theme) {
+  const sunIcon = document.querySelector('.sun-icon');
+  const moonIcon = document.querySelector('.moon-icon');
+
+  if (!sunIcon || !moonIcon) return;
+
+  document.documentElement.setAttribute('data-theme', theme);
+
+  // アイコンの表示/非表示を切り替え
+  if (theme === 'dark') {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+  } else {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  }
+}
+
 // 初期化
 async function init() {
+  // テーマ初期化を最初に実行
+  initTheme();
+
   try {
     // インデックスファイルを読み込む
     const indexResponse = await fetch('./data/index.json');
