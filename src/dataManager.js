@@ -62,8 +62,9 @@ export async function saveCategoryData(categoryId, categoryName, articles) {
  * @param {string} categoryId - カテゴリID
  * @param {string} categoryName - カテゴリ名
  * @param {Array} newArticles - 追加する記事の配列
+ * @param {string} siteName - サイト名
  */
-export async function addArticlesToCategory(categoryId, categoryName, newArticles) {
+export async function addArticlesToCategory(categoryId, categoryName, newArticles, siteName = '') {
   const existingArticles = await loadCategoryData(categoryId);
 
   // 重複を避けるため、IDでマージする
@@ -76,7 +77,12 @@ export async function addArticlesToCategory(categoryId, categoryName, newArticle
 
   // 新しい記事を追加（既存のものは上書きされる）
   newArticles.forEach(article => {
-    articleMap.set(article.id, article);
+    // サイト名を追加
+    const articleWithSiteName = {
+      ...article,
+      siteName: siteName || article.siteName // 既存のsiteNameがあればそれを保持
+    };
+    articleMap.set(article.id, articleWithSiteName);
   });
 
   // Map を配列に変換し、日付でソート（新しい順）
@@ -150,5 +156,37 @@ export async function generateIndex(categories) {
   } catch (error) {
     console.error('インデックスファイルの生成に失敗しました:', error);
     throw error;
+  }
+}
+
+/**
+ * 未使用のデータファイルを削除する
+ * @param {Array} categories - カテゴリ情報の配列
+ */
+export async function cleanupUnusedDataFiles(categories) {
+  try {
+    // 許可されたカテゴリIDのセットを作成
+    const allowedFiles = new Set(categories.map(category => `${category.id}.json`));
+    allowedFiles.add('index.json'); // index.jsonは除外対象
+
+    // データディレクトリ内のファイル一覧を取得
+    const files = await fs.readdir(DATA_DIR);
+
+    // 未使用ファイルを削除
+    for (const file of files) {
+      // .jsonファイルのみを対象とする
+      if (!file.endsWith('.json')) {
+        continue;
+      }
+
+      if (!allowedFiles.has(file)) {
+        const filePath = path.join(DATA_DIR, file);
+        console.log(`未使用のデータファイルを削除します: ${filePath}`);
+        await fs.unlink(filePath);
+      }
+    }
+  } catch (error) {
+    console.error('データファイルのクリーンアップに失敗しました:', error);
+    // エラーが発生しても処理は継続
   }
 }

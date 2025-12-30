@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import fs from 'fs/promises';
-import { addArticlesToCategory, generateIndex, getAllArticleIds } from './dataManager.js';
+import { addArticlesToCategory, generateIndex, getAllArticleIds, cleanupUnusedDataFiles } from './dataManager.js';
 import { postMultipleArticles } from './discordPoster.js';
 import { collectFeed } from './feedCollector.js';
 import { addToHistory, filterNewArticles, loadHistory, saveHistory } from './historyManager.js';
@@ -76,7 +76,7 @@ async function main() {
 
         // データをJSONファイルに保存（全記事、新旧問わず）
         console.log('データを保存中...');
-        await addArticlesToCategory(category.id, category.name, articles);
+        await addArticlesToCategory(category.id, category.name, articles, category.siteName);
 
       } catch (error) {
         console.error(`[${category.name}] カテゴリの処理中にエラーが発生しました:`, error);
@@ -90,6 +90,9 @@ async function main() {
 
     // インデックスファイルを生成（GitHub Pages用）
     await generateIndex(categories);
+
+    // 未使用のデータファイルを削除
+    await cleanupUnusedDataFiles(categories);
 
     console.log('\n情報収集処理が完了しました');
   } catch (error) {
