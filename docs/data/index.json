@@ -3,7 +3,7 @@
     {
       "id": "tech_general",
       "name": "一般",
-      "articleCount": 4,
+      "articleCount": 15,
       "dataFile": "tech_general.json"
     },
     {
@@ -13,5 +13,5 @@
       "dataFile": "aws.json"
     }
   ],
-  "generatedAt": "2025-12-29T21:39:53.187Z"
+  "generatedAt": "2025-12-30T01:06:40.900Z"
 }
