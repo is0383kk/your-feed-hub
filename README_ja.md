@@ -1,4 +1,4 @@
-# my-feed-hub
+# your-feed-hub
 
 <div align="center" style="font-size: 1.1rem; margin-bottom: 1rem;"><sub>
 <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
@@ -16,7 +16,7 @@ RSS フィードから自動収集した記事を GitHub Pages で一覧表示�
 ## ２．ディレクトリ構造
 
 ```
-my-feed-hub/
+your-feed-hub/
 ├── .github/
 │   └── workflows/
 │       └── collect.yml          # GitHub Actions ワークフロー（3時間ごとに実行）

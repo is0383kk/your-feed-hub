@@ -1,4 +1,4 @@
-# my-feed-hub
+# your-feed-hub
 
 <div align="center" style="font-size: 1.1rem; margin-bottom: 1rem;"><sub>
 <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
@@ -16,7 +16,7 @@ A tool for automatically collecting articles from RSS feeds and displaying them 
 ## 2. Directory Structure
 
 ```
-my-feed-hub/
+your-feed-hub/
 ├── .github/
 │   └── workflows/
 │       └── collect.yml          # GitHub Actions workflow (runs every 3 hours)
