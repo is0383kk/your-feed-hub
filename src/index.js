@@ -11,7 +11,7 @@ const FILTER_DAYS = 30; // 初回実行時に遡る日数
  * メイン処理
  */
 async function main() {
-  console.log('技術情報の自動収集を開始します...');
+  console.log('情報収集処理を開始します...');
 
   try {
     // カテゴリ設定を読み込む
@@ -91,7 +91,7 @@ async function main() {
     // インデックスファイルを生成（GitHub Pages用）
     await generateIndex(categories);
 
-    console.log('\n技術情報の自動収集が完了しました');
+    console.log('\n情報収集処理が完了しました');
   } catch (error) {
     console.error('エラーが発生しました:', error);
     process.exit(1);

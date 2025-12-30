@@ -134,7 +134,7 @@ async function selectCategory(categoryId) {
   // タイトルを更新
   const titleEl = document.getElementById('categoryTitle');
   if (titleEl) {
-    titleEl.textContent = `${category.name}の記事`;
+    titleEl.textContent = `${category.name}カテゴリ`;
   }
 
   // 記事を読み込んで表示
@@ -219,10 +219,12 @@ function createArticleCard(article, showCategory = false) {
   meta.className = 'article-meta';
 
   const date = new Date(article.pubDate);
-  const dateStr = date.toLocaleDateString('ja-JP', {
+  const dateStr = date.toLocaleString('ja-JP', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
   });
 
   let metaHtml = `<span>公開日: ${dateStr}</span>`;

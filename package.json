@@ -1,7 +1,7 @@
 {
-  "name": "techfeed-workflow",
+  "name": "my-feed-hub",
   "version": "1.0.0",
-  "description": "技術情報の自動収集ツール",
+  "description": "情報の自動収集ツール",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

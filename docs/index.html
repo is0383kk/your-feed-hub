@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="技術情報の自動収集ツール - 最新の技術記事を一覧できます">
-  <title>My-feed-hub</title>
+  <meta name="description" content="情報自動収集ツール - 自分好みで収集したい情報を一覧化できます">
+  <title>MyFeedHub</title>
   <link rel="stylesheet" href="style.css">
   <script>
     // FOUC対策: ページ表示前にテーマを適用
@@ -19,7 +19,7 @@
 <body>
   <header class="header">
     <div class="container header-container">
-      <h1 class="site-title">My-feed-hub</h1>
+      <h1 class="site-title">MyFeedHub</h1>
       <div class="header-actions">
         <button id="theme-toggle" class="theme-toggle" aria-label="ダークモード切り替え">
           <svg class="theme-icon sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -54,7 +54,7 @@
           type="text"
           id="searchInput"
           class="search-input"
-          placeholder="キーワードで記事を検索... (全カテゴリ対象)"
+          placeholder="キーワード検索... (全カテゴリ対象)"
           aria-label="記事を検索"
         />
         <button id="clearSearch" class="clear-search-btn" aria-label="検索をクリア" style="display: none;">✕</button>
@@ -81,7 +81,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 TechFeed. 最終更新: <span id="lastUpdated">-</span></p>
+      <p>&copy; 2025 MyFeedHub. Last updated: <span id="lastUpdated">-</span></p>
     </div>
   </footer>
 

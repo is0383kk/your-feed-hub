@@ -29,7 +29,7 @@ jobs:
       - name: 依存関係のインストール
         run: npm install
 
-      - name: 技術情報の収集と投稿
+      - name: 情報収集とDiscordへの投稿
         env:
           DISCORD_WEBHOOK_AWS: ${{ secrets.DISCORD_WEBHOOK_AWS }}
           DISCORD_WEBHOOK_TECH_GENERAL: ${{ secrets.DISCORD_WEBHOOK_TECH_GENERAL }}
@@ -43,7 +43,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "データに変更はありません"
           else
-            git commit -m "自動収集: 技術情報を更新 $(date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "記事一覧を更新 $(date +'%Y-%m-%d %H:%M:%S')"
             git push
           fi
 
