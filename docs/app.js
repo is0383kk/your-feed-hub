@@ -98,7 +98,7 @@ async function init() {
     initScrollToTop();
   } catch (error) {
     console.error('初期化エラー:', error);
-    showError('データの読み込みに失敗しました');
+    showError('Loading failed');
   }
 }
 
@@ -134,12 +134,6 @@ async function selectCategory(categoryId) {
   const category = categoriesData.find(cat => cat.id === categoryId);
   if (!category) return;
 
-  // タイトルを更新
-  const titleEl = document.getElementById('categoryTitle');
-  if (titleEl) {
-    titleEl.textContent = `${category.name}カテゴリ`;
-  }
-
   // 記事を読み込んで表示
   await loadAndRenderArticles(categoryId, category.dataFile);
 }
@@ -154,7 +148,7 @@ async function loadAndRenderArticles(categoryId, dataFile) {
     if (!articlesData[categoryId]) {
       const response = await fetch(`./data/${dataFile}`);
       if (!response.ok) {
-        throw new Error('記事データの読み込みに失敗しました');
+        throw new Error('Loading failed');
       }
 
       const data = await response.json();
@@ -166,7 +160,7 @@ async function loadAndRenderArticles(categoryId, dataFile) {
     // 記事数を更新
     const countEl = document.getElementById('articlesCount');
     if (countEl) {
-      countEl.textContent = `${articles.length}件の記事`;
+      countEl.textContent = `${articles.length} Articles`;
     }
 
     // 記事を表示
@@ -222,15 +216,14 @@ function createArticleCard(article, showCategory = false) {
   meta.className = 'article-meta';
 
   const date = new Date(article.pubDate);
-  const dateStr = date.toLocaleString('ja-JP', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  });
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const dateStr = `${year}-${month}-${day} ${hours}:${minutes}`;
 
-  let metaHtml = `<span>公開日: ${dateStr}</span>`;
+  let metaHtml = `<span>${dateStr}</span>`;
 
   // 検索結果の場合はカテゴリバッジを表示
   if (showCategory && article.categoryName) {
@@ -393,7 +386,7 @@ async function handleSearch(event) {
   // タイトルを更新
   const titleEl = document.getElementById('categoryTitle');
   if (titleEl) {
-    titleEl.textContent = `検索結果: "${keyword}"`;
+    titleEl.textContent = `Search Results: "${keyword}"`;
   }
 
   // 全カテゴリのデータを読み込んで検索
@@ -455,7 +448,7 @@ async function performSearch(keyword) {
     // 記事数を更新
     const countEl = document.getElementById('articlesCount');
     if (countEl) {
-      countEl.textContent = `${results.length}件の記事`;
+      countEl.textContent = `${results.length} Articles`;
     }
 
     // 検索結果を表示
