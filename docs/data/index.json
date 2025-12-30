@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "id": "tech_general",
+      "name": "一般",
+      "articleCount": 15,
+      "dataFile": "tech_general.json"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "articleCount": 100,
+      "dataFile": "aws.json"
+    }
+  ],
+  "generatedAt": "2025-12-30T07:29:57.700Z"
+}

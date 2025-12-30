@@ -1,0 +1,707 @@
+{
+  "categoryId": "aws",
+  "categoryName": "AWS",
+  "articles": [
+    {
+      "id": "fd8606ae7b473bbd13f0da6a3a7d5885b0f39457",
+      "title": "AWS Shield ネットワークセキュリティディレクターがマルチアカウント分析のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-shield-network-security-director-multi-account-analysis",
+      "pubDate": "2025-12-12T15:00:00.000Z",
+      "contentSnippet": "本日、AWS Shield は、ネットワークセキュリティディレクター向けのマルチアカウントネットワークセキュリティ管理と自動ネットワーク分析を発表しました。こちらは現在プレビュー段階です。AWS Shield ネットワークセキュリティディレクターは、AWS 組織内の AWS リソースを可視化し、ネットワークセキュリティサービスの不足や設定ミスを特定し、修復手順を推奨します。\n  ネットワークセキュリティディレクターを使用すると、委任管理者アカウントを指定して、そのアカウントから AWS 組織内の複数のアカウントまたは組織単位の継続的なネットワーク分析を開始できます。その後、各アカウントのネットワークトポロジ、ネットワークセキュリティ検出結果、ネットワークセキュリティサービスの不足または設定ミスに対する推奨修復方法を一元的に確認できます。また、AWS Shield ネットワークセキュリティディレクターが特定したネットワークセキュリティの設定ミスを、AWS マネジメントコンソールやチャットアプリケーション内の Amazon Q Developer から簡単にまとめて報告できます。\n  AWS Shield ネットワークセキュリティディレクターが、欧州 (アイルランド)、欧州 (フランクフルト)、アジアパシフィック (香港)、アジアパシフィック (シンガポール)、オーストラリア (シドニー) の 5 つの AWS リージョンでも利用できるようになりました。\n  詳細については、概要ページにアクセスしてください。"
+    },
+    {
+      "id": "e47f3df4c90befb0ea19673910866617e4174a62",
+      "title": "Amazon EMR Managed Scaling がさらに 7 つの AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-emr-managed-scaling-additional-regions",
+      "pubDate": "2025-12-12T15:00:00.000Z",
+      "contentSnippet": "Amazon EMR Managed Scaling が、アジアパシフィック (マレーシア、ニュージーランド、台北、タイ)、カナダ西部 (カルガリー)、メキシコ (中部)、US Gameday Northeast (イリノイ) の AWS リージョンで EC2 の EMR を使用しているお客様にご利用いただけるようになりました。Amazon EMR Managed Scaling は、可能な限り最小のコストで最高のパフォーマンスを発揮できるよう、EMR クラスターでの EC2 インスタンスのサイズを自動的に変更します。\n  Amazon EMR Managed Scaling を使用すると、クラスターの最小コンピューティング制限と最大コンピューティング制限を指定するだけで、パフォーマンスとリソース使用率が最適になるように、EC2 上の Amazon EMR によってクラスターのサイズが自動的に変更されます。Amazon EMR Managed Scaling は、ワークロード関連の主要なメトリックスを常に監視し、リソースを最大限に活用できるようにクラスターサイズを最適化するアルゴリズムを使用します。このアルゴリズムを使用すると、Amazon EMR では、ピーク時に EC2 クラスターをスケールアップし、アイドル時にスケールダウンできるため、コストを削減し、クラスター容量を最適化して最高のパフォーマンスを実現できます。Amazon EMR Managed Scaling は Amazon EC2 スポットインスタンスと併用することもできます。そのようにすると、未使用の EC2 容量をオンデマンド料金と比較して割引価格で活用できます。\n  Amazon EMR Managed Scaling がすべての AWS 商用リージョンで利用可能になりました。\n  Amazon EMR Managed Scaling は、EC2 バージョン 6.14 以降の Amazon EMR 上の Apache Spark、Apache Hive、および YARN ベースのワークロードでサポートされています。詳細と開始方法については、Amazon EMR Managed Scalingの ユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "136105692ad1e9ea3e4f84b9c123a6857d0fed9f",
+      "title": "AWS DataSync がオンプレミスのファイル転送のスケーラビリティとパフォーマンスを強化",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-datasync-scalability-performance-on-premises-file-transfers",
+      "pubDate": "2025-12-12T15:00:00.000Z",
+      "contentSnippet": "AWS DataSync の拡張モードは、オンプレミスのファイルサーバーと Amazon S3 の間のデータ転送をサポートするようになりました。これにより、お客様は DataSync 基本モードよりも高いパフォーマンスで、事実上無制限のファイル数までスケールするデータセットを転送できます。\n  AWS DataSync は、ネットワーク上のデータ移動を最適化する安全で高速なファイル転送サービスです。拡張モードでは、並列処理を使用してあらゆるサイズのデータセットのパフォーマンスとスケーラビリティを向上させながら、ファイル数の制限を排除し、詳細な転送メトリクスを提供することでモニタリングと管理を強化します。これまでは、Amazon S3 ロケーション間のデータ転送とマルチクラウド転送に拡張モードを使用できました。今回の発表により、拡張モードの機能が拡張され、オンプレミスの NFS または SMB ファイルサーバーと Amazon S3 間の転送がサポートされるようになりました。拡張モードを使用すると、お客様はトレーニングデータセットを AWS に迅速に移動することで生成 AI ワークロードを加速し、オンプレミスのデータをクラウドベースのパイプラインと同期することでデータレイク分析を強化し、アーカイブとクラウドモダナイズのための大規模な移行を推進できます。\n  この新しい機能は、AWS DataSync が提供されているすべての AWS リージョンでご利用いただけます。使用を開始するには、AWS DataSync コンソールにアクセスしてください。詳細については、AWS DataSync のドキュメントをご覧ください。"
+    },
+    {
+      "id": "ec035998958cc01fa7ce2aae4c2e4cf89cc46b10",
+      "title": "AWS DataSync が拡張モードに Terraform のサポートを導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/datasync-terraform-enhanced-mode/",
+      "pubDate": "2025-12-12T08:00:00.000Z",
+      "contentSnippet": "AWS DataSync Terraform モジュールが S3 ロケーション間の転送の拡張モードをサポートするようになり、大規模な高性能データ転送を簡単にセットアップできるようになりました。\n  AWS DataSync は、ネットワーク上のデータ移動を最適化する安全で高速なファイル転送サービスです。拡張モードでは、並列処理を使用してあらゆるサイズのデータセットのパフォーマンスとスケーラビリティを向上させながら、ファイル数の制限を排除し、詳細な転送メトリクスを提供することでモニタリングと管理を強化します。拡張モード用に設定された DataSync タスクを Terraform を使用して自動的にプロビジョニングできるようになりました。これにより、時間がかかり、エラーが発生しやすい手動の設定手順が不要になり、組織全体でスケールすることができる、一貫性のある反復可能な、バージョン管理されたデプロイプロセスが実現します。\n  AWS DataSync Terraform モジュールには、GitHub または Terraform Registry でアクセスできます。\n  DataSync の詳細については、AWS DataSync のドキュメントを参照してください。DataSync が利用可能なすべてのリージョンを確認するには、AWS リージョン表をご覧ください。"
+    },
+    {
+      "id": "49356a46f53748bbc6b9b2708acc941577b91180",
+      "title": "AWS Systems Manager による SAP ABAP アプリケーションのベストプラクティスコンプライアンスの検証",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/compliance-sap-abap-systems-manager/",
+      "pubDate": "2025-12-12T08:00:00.000Z",
+      "contentSnippet": "AWS Systems Manager (AWS SSM) Configuration Manager では、AWS 上の SAP ABAP ベースのアプリケーションを AWS Well-Architected フレームワークの SAP Lens で定義されているベストプラクティスに照らして自動的にテストできるようになりました。\n  SAP アプリケーションを最適な構成に保つには、SAP 管理者が AWS、SAP、オペレーティングシステムベンダーなど、複数のソースから最新のベストプラクティスを入手し、それらの構成を手動で確認してコンプライアンスを検証する必要があります。AWS SSM Configuration Manager は、AWS で実行されている SAP アプリケーションをこれらの標準に照らして自動的に評価し、構成ミスを事前に特定し、具体的な修正手順を推奨します。これにより、業務への影響が出る前に必要な変更を加えることができます。今回のリリースにより、SAP HANA および ABAP アプリケーションの構成チェックをスケジュールしたり、オンデマンドで実行したりできます。\n  SSM for SAP Configuration Manager は、SSMSAP が利用可能な AWS リージョンで利用できます。\n  詳細については、リリースブログを読むか、AWS Systems Manager for SAP のドキュメントを参照してください。"
+    },
+    {
+      "id": "81a51220eb5efe8ae19395a8da5080648bf39c1a",
+      "title": "Amazon EC2 X2iedn インスタンスが AWS の欧州 (チューリッヒ) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-x2iedn-instances-zurich-region/",
+      "pubDate": "2025-12-12T08:00:00.000Z",
+      "contentSnippet": "本日より、メモリ最適化された Amazon Compute Cloud (Amazon EC2) X2iedn インスタンスが AWS の欧州 (チューリッヒ) リージョンで利用できるようになりました。これらのインスタンスは、第 3 世代の Intel Xeon スケーラブルプロセッサを搭載し、AWS Nitro System で構築されており、メモリを大量に消費するワークロード向けに設計されています。前世代の X1e インスタンスと比較して、パフォーマンス、費用対効果、メモリ 1 GiB あたりのコストが改善されています。これらのインスタンスは、データベースでの Business Suite on HANA、SAP S/4HANA、Data Mart Solutions on HANA、Business Warehouse on HANA、SAP BW/4HANA、SAP NetWeaver といったワークロードの実行について、SAP 認定を取得しています。\n  詳細については、EC2 X2i インスタンスのページを参照するか、AWS サポートまでお問い合わせください。"
+    },
+    {
+      "id": "72b94db71aff342c9f823f874e79d2f535fd9959",
+      "title": "AWS Elastic Beanstalk の利用可能リージョンが拡大",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/elastic-beanstalk-additional-regions/",
+      "pubDate": "2025-12-12T08:00:00.000Z",
+      "contentSnippet": "AWS Elastic Beanstalk がアジアパシフィック (ニュージーランド、メルボルン、マレーシア、ハイデラバード)、カナダ西部 (カルガリー)、欧州 (チューリッヒ) で一般提供開始されることをお知らせいたします。\n  AWS Elastic Beanstalk は、AWS でのアプリケーションのデプロイと管理を簡素化するサービスです。このサービスを使用すると、デプロイ、キャパシティプロビジョニング、負荷分散、自動スケーリング、アプリケーションヘルスモニタリングを自動的に処理できるため、デベロッパーはコードの作成に集中できます。\n  リージョンおよび提供サービスの一覧については、AWS リージョン表をご覧ください。\n  AWS Elastic Beanstalk の使用を開始するには、AWS Elastic Beanstalk のデベロッパーガイドを参照してください。Elastic Beanstalk の詳細については、Elastic Beanstalk の製品ページをご覧ください。"
+    },
+    {
+      "id": "d413389c43af14471cc95ff340d792a2006a4d28",
+      "title": "Amazon EC2 X2iedn インスタンスが AWS アジアパシフィック (タイ) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-x2iedn-instances-thailand-region/",
+      "pubDate": "2025-12-12T08:00:00.000Z",
+      "contentSnippet": "本日より、メモリ最適化された Amazon Compute Cloud (Amazon EC2) X2iedn インスタンスが AWS アジアパシフィック (タイ) リージョンで利用可能になりました。これらのインスタンスは、第 3 世代の Intel Xeon スケーラブルプロセッサを搭載し、AWS Nitro System で構築されており、メモリを大量に消費するワークロード向けに設計されています。前世代の X1e インスタンスと比較して、パフォーマンス、費用対効果、メモリ 1 GiB あたりのコストが改善されています。これらのインスタンスは、データベースでの Business Suite on HANA、SAP S/4HANA、Data Mart Solutions on HANA、Business Warehouse on HANA、SAP BW/4HANA、SAP NetWeaver といったワークロードの実行について、SAP 認定を取得しています。\n \n詳細については、EC2 X2i インスタンスのページを参照するか、AWS サポートまでお問い合わせください。"
+    },
+    {
+      "id": "3a1cf1de614847985ae1399f1d07a9d0ce148678",
+      "title": "Amazon Aurora DSQL が数秒でのクラスターの作成をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-aurora-dsql-cluster-creation-in-seconds",
+      "pubDate": "2025-12-11T21:00:00.000Z",
+      "contentSnippet": "Amazon Aurora DSQL が、より高速なクラスター作成をサポートするようになり、セットアップ時間が数分から数秒に短縮されました。\n  クラスターを数秒で作成できるようになったため、開発者は Aurora DSQL データベースを即座にプロビジョニングして、新しいアイデアのプロトタイプをすばやく作成できます。開発者は AWS コンソールに統合されたクエリエディタを使用して、外部クライアントを設定することなくすぐに構築を開始できます。また、Aurora DSQL モデルコンテキストプロトコル (MCP) サーバーを介して接続して AI を活用した開発ツールを有効にすることもできます。Aurora DSQL は、ワークロードのプロトタイプ作成でも本番環境の実行でも、事実上無制限のスケーラビリティ、アクティブ/アクティブ高可用性、ゼロインフラストラクチャ管理、従量課金制の価格設定を実現し、アプリケーションのニーズに合わせてデータベースを簡単にスケールできます。\n  この強化機能は、Aurora DSQL が提供されているすべてのリージョンでご利用いただけます。AWS 無料利用枠を使って、Aurora DSQL を無料で始めることができます。詳細については、Aurora DSQL のウェブページとドキュメントをご覧ください。"
+    },
+    {
+      "id": "4925c05996b58039e5ca34cbf9c3f84dabf84f3b",
+      "title": "Amazon WorkSpaces Secure Browser がウェブコンテンツのフィルタリングを導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-workspaces-secure-browser-web-content-filtering/",
+      "pubDate": "2025-12-11T18:00:00.000Z",
+      "contentSnippet": "Amazon WorkSpaces Secure Browser に、組織がウェブコンテンツへのアクセスを制御および監視できるようにする包括的なセキュリティおよびコンプライアンス機能であるウェブコンテンツのフィルタリングが追加されました。この新機能により、管理者はきめ細かなアクセスポリシーを定義し、25 以上の定義済みカテゴリを使用して特定の URL またはドメインカテゴリ全体をブロックし、Session Logger とシームレスに統合して監視とコンプライアンスレポートを強化できます。\n  既存の Chrome ドメイン制御ポリシーは引き続きサポートされますが、ウェブコンテンツのフィルタリングは、カテゴリベースのフィルタリングと強化されたログ機能を通じて、より包括的なウェブアクセス制御を実現します。組織は、企業全体にスケール可能な一元化されたポリシー管理を通じて、リモートワークのセキュリティとコンプライアンス要件をより適切に管理できます。IT セキュリティチームは、高度なセキュリティ環境向けにデフォルト拒否ポリシーを実装でき、コンプライアンス担当者は詳細なログ記録とモニタリング機能を活用できます。この機能では、特定のビジネスニーズに基づいてポリシーや例外をカスタマイズできるため、柔軟性が維持されます。\n  この機能は、米国東部 (バージニア北部)、米国西部 (オレゴン)、カナダ (中部)、欧州 (フランクフルト、ロンドン、アイルランド)、アジアパシフィック (東京、ムンバイ、シドニー、シンガポール) を含む 10 の AWS リージョンで追加料金なしで利用できます。WorkSpaces Secure Browser は従量制料金です。\n  WorkSpaces Secure Browser を使い始めるには、「Amazon WorkSpaces Secure Browser の開始方法」を参照してください。この機能は AWS コンソールで有効にでき、URL ブロックリストまたは URL 許可リストのブラウザポリシーを自動的に移行できます。この機能の詳細については、機能ドキュメントを参照してください。"
+    },
+    {
+      "id": "fc9e944f9f2ebb787d1a4268cf07c56feca89052",
+      "title": "Amazon Aurora PostgreSQL が Kiro powers との統合をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-aurora-postgresql-integration-kiro-powers",
+      "pubDate": "2025-12-11T15:00:00.000Z",
+      "contentSnippet": "本日、AWS は Amazon Aurora PostgreSQL 互換エディションと Kiro powers の統合を発表しました。これにより、開発者は Kiro を使用した AI エージェント支援開発により、Aurora PostgreSQL を基盤とするアプリケーションをより迅速に構築できるようになります。Kiro powers は、Kiro パートナーによって検証された、厳選されパッケージ化されたモデルコンテキストプロトコル (MCP) サーバー、ステアリングファイル、フックのリポジトリであり、特殊なソフトウェア開発およびデプロイのユースケースを加速します。Aurora PostgreSQL 向け Kiro power は、MCP サーバーと対象を絞ったデータベース開発ガイダンスをパッケージ化することで、Kiro エージェントに Aurora PostgreSQL の操作とスキーマ設計に関する専門知識を即座に提供します。\n  Aurora PostgreSQL 向け Kiro power には、データプレーン操作 (クエリ、テーブル作成、スキーマ管理) およびコントロールプレーン操作 (クラスター作成) のための Aurora PostgreSQL MCP サーバーを介した直接データベース接続と、Aurora PostgreSQL 固有のベストプラクティスによるステアリングファイルがバンドルされています。開発者がデータベースタスクに取り組むとき、power は新しい Aurora クラスターの新規作成、スキーマの設計、クエリの最適化など、関連するガイダンスを動的に読み込むため、AI エージェントは特定のタスクに必要なコンテキストのみを受け取ります。\n  Aurora PostgreSQL power は Kiro IDE 内で利用可能で、Kiro powers ウェブページからワンクリックでインストールでき、すべての AWS リージョンで Aurora PostgreSQL クラスターを作成および管理できます。開発ユースケースの詳細については、このブログ投稿をご覧ください。Aurora PostgreSQL MCP サーバーの詳細については、当社のドキュメントをご覧ください。\n  Amazon Aurora は PostgreSQL との完全互換性を備えており、圧倒的な高いパフォーマンスおよび可用性を世界規模で実現するように設計されています。このサービスは、組み込みのセキュリティ、継続的なバックアップ、サーバーレスコンピューティング、最大 15 のリードレプリカ、自動化されたマルチリージョンレプリケーションを提供します。Amazon Aurora の使用を開始するには、開始方法のページをご覧ください。"
+    },
+    {
+      "id": "05fe58e60a393185d0c31969c21d43fdd4589cd1",
+      "title": "Amazon Cognito アイデンティティプールが AWS PrivateLink とのプライベート接続のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-cognito-identity-pools-private-connectivity-aws-privatelink",
+      "pubDate": "2025-12-11T15:00:00.000Z",
+      "contentSnippet": "Amazon Cognito アイデンティティプールが AWS PrivateLink をサポートしました。これにより、仮想プライベートクラウド (VPC) と Cognito 間のプライベート接続を通じて、フェデレーティッドアイデンティティと AWS 認証情報を安全に交換できるようになりました。これにより、認証トラフィックをパブリックインターネット経由でルーティングする必要がなくなり、ワークロードのセキュリティが強化されます。アイデンティティプールは、認証済みアイデンティティとゲストアイデンティティを AWS Identity and Access Management (IAM) ロールにマッピングし、この新機能を使用して一時的な AWS 認証情報を安全でプライベートな接続を通じて提供します。\n  PrivateLink 接続は、Amazon Cognito アイデンティティプールが利用可能なすべての AWS リージョンで使用できます。ただし、Sinnet が運営する AWS 中国 (北京) リージョンと AWS GovCloud (米国) リージョンを除きます。AWS PrivateLink で VPC エンドポイントを作成すると、追加料金が発生します。詳細については、AWS PrivateLink の料金ページをご確認ください。まず、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (CLI)、AWS Software Development Kit (SDK)、AWS Cloud Development Kit (CDK)、または AWS CloudFormation を使用して、Amazon Cognito アイデンティティプール用の AWS PrivateLink VPC インターフェイスエンドポイントを作成します。詳細については、VPC インターフェイスエンドポイントの作成に関するドキュメントと Amazon Cognito デベロッパーガイドを参照してください。"
+    },
+    {
+      "id": "837a7e9e0f502733c0a5e4243dc407d984430931",
+      "title": "Amazon CloudWatch SDK で最適化された JSON プロトコルと CBOR プロトコルをサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-cloudwatch-sdk-json-cbor-protocols",
+      "pubDate": "2025-12-11T12:00:00.000Z",
+      "contentSnippet": "Amazon CloudWatch では、CloudWatch SDK で JSON プロトコルと Concise Binary Object Representation (CBOR) プロトコルの両方がサポートされることを発表します。これにより、CloudWatch のお客様はレイテンシーの減少とパフォーマンスの向上を実現できます。この SDK では、新しいデフォルト通信プロトコルとして自動的に JSON または CBOR が使用されるため、エンドツーエンドの処理レイテンシーが減少するだけでなく、ペイロードサイズ、アプリケーションクライアント側の CPU、およびメモリ使用量が削減されます。\n  お客様は CloudWatch SDK を直接使用するか、Infrastructure as Code ソリューションを介して使用し、モニタリングリソースを管理します。コントロールプレーン操作のレイテンシーとペイロードサイズを減らすことで、お客様は運用保守およびリソースの使用量とコストを最適化できます。JSON および CBOR データ形式は、従来の AWS Query プロトコルよりも優れたパフォーマンスを実現するために設計された標準です。\n  JSON および CBOR プロトコル用 CloudWatch SDK サポートは、Amazon CloudWatch が利用可能なすべての AWS リージョンにおいて、一般提供されているすべての AWS SDK 言語バリアントでご利用いただけます。\n  このパフォーマンスの向上を活用するには、こちらから最新の SDK バージョンをインストールしてください。AWS SDK の詳細については、Amazon の開発ツールに関するページをご覧ください。"
+    },
+    {
+      "id": "456ac9b80bf5dd0cd5a05bd65b4930217308f88e",
+      "title": "Amazon EC2 C7i インスタンスが アジアパシフィック (ハイデラバード) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-c7i-instances-asia-pacific-hyderabad-region/",
+      "pubDate": "2025-12-11T08:00:00.000Z",
+      "contentSnippet": "本日より、カスタムの第 4 世代 Intel Xeon スケーラブルプロセッサ (コードネーム Sapphire Rapids) を搭載した Amazon Elastic Compute Cloud (Amazon EC2) C7i インスタンスが、アジアパシフィック (ハイデラバード) リージョンで利用できるようになりました。カスタム Intel プロセッサによってサポートされる C7i インスタンスは AWS でのみ利用可能です。\n  C7i インスタンスは、C6i インスタンスと比較して最大 15% 優れたコストパフォーマンスを発揮し、バッチ処理、分散分析、広告配信、動画エンコーディングなど、コンピューティング集約型のすべてのワークロードに最適です。C7i インスタンスは、より大きなインスタンスサイズ (最大 48xlarge) と、2 つのベアメタルサイズ (metal-24xl、metal-48xl) で提供されています。これらのベアメタルサイズでは、Intel の内蔵アクセラレーターである Data Streaming Accelerator、In-Memory Analytics Accelerator、QuickAssist Technology がサポートされるため、データ操作の負荷を効率的に軽減したり、データ操作を高速化したり、ワークロードのパフォーマンスを最適化したりできます。\n  C7i インスタンスでは、CPU ベースの ML などのアプリケーションの行列の乗法演算を高速化する新しい Intel Advanced Matrix Extension (AMX) がサポートされています。お客様は 1 つの C6i インスタンスに最大 28 個の EBS ボリュームをアタッチできるのに対し、1 つの C7i インスタンスには最大 128 個の EBS ボリュームをアタッチできます。これにより、C6i インスタンスよりも大量のデータを処理し、ワークロードを拡張し、パフォーマンスを向上させることができます。\n  詳細については、Amazon EC2 C7i Instances をご覧ください。使用を開始するには、AWS マネジメントコンソールをご覧ください。"
+    },
+    {
+      "id": "769903e1bc50f8c60571b641a8b66adf71827639",
+      "title": "Amazon EC2 I7i インスタンスが追加の AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-i7i-instances-additional-regions/",
+      "pubDate": "2025-12-11T08:00:00.000Z",
+      "contentSnippet": "Amazon Web Services (AWS) は、AWS アジアパシフィック (シンガポール、ジャカルタ)、欧州 (ストックホルム) リージョンにおいて、高性能のストレージ最適化 Amazon EC2 I7i インスタンスが利用可能になったことを発表しました。このインスタンスは、オールコアターボ周波数 3.2 GHz の第 5 世代 Intel Xeon スケーラブルプロセッサを搭載しており、前世代の I4i インスタンスと比較して、コンピューティングパフォーマンスが最大で 23%、コストパフォーマンスが 10% 以上向上します。第 3 世代の AWS Nitro SSD を搭載した I7i インスタンスでは、最大 45 TB の NVMe ストレージを提供し、I4i インスタンスと比較して、リアルタイムストレージのパフォーマンスが最大 50% 向上し、ストレージ I/O レイテンシーが最大 50% 短縮され、ストレージ I/O レイテンシーの変動が最大 60% 減少します。\n  I7i インスタンスは、数 TB の中小規模データセットにアクセスするために、リアルタイムの低レイテンシーアクセスと非常に高いランダム IOPS パフォーマンスを必要とする、I/O 集約型でレイテンシーの影響を受けやすいワークロードに最適です。I7i インスタンスは、最大 16 KB のブロックサイズを備えた Torn Write Prevention 機能をサポートしているため、データベースパフォーマンスのボトルネックを解消できます。\n  I7i インスタンスは、11 サイズ (最大 48xlarge の 9 種類の仮想サイズと 2 種類のベアメタルサイズ) で提供され、最大 100 Gbps のネットワーク帯域幅と 60 Gbps の Amazon Elastic Block Store (EBS) 帯域幅をサポートします。\n 詳細については、I7i インスタンスのページをご覧ください。"
+    },
+    {
+      "id": "641b70e9a1e6e43244f82ba2823edb2b8b335707",
+      "title": "Amazon EC2 ハイメモリ U7i インスタンスを利用できるリージョンが拡大",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-high-memory-u7i-instances-additional-regions/",
+      "pubDate": "2025-12-11T08:00:00.000Z",
+      "contentSnippet": "24 TB のメモリを搭載した Amazon EC2 ハイメモリ U7i インスタンス (u7in-24tb.224xlarge) が AWS 欧州 (フランクフルト) で、16 TB のメモリを搭載した U7i インスタンス (u7in-16tb.224xlarge) が AWS アジアパシフィック (ムンバイ) で、6 TB のメモリを搭載した U7i インスタンス (u7i-6tb.112xlarge) が AWS 欧州 (パリ) リージョンで利用可能になりました。AWS 第 7 世代に含まれる U7i インスタンスは、カスタム第 4 世代 Intel Xeon スケーラブルプロセッサ (Sapphire Rapids) を搭載しています。U7in-24tb インスタンスは 24TiB の DDR5 メモリ、U7in-16tb インスタンスは 16TiB の DDR5 メモリ、U7i-6tb インスタンスは 6TiB の DDR5 メモリを提供します。これによりお客様は、急速に拡大するデータ環境においてトランザクション処理のスループットをスケールできます。\n \nU7i-6tb インスタンスは 448 個の vCPU、最大 100 Gbps の Elastic Block Storage (EBS) をサポートし、より高速なデータ読み込みとバックアップを実現します。また、最大 100 Gbps のネットワーク帯域幅を提供し、ENA Express をサポートします。U7in-16tb インスタンスは 896 個の vCPU、最大 100 Gbps の Elastic Block Storage (EBS) をサポートし、より高速なデータ読み込みとバックアップを実現します。また、最大 200 Gbps のネットワーク帯域幅を提供し、ENA Express をサポートします。U7in-24tb インスタンスは 896 個の vCPU、最大 100 Gbps の Elastic Block Storage (EBS) をサポートし、より高速なデータ読み込みとバックアップを実現します。また、最大 200 Gbps のネットワーク帯域幅を提供し、ENA Express をサポートします。U7i インスタンスは、SAP HANA、Oracle、SQL Server など、ミッションクリティカルなインメモリデータベースを使用しているお客様に最適です。\n \nU7i インスタンスの詳細については、High Memory インスタンスのページをご覧ください。"
+    },
+    {
+      "id": "206a8e4ca98958b434ffd4f0ca1a5e1a28d83b67",
+      "title": "AWS Application Migration Service が IPv6 のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/application-migration-service-ipv6/",
+      "pubDate": "2025-12-11T08:00:00.000Z",
+      "contentSnippet": "AWS Application Migration Service (MGN) は、サービス通信とアプリケーション移行の両方でインターネットプロトコルバージョン 6 (IPv6) をサポートするようになりました。これにより、組織は IPv6 アドレスを使用するアプリケーションを移行できるため、最新のネットワークインフラストラクチャへの移行が可能になります。\n \nIPv4 と IPv6 の両方の通信をサポートする新しいデュアルスタックサービスエンドポイントを使用して、AWS MGN に接続できます。アプリケーションの移行時には、ネットワーク接続とセキュリティを維持しながら、IPv4 または IPv6 を使用してレプリケーションデータを転送できます。その後、テストおよびカットオーバーフェーズでは、選択したネットワーク構成 (IPv4、IPv6、またはデュアルスタック) を使用して、ターゲット環境でサーバーを起動できます。\n  この機能は、AWS MGN および Amazon Elastic Compute Cloud (Amazon EC2) デュアルスタックエンドポイントをサポートするすべての AWS リージョンで利用できます。サポートされているリージョンについては、AWS MGN がサポートする AWS リージョンと Amazon EC2 エンドポイントのドキュメントをご覧ください。\n  AWS MGN の詳細については、製品ページまたはドキュメントをご覧ください。使用を開始するには、AWS Application Migration Service コンソールにサインインします。"
+    },
+    {
+      "id": "1715fb770ba3d8bdda1d90386b25678af3a3b005",
+      "title": "Amazon ECS が AWS Fargate でのカスタムのコンテナ停止シグナルのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ecs-custom-container-stop-signals-fargate/",
+      "pubDate": "2025-12-10T20:48:00.000Z",
+      "contentSnippet": "Amazon Elastic Container Service (Amazon ECS) は、AWS Fargate で実行されている Linux タスクに対するカスタムのコンテナ停止シグナルをサポートするようになりました。これにより、タスクが停止した際に、Open Container Initiative (OCI) イメージで設定された停止シグナルが実行されるようになります。この機能強化では、Fargate のタスク終了を各コンテナで設定される終了シグナルに合わせることにより、グレースフルシャットダウンの動作が改善されます。\n  以前は、AWS Fargate で実行されている Amazon ECS タスクが停止すると、各 Linux コンテナは必ず SIGTERM を受信し、その後、設定したタイムアウト後に SIGKILL を受信していました。新しい動作では、Amazon ECS コンテナエージェントはコンテナイメージ設定から停止シグナルを読み取り、タスクを停止するときにそのシグナルを送信します。グレースフルシャットダウンに関して SIGQUIT や SIGINT などのシグナルに依存するコンテナは、Fargate で実行される際に、意図した通りの終了を実行できるようになりました。STOPSIGNAL が設定されていない場合、Amazon ECS は引き続き SIGTERM をデフォルトで送信します。\n  お客様は、OCI 準拠のコンテナイメージに STOPSIGNAL 命令 (STOPSIGNAL SIGQUIT など) を追加することで、AWS Fargate を使用する Amazon ECS において、カスタムの停止シグナルを使用できます。コンテナで定義される停止シグナルのサポートは、すべての AWS リージョンで利用できます。詳細については、ECS 開発者ガイドを参照してください。"
+    },
+    {
+      "id": "39f19a307d1a5a331093e42b995deffeb9cc1e12",
+      "title": "Amazon EC2 C8gb インスタンスの一般提供を開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/generally-available-amazon-ec2-c8gb-instances",
+      "pubDate": "2025-12-10T18:00:00.000Z",
+      "contentSnippet": "AWS は本日、新しい Amazon Elastic Block Storage (Amazon EBS) 最適化 Amazon Elastic Compute Cloud (Amazon EC2) C8gb インスタンスの一般提供を開始しました。このインスタンスは AWS Graviton4 プロセッサを搭載しており、AWS Graviton3 プロセッサと比較して最大 30% 優れたコンピューティングパフォーマンスを発揮します。また、最大 150 Gbps の EBS 帯域幅で、同じサイズの同等の Graviton4 ベースインスタンスよりも高い EBS パフォーマンスを実現します。この新しい EBS 最適化 EC2 インスタンスが提供する高いブロックストレージパフォーマンスを活用することで、ワークロードの実行コストを最適化しながら、高パフォーマンスのファイルシステムなどのワークロードのパフォーマンスとスループットをスケールできます。\n \nスケーラビリティを高めるため、このインスタンスでは metal-24xl サイズを含む最大 24xlarge のインスタンスサイズが用意されています。また、最大 192 GiB のメモリ、最大 150 Gbps の EBS 帯域幅、最大 200 Gbps のネットワーク帯域幅を提供します。このインスタンスは 16xlarge、24xlarge、metal-24xl サイズで Elastic Fabric Adapter (EFA) ネットワークをサポートしています。これにより、密結合のクラスター上にデプロイされたワークロードのレイテンシーを低減し、クラスターのパフォーマンスを向上させることができます。\n \n新しい C8gb インスタンスは、米国東部 (バージニア北部) および米国西部 (オレゴン) リージョンでご利用いただけます。メタルサイズは米国東部 (バージニア北部) リージョンでのみ利用できます。\n \n詳細については、Amazon EC2 C8gb インスタンスをご覧ください。Graviton の利用を開始するには、「AWS Graviton でコンピューティングをレベルアップする」ページにアクセスしてください。使用を開始するには、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS SDK をご覧ください。"
+    },
+    {
+      "id": "8f49bb4d3862f1de3c70771c8a8953f109576533",
+      "title": "Amazon EC2 X8g インスタンスがアジアパシフィック (シドニー) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-x8g-instances-asia-pacific-sydney/",
+      "pubDate": "2025-12-10T16:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) X8g インスタンスがアジアパシフィック (シドニー) リージョンで利用できます。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、AWS Graviton2 ベースの Amazon EC2 X2gd インスタンスよりも最大 60% 高いパフォーマンスを発揮します。X8g インスタンスは、合計メモリが最大 3 TiB で、他の Graviton4 ベースのインスタンスと比較して vCPU あたりのメモリも増加しています。EC2 X シリーズインスタンスの中で最もコストパフォーマンスに優れており、Electronic Design Automation (EDA) ワークロード、インメモリデータベース (Redis、Memcached)、リレーショナルデータベース (MySQL、PostgreSQL)、リアルタイムビッグデータ分析、リアルタイムキャッシュサーバー、メモリ集約型のコンテナ化されたアプリケーションなど、メモリを大量に使用するワークロードに最適です。\n  X8g インスタンスは、Graviton2 ベースの X2gd インスタンスよりも最大 3 倍大きい vCPU (最大 48xlarge) とメモリ (最大 3 TiB) を備えた、より大きなインスタンスサイズを提供します。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。Elastic Fabric Adapter (EFA) ネットワーキングサポートは 24xlarge、48xlarge、およびベアメタルサイズで提供され、Elastic Network Adapter (ENA) Express サポートは、12xlarge を超えるインスタンスサイズで利用できます。\n  詳細については、「Amazon EC2 X8g Instances」をご覧ください。ワークロードを Graviton ベースのインスタンスに簡単に移行するには、AWS Graviton Fast Start プログラムを参照してください。使用を開始するには、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS SDK のいずれかにアクセスしてください。"
+    },
+    {
+      "id": "28792ca77e77ee6b650cd0a05c82c32821230b32",
+      "title": "Amazon ElastiCache Serverless が同一スロットの WATCH コマンドのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-elasticache-serverless-same-slot-watch-command",
+      "pubDate": "2025-12-10T15:00:00.000Z",
+      "contentSnippet": "本日、Amazon ElastiCache Serverless が同一スロットトランザクションに対する WATCH コマンドをサポートするようになったことを発表します。これにより開発者は、同時実行性が高いシナリオでのデータの一貫性が向上した、より信頼性の高いアプリケーションを構築できるようになります。今回の発表により、WATCH コマンドはトランザクションを条件に応じて実行できるようになり、監視対象のキーが変更されていない場合にのみ実行されるようにします。\n  ElastiCache Serverless では、WATCH コマンドは、監視対象キーと同じハッシュスロット内のキーを使用するトランザクションに対して動作します。アプリケーションが同じハッシュスロットにないキーを監視しようとすると、CROSSSLOT エラーが発生します。開発者は、キー名のハッシュタグを使用して、キーが同じスロット内にハッシュ値を持つようにすることで、キーの配置を制御できます。ElastiCache Serverless が監視対象キーの状態を保証できない場合も、トランザクションは中止されます。\n  WATCH コマンドのサポートは、ElastiCache サーバーレスがサポートされているすべての AWS リージョンで追加料金なしで利用できます。開始するには、お好みのクライアントライブラリから WATCH コマンドを使用してトランザクションを作成します。条件付きトランザクションと WATCH コマンドの詳細については、 ElastiCache Serverless のドキュメントと Valkey トランザクションのドキュメントを参照してください。"
+    },
+    {
+      "id": "16b1f5d3eac17862ff9050277738e8dcfad0cdc3",
+      "title": "Amazon Braket が Qiskit 2.0 のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-braket-qiskit-2-0/",
+      "pubDate": "2025-12-10T08:00:00.000Z",
+      "contentSnippet": "Amazon Braket は Qiskit 2.0 をサポートするようになりました。これにより、量子開発者は、ネイティブプリミティブとクライアント側のコンパイル機能を備えた、最も人気のある量子ソフトウェアフレームワークの最新バージョンを使用できます。\n  今回のリリースでは、Braket は Qiskit の Sampler および Estimator プリミティブのネイティブ実装を提供します。これらは、Braket のプログラムセットを活用してバッチ処理を最適化し、一般的なラッパーアプローチと比較して実行時間とコストを削減します。ネイティブプリミティブはパラメータスイープと観測可能な測定値をサービス側で処理するため、お客様がこのロジックを手動で実装する必要はありません。さらに、双方向回路変換機能により、お客様は Braket デバイスに送信する前に Qiskit の広範なコンパイルフレームワークをクライアント側のトランスパイルのために使用できるようになります。そのため、エンタープライズのユーザーや研究者は、デバイスの特性評価実験やカスタムコンパイルパスのために必要な制御と再現性を得ることができます。\n  Qiskit 2.0 は、Amazon Braket を利用できるすべての AWS リージョンで利用できます。開始するには、Qiskit-Braket プロバイダーのドキュメントと Amazon Braket 開発者ガイドを参照してください。"
+    },
+    {
+      "id": "e73f6bccb16221d99bff9d094e443fd0247ef451",
+      "title": "AWS サポートセンターコンソールで、トラブルシューティングサポートケースのための画面共有のサポートが開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/support-center-console-screen-sharing/",
+      "pubDate": "2025-12-10T08:00:00.000Z",
+      "contentSnippet": "本日、AWS サポートセンターコンソールが、トラブルシューティングサポートケースのための画面共有をサポートするようになったことを発表します。この新機能により、チャットや通話の最中に仮想会議をリクエストしたり、会議ブリッジリンクからワンクリックでサポートコールに参加したりできるようになります。新しい仮想会議では、会議中に画面を共有したり、ケースの詳細にシームレスにアクセスしたりして、効率的なトラブルシューティングを行うことができます。この機能強化により、すべてのサポートに関するやり取りが AWS サポートセンターコンソール内で行えるようになるため、サポートエクスペリエンスが簡素化されます。\n \n詳細については、AWS サポートページをご覧ください。"
+    },
+    {
+      "id": "a64b40a426341cc0856f7569bc47cadaef18b7bc",
+      "title": "Amazon EC2 C8gn インスタンスを利用可能なリージョンが拡大",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-c8gn-instances-additional-regions",
+      "pubDate": "2025-12-09T18:00:00.000Z",
+      "contentSnippet": "本日より、最新世代の AWS Graviton4 プロセッサを搭載した Amazon Elastic Compute Cloud (Amazon EC2) C8gn インスタンスが、米国東部 (オハイオ) および中東 (UAE) の AWS リージョンで利用できるようになりました。新しいインスタンスは、Graviton3 ベースの Amazon EC2 C7gn インスタンスよりもコンピューティングパフォーマンスが最大で 30% 優れています。Amazon EC2 C8gn インスタンスには最新の第 6 世代 AWS Nitro Card が搭載されており、最大 600 Gbps のネットワーク帯域幅を提供します。これは、ネットワーク最適化 EC2 インスタンスの中で最高のネットワーク帯域幅です。\n  C8gn の強化されたネットワーク機能を活用して、パフォーマンスとスループットをスケールすると同時に、ネットワーク仮想アプライアンス、データ分析、CPU ベースの人工知能と機械学習 (AI/ML) 推論などのネットワーク集約型ワークロードの実行コストを最適化できます。\n  スケーラビリティを高めるため、C8gn インスタンスでは最大 48xlarge、最大 384 GiB メモリ、Amazon Elastic Block Store (EBS) への最大 60 Gbps の帯域幅までのインスタンスサイズが用意されています。C8gn インスタンスは 16xlarge、24xlarge、48xlarge、metal-24xl、metal-48xl サイズで Elastic Fabric Adapter (EFA) ネットワークをサポートしています。これにより、密結合のクラスター上にデプロイされたワークロードのレイテンシーを低減し、クラスターのパフォーマンスを改善できます。\n  C8gn インスタンスは、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン、北カリフォルニア)、欧州 (フランクフルト、ストックホルム)、アジアパシフィック (シンガポール、マレーシア、シドニー、タイ)、中東 (UAE) の AWS リージョンで利用できます。\n  詳細については、Amazon C8gn インスタンスをご覧ください。Graviton の利用を開始するには、「AWS Graviton でコンピューティングをレベルアップする」ページにアクセスしてください。使用を開始するには、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS SDK をご覧ください。"
+    },
+    {
+      "id": "3c7631cdd7e5e3be66e1824b54d6e784e3d388ab",
+      "title": "Amazon EC2 X8g インスタンスが欧州 (ストックホルム) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-x8g-instances-europe-stockholm/",
+      "pubDate": "2025-12-09T16:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) X8g インスタンスが欧州 (ストックホルム) リージョンで利用可能になりました。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、合計メモリが最大 3 TiB で、他の Graviton4 ベースのインスタンスと比較して vCPU あたりのメモリも増加しています。X8g インスタンスは、Electronic Design Automation (EDA) ワークロード、インメモリデータベース (Redis、Memcached)、リレーショナルデータベース (MySQL、PostgreSQL)、リアルタイムビッグデータ分析、リアルタイムキャッシュサーバー、メモリを大量に使用するコンテナ化されたアプリケーションなど、メモリを大量に使用するワークロードに最適です。\n \nX8g インスタンスは、Graviton2 ベースの X2gd インスタンスよりも最大 3 倍大きい vCPU (最大 48xlarge) とメモリ (最大 3 TiB) を備えた、より大きなインスタンスサイズを提供します。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。Elastic Fabric Adapter (EFA) ネットワーキングサポートは 24xlarge、48xlarge、およびベアメタルサイズで提供され、Elastic Network Adapter (ENA) Express サポートは、12xlarge を超えるインスタンスサイズで利用できます。\n \nX8g インスタンスは現在、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン)、および欧州 (フランクフルト、ストックホルム) の各 AWS リージョンでご利用いただけます。\n \n詳細については、「Amazon EC2 X8g Instances」をご覧ください。ワークロードを Graviton ベースのインスタンスに簡単に移行するには、AWS Graviton Fast Start プログラムを参照してください。使用を開始するには、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS SDK のいずれかにアクセスしてください。"
+    },
+    {
+      "id": "46927d2a8a9a893679eb3ff49e6377f2bb7ff360",
+      "title": "AWS パートナーセントラルでオポチュニティ取引サイジング機能が利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-partner-central-opportunity-deal-sizing",
+      "pubDate": "2025-12-09T15:00:00.000Z",
+      "contentSnippet": "本日、AWS は AWS パートナーセントラルの取引サイジング機能を発表しました。この新機能は、APN カスタマーエンゲージメント (ACE) オポチュニティ内で利用でき、AI を活用した取引規模の見積りと AWS サービスの推奨事項を提供します。取引サイジング機能により、オポチュニティの作成または更新時における AWS 月次経常収益 (MMR) の見積りプロセスが簡素化されるため、パートナー様は取引管理にかかる時間を節約できます。\n  パートナー様は、オプションで AWS 料金見積りツールの URL をインポートできます。これにより、AWS サービスの選択とそれに対応する支出見積りがオポチュニティに自動入力されるため、手動での再入力が不要になります。料金見積りツールの URL を指定すると、取引サイジング機能により、価格戦略の最適化に関する推奨事項、コスト削減の可能性に関する分析、Migration Acceleration Program (MAP) の参加資格指標、モダナイズの取り組みに関する分析といった詳細なインサイトが得られます。こうした強化されたインサイトにより、パートナー様は技術的アプローチの改善や資金調達申請の強化を実現し、資金調達の承認プロセスを迅速化することができます。\n  取引サイジング機能は現在、世界中の AWS パートナーセントラルでご利用いただけます。この機能は、AWS パートナーセントラル、および米国東部 (バージニア北部) リージョンで利用可能な AWS Partner Central API for Selling の両方を通じてアクセスできます。\n  開始するには、コンソールで AWS パートナーセントラルにログインし、オポチュニティを作成または更新して、取引サイジング機能のインサイトを確認してください。CRM システムとの API 統合については、AWS パートナーセントラル API ドキュメントを参照してください。取引サイジング機能の詳細については、パートナーセントラルのセールスガイドをご覧ください。"
+    },
+    {
+      "id": "7c8f10ae67588ff1779efa72dafa79fae3991bba",
+      "title": "Amazon RDS および Aurora が自動バックアップのリソースタグ付けのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/rds-aurora-resource-tagging-automated-backups/",
+      "pubDate": "2025-12-09T08:00:00.000Z",
+      "contentSnippet": "Amazon RDS および Aurora が、自動バックアップとクラスター自動バックアップのリソースタグ付けをサポートするようになりました。親 DB インスタンスや DB クラスターとは別に自動バックアップにタグ付けできるようになるため、属性ベースのアクセス制御 (ABAC) が可能になり、リソース管理とコスト追跡が簡素化されます。\n \n今回のリリースにより、AWS マネジメントコンソール、API、または SDK を使用して、他の RDS リソースと同じように自動バックアップにタグを付けることができます。これらのタグを IAM ポリシーとともに使用して、自動バックアップへのアクセスと権限を制御できます。さらに、これらのタグを活用して、アプリケーション、プロジェクト、部門、環境などに応じてリソースを分類したり、自動バックアップのコストを管理、整理、追跡したりすることができます。例えば、アプリケーション固有のタグを作成し、自動バックアップの記述、削除、復元に関する権限を制御したり、アプリケーションのバックアップコストを整理および追跡したりすることが可能です。\n \nこの機能は、Aurora および RDS が利用可能な、AWS GovCloud (米国) リージョンを含む、すべての AWS リージョンで一般提供されています。\n \nAurora および RDS の自動バックアップのタグ付けについて詳しくは、Amazon Aurora リソースへのタグ付け、Amazon RDS リソースへのタグ付け、属性ベースのアクセス制御のためのタグの使用に関する Amazon ドキュメントをご覧ください。"
+    },
+    {
+      "id": "abf87a984d83fb7e562781f11c75722e2d1f5655",
+      "title": "Amazon GameLift Servers が AI を活用した支援でゲーム開発者向けの AWS コンソールを強化",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/gamelift-servers-console-developers-ai-powered/",
+      "pubDate": "2025-12-09T08:00:00.000Z",
+      "contentSnippet": "本日、Amazon GameLift Servers は AWS コンソールでの AI を活用した支援を発表しました。Amazon Q Developer を活用し、ゲーム開発者向けにカスタマイズされたガイダンスを提供します。この新機能により、GameLift Servers に関する専門知識が統合され、お客様は複雑なワークフローに対応したり、問題をトラブルシューティングしたり、ゲームサーバーのデプロイをより効率的に最適化したりできるようになります。\n  開発者は、Amazon GameLift Servers を介して、AWS コンソール内でゲームサーバーの統合、フリート設定、パフォーマンスの最適化に関する AI 支援の推奨事項に直接アクセスできるようになります。この機能強化により、意思決定プロセスの効率化、トラブルシューティング時間の短縮、リソース利用率の全体的な向上が図られ、コスト削減とプレイヤーエクスペリエンスの向上が実現します。\n  AI を活用した支援は、AWS 中国を除くすべての Amazon GameLift Servers サポート対象リージョンで利用できるようになりました。この新機能の詳細については、Amazon GameLift Servers のドキュメントをご覧ください。"
+    },
+    {
+      "id": "da40f8b372671247469a36c25ec9a7b988df1df6",
+      "title": "レポート自動化のための Amazon Quick Suite における Quick Research と Quick Flows の統合",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-quick-suite-research-flows-report-automation",
+      "pubDate": "2025-12-08T15:00:00.000Z",
+      "contentSnippet": "Amazon Quick Suite に、Quick Flows 内のステップとして Quick Research が含められました。この統合により、チームは自動化された複数ステップのワークフローの一部として包括的な調査レポートを生成できるようになり、研究プロジェクトを組織全体で共有できる再利用可能なワークフローに変えることができます。\n  Quick Suite は、組織がビジネスデータから答えを導き出し、インサイトからアクションへと迅速に移行できるように支援する、Amazon の新しい AI 搭載ワークスペースです。この統合により、チームは個別に分析を行う必要はなく、フロー内で自動的に調査を開始できるようになります。この機能のおかげで、チームは何百もの自動化されたユースケースから実証済みの調査方法を取り込んでスケールできるようになり、生産性の重大な課題に対応できます。また、この統合により、ユーザーはスケジュールされたトリガーを使用して調査ワークフローを自動化できるため、特定の時間に自動で調査を生成するフローを設定できます。一般的なユースケースには、アカウントプランの自動作成、製品コンプライアンス分析の標準化、定期的な業界レポートの作成などがあります。\n  ユーザーは、フロー作成者の指示と任意のユーザー入力に基づいて調査を生成する、事前設定されたフローの恩恵を受けます。生成された調査レポートは、アカウントチームがフォローアップできるように Salesforce の商談を更新したり、コンプライアンスチームがレビューできるように Jira チケットに投稿したり、特許弁護士に承認してもらう Asana タスクを作成したりするなど、後続のアクションを自動的にトリガーしたりするためにも利用できます。これにより、手作業で面倒な作業をしなくても一貫した分析を可能にする、「設定したら、あとは忘れる」型のワークフローが実現します。現在、Quick Research は、これらの自動化されたワークフロー内で運用されており、検証済みでソースを追跡できるインサイトを提供すると同時に、多様な企業データソースを横断する分析を合理化するという核心的な強みを維持しています。既存の Flows ユーザーは、より包括的な分析を利用できるようになります。\n  Quick Research と Flows の統合は、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (シドニー)、欧州 (アイルランド) の AWS リージョンで利用できます。調査ニーズの自動化について詳しくは、Quick Suite ユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "8b028e80c451a32178c504682dacd9a85e1eb3bc",
+      "title": "空間データのインサイトを加速させる Spatial Data Management on AWS を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/spatial-data-management-spatial-data-insights/",
+      "pubDate": "2025-12-08T08:00:00.000Z",
+      "contentSnippet": "本日、AWS は、ユーザーに空間データの大規模な保存、強化、接続を可能にするソリューションである Spatial Data Management on AWS (SDMA) を発表しました。SDMA を使用すると、お客様は物理アセット (3D、地理空間、行動、時系列データ) を表すマルチモーダル空間データを、安全で一元化されたクラウド環境に保存できるようになります。SDMA は、お客様の空間データ、ISV SaaS アプリケーション、AWS サービス相互の接続を可能にするコラボレーションハブとして機能します。さらに、お客様は SDMA の収集ルールを使用して空間データをどのように整理、強化するかを定義できるため、一貫性とガバナンスの維持に役立てることができます。お客様は、SDMA の API、デスクトップアプリケーション、Web インターフェイスを使用して空間データを効率的に管理し、物理的な運用に関するインサイトと情報に基づいた意思決定を加速できます。\n \nSDMA は、お客様の空間データを安全で便利なクラウドリポジトリに集中させ、ワークフロー全体でのデータの透明性とアクセシビリティを強化します。.LAZ、.E57、.GLB、.GLTF を始めとする空間データファイル形式用の SDMA の自動メタデータ抽出機能を活用することで、データが発見しやすくなり、関係性を向上させることができます。SDMA の REST API とカスタマイズ可能なコネクタを使用すると、外部アプリケーションとの統合が簡単になり、手動でのファイル処理が不要になり、クラウドとオンプレミスの相互運用性が向上します。SDMA の直感的な Web インターフェイスとデスクトップインターフェイスにより、さまざまレベルの技術スキルを持つユーザーが空間データを効率的に管理できるようになります。自動生成されるファイルプレビューは、ワークフローの速度とデータの精度を向上させるように設計されており、ユーザーは大きなファイルをダウンロードしなくてもデータを表示し、検証できます。\n \nSDMA は、アジアパシフィック (東京、シンガポール、シドニー)、欧州 (フランクフルト、アイルランド、ロンドン)、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン) の AWS リージョンで利用できます。\n \n詳細は、SDMA の製品ページをご覧ください。"
+    },
+    {
+      "id": "09d37c31f8439a41281996d8cbacbd8681422603",
+      "title": "Amazon Connect がアウトバウンドキャンペーン向け WhatsApp チャネルをリリース",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/connect-whatsapp-channel-outbound-campaigns/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "Amazon Connect アウトバウンドキャンペーンで WhatsApp がサポートされるようになりました。これにより、顧客がエージェントへの問い合わせに利用している既存の WhatsApp ビジネスメッセージング機能がさらに拡張されます。これによりお客様は、任意のメッセージングプラットフォーム上でタイムリーなコミュニケーション (予約リマインダー、支払い通知、注文状況の更新、製品のレコメンデーションなど) を WhatsApp 経由で直接配信する、プロアクティブかつ自動化されたキャンペーンを通じて顧客を引き付けることができます。WhatsApp キャンペーンの設定は、使い慣れた Amazon Connect インターフェイスを使用して行います。SMS、音声、E メールキャンペーンの場合と同様に、ターゲットオーディエンスの定義、パーソナライズされたメッセージテンプレートの選択、配信時間のスケジュール設定、コンプライアンスガードレールの適用を行うことができます。\n  これまで、アウトバウンドキャンペーンは SMS、E メール、音声チャネルをサポートしていましたが、WhatsApp は顧客がエージェントとの会話を開始する際にしか利用できませんでした。アウトバウンドキャンペーンの WhatsApp サポートにより、お客様は、統一されたキャンペーン管理エクスペリエンスを維持しながら、追加のメッセージングプラットフォームを通じてプロアクティブに顧客にリーチできるようになりました。リアルタイムの顧客データに基づいて WhatsApp メッセージをパーソナライズし、配信とエンゲージメントのメトリクスを追跡し、コミュニケーションの頻度とタイミングを管理してコンプライアンスを確保できます。この拡張により、オムニチャネルアウトリーチ戦略を合理化しつつ、任意のプラットフォームでより柔軟に顧客とつながることが可能となります。\n  この機能は、Amazon Connect アウトバウンドキャンペーンがサポートされているすべての AWS リージョンで利用できます。詳細については、Amazon Connect アウトバウンドキャンペーンのドキュメントをご覧ください。"
+    },
+    {
+      "id": "e236474a29f9c9962b10e45a970ab680cabe0083",
+      "title": "AWS Elastic Beanstalk が Node.js 24 on Amazon Linux 2023 のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/elastic-beanstalk-node-js-24-linux-2023/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "AWS Elastic Beanstalk により、お客様は Amazon Linux 2023 (AL2023) プラットフォームで .Node.js 24 アプリケーションを構築してデプロイできるようになりました。この最新のプラットフォームのサポートにより、開発者は AL2023 の強化されたセキュリティとパフォーマンスを活用しながら、Node.js の最新機能と改善点を活用できます。\n \nAWS Elastic Beanstalk は、アプリケーションを実行するインフラストラクチャを心配することなく、AWS でアプリケーションをデプロイおよび管理できるようにするサービスです。Node.js 24 on AL2023 には V8 JavaScript エンジンのアップデートが含まれており、npm 11 の搭載によるセキュリティとパフォーマンスの向上が行われています。開発者は、Elastic Beanstalk コンソール、CLI、または API を使用して、Node.js 24 on AL2023 を実行する Elastic Beanstalk 環境を作成できます。\n \nこのプラットフォームは、AWS GovCloud (米国) リージョンを含む、Elastic Beanstalk が利用可能なすべての商用 AWS リージョンで利用できます。リージョンおよび提供サービスの一覧については、AWS リージョン表をご覧ください。\n \nNode.js 24 on Amazon Linux 2023 の詳細については、AWS Elastic Beanstalk デベロッパーガイドを参照してください。 その他の情報については、AWS Elastic Beanstalk の製品ページをご覧ください。"
+    },
+    {
+      "id": "bbdd87e2ad452184c93ed6e9aa8d438ec570c2cf",
+      "title": "Amazon SES が API エンドポイントの VPC サポートを追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ses-vpc-api-endpoints/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "本日、Amazon Simple Email Service (SES) が、仮想プライベートクラウド (VPC) エンドポイントを介した SES API エンドポイントへのアクセスに対応するようになりました。お客様は VPC エンドポイントを使用して、SES API にアクセスして E メールを送信し、SES リソース設定を管理できるようになります。このリリースにより、お客様は VPC のセキュリティを強化することができます。\n  これまで、VPC でワークロードを実行するお客様は、VPC でインターネットゲートウェイリソースを設定することで SES API にアクセスできました。これにより、VPC からのトラフィックがインターネットに流れ、SES パブリック API エンドポイントに到達できるようになっていました。今後は、インターネットゲートウェイを必要とせずに VPC エンドポイントを使用して SES API にアクセスできるようになるため、VPC 内のアクティビティがインターネットに公開される可能性が低減されます。\n  SES での SES API エンドポイント向け VPCは、SES を利用できるすべての AWS リージョンでサポートされています。\n  詳細については、Amazon SES での VPC エンドポイントの設定に関するドキュメントを参照してください。"
+    },
+    {
+      "id": "4b17110c60c4e2725b3c5d1017abf6ca44b60733",
+      "title": "Amazon OpenSearch Service が自動セマンティックエンリッチメントのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/opensearch-service-automatic-semantic-enrichment/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "Amazon OpenSearch Service に、マネージドクラスター向けの自動セマンティックエンリッチメントが導入されました。これは、今年初めに OpenSearch Serverless 向けにリリースされた機能と同等のものです。この機能により、最小限の設定作業でセマンティック検索の機能を活用できます。\n  従来の語彙検索では、完全に一致するフレーズのみが検索され、関連するコンテンツが欠落することがよくありました。自動セマンティックエンリッチメントは文脈や意味を理解し、より関連性の高い結果を提供します。例えば「環境に優しい交通手段」と検索すると、完全に一致する用語が含まれているかを問わず、「電気自動車」や「公共交通機関」に関する結果がヒットします。この新機能はすべてのセマンティック処理を自動的に処理するため、機械学習モデルの管理が不要になります。英語のみと多言語の両方をサポートし、アラビア語、フランス語、ヒンディー語、日本語、韓国語など 15 の言語に対応しています。データ取り込み時の実際の使用量のみが発生し、OpenSearch コンピュートユニット (OCU) - セマンティック検索として課金されます。費用の詳細と料金の例については、料金ページをご覧ください。\n  この機能は、OpenSearch バージョン 2.19 以降を実行している Amazon OpenSearch Service ドメインで利用できるようになりました。現在、この機能は、米国東部 (バージニア北部)、米国東部 (オハイオ)、米国西部 (オレゴン)、アジアパシフィック (ムンバイ)、アジアパシフィック (シンガポール)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、欧州 (フランクフルト)、欧州 (アイルランド)、および欧州 (ストックホルム) の AWS リージョンで非 VPC ドメインをサポートしています。\n  まずは自動セマンティックエンリッチメントに関するドキュメントをご覧ください。"
+    },
+    {
+      "id": "2812e5d378e844840c1e09b198ed4c659082b22a",
+      "title": "SES Mail Manager が、新たに 10 の AWS リージョンで利用可能に (合計 27 か所)",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ses-mail-manager-10-regions/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "Amazon SES は、SES Mail Manager 製品がさらに 10 か所の商用 AWS リージョンで利用できるようになったことを発表しました。これにより、Mail Manager がリリースされている現在の 17 の商用 AWS リージョンの対象範囲が拡大され、SES が中核となるアウトバウンドサービスを提供しているすべての商用リージョンで Mail Manager が提供されるようになりました。\n  SES Mail Manager を使用すると、お客様は自社のドメイン向けに E メールのルーティングと配信メカニズムを設定でき、すべての E メールワークロードに対する E メールのガバナンス、リスク、およびコンプライアンスソリューションを一元的に確認できます。組織は一般的に、従来のホスト型メールリレーの代替として、またはサードパーティーのメールボックスプロバイダーや E メールセキュリティソリューションとの統合を簡素化する目的で Mail Manager をデプロイします。Mail Manager は、WorkMail メールボックスへの再配信、検索およびエクスポート機能を備えた組み込みアーカイブ、コンソール内でのサードパーティー製セキュリティアドオンとの直接統合もサポートしています。\n  Mail Manager の新たな 10 か所のリージョンには、中東 (バーレーン)、アジアパシフィック (ジャカルタ)、アフリカ (ケープタウン)、中東 (UAE)、アジアパシフィック (ハイデラバード)、アジアパシフィック (マレーシア)、欧州 (ミラノ)、イスラエル (テルアビブ)、カナダ西部 (カルガリー)、欧州 (チューリッヒ) が含まれます。利用可能な Mail Manager リージョンの詳細なリストは、こちらでご覧いただけます。\n  詳細については、Amazon SES Mail Manager の製品ページと SES Mail Manager のドキュメントをご覧ください。Amazon SES コンソールを通じて、これらの新しいリージョンで Mail Manager の使用を開始できます。"
+    },
+    {
+      "id": "304b1cca90799c859d38ef4e327f3bb577f4a244",
+      "title": "TwelveLabs の Pegasus 1.2 モデルが、グローバルクロスリージョン推論により新たに 23 の AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/twelvelabs-pegasus-available-with-global-cross-region-inference/",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "Amazon Bedrock は、TwelveLabs の Pegasus 1.2 にグローバルクロスリージョン推論を導入し、モデルの提供範囲が拡大され、既に利用可能だった 7 つのリージョンに加えて、23 の新しいリージョンで利用可能になりました。また、地理的クロスリージョン推論を使用して、Amazon Bedrock のすべての EU リージョンでモデルにアクセスできるようになりました。地理的クロスリージョン推論は、特定の地理的境界内にデータレジデンシーまたはコンプライアンス要件があるワークロードに最適です。一方、グローバルクロスリージョン推論は、複数の地域にわたる可用性とパフォーマンスが優先されるアプリケーションに適しています。\n  Pegasus 1.2 は、動画中の映像、音声、テキストのコンテンツに基づいてテキストを生成する、動画に特化した強力な言語モデルです。特に長尺の動画向けに設計されており、動画からテキストへの生成と時間的理解に優れています。今回新たに追加されたリージョンでも Pegasus 1.2 が利用可能になったことで、データやエンドユーザーの近くで動画インテリジェンスアプリケーションを構築できるようになります。これにより、レイテンシーが低減され、アーキテクチャが簡素化されます。\n  Pegasus 1.2 でサポートされている推論プロファイルとリージョンの詳細なリストについては、クロスリージョン推論のドキュメントを参照してください。Pegasus 1.2 の使用を開始するには、Amazon Bedrock コンソールにアクセスしてください。詳細については、製品ページと Amazon Bedrock のドキュメントをご覧ください。"
+    },
+    {
+      "id": "6db51ffdd330febe841610bd7c5918887bbf023c",
+      "title": "Amazon SageMaker が、ノートブックインスタンスの最新プラットフォームバージョンへのセルフサービス移行のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-sagemaker-self-service-migration-notebook-instances",
+      "pubDate": "2025-12-05T18:00:00.000Z",
+      "contentSnippet": "Amazon SageMaker ノートブックインスタンスがセルフサービス移行をサポートするようになり、UpdateNotebookInstance API を使用してノートブックインスタンスのプラットフォーム識別子を更新できるようになりました。これにより、サポート対象外のプラットフォーム識別子 (notebook-al1-v1、notebook-al2-v1、notebook-al2-v2) からサポート対象バージョン (notebook-al2-v3、notebook-al2023-v1) にシームレスに移行できます。\n  UpdateNotebookInstance API の新しい  PlatformIdentifier パラメータを使用することで、既存のデータや設定を維持したまま、ノートブックインスタンスプラットフォームを新しいバージョンに更新できます。プラットフォーム識別子により、ノートブックインスタンスが実行されるオペレーティングシステムと JupyterLab バージョンの組み合わせが決定します。このセルフサービス機能により移行プロセスが簡素化され、ノートブックインスタンスを最新の状態に保つことができます。\n  この機能は AWS CLI (バージョン 2.31.27 以降) と SDK でサポートされており、Amazon SageMaker ノートブックインスタンスがサポートされているすべての AWS リージョンで利用できます。詳細については、Amazon SageMaker デベロッパーガイドの「Update a Notebook Instance」を参照してください。"
+    },
+    {
+      "id": "fdf5f6b3fe1b86fc93bafe9e61805c902db0c123",
+      "title": "Amazon Connect Customer Profiles で新しいセグメンテーション機能が利用可能に (ベータ)",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-connect-customer-profiles/",
+      "pubDate": "2025-12-05T15:04:00.000Z",
+      "contentSnippet": "Amazon Connect Customer Profiles で、Spark SQL (ベータ) による新しいセグメンテーション機能を利用できるようになりました。これにより、AI 支援のもと、完全な Customer Profiles データを活用して高度な顧客セグメントを構築できます。\n  利用可能な機能:\n  \n \n \n完全なプロファイルデータへのアクセス: カスタムオブジェクトと標準オブジェクトの両方をセグメンテーションに使用できます。\n \n \nSQL 機能の活用: オブジェクトの結合、パーセンタイルなどの統計機能によるフィルタリング、日付フィールドの標準化による複雑な分析を実施できます。\n \n \nAI 支援によるセグメントの構築: セグメント AI アシスタントで自然言語プロンプトを使用し、Spark SQL でセグメント定義を自動的に生成することも、SQL を直接記述することもできます。\n \n \nデプロイ前の検証: AI が生成した SQL の確認、自然言語による説明の表示、自動セグメント見積もりの取得を行うことができます。\n \n \n例えば、「過去 1 か月間に新規購入についてカスタマーサービスに 3 回以上電話で問い合わせた顧客」や「生涯支出額が上位 90 パーセンタイルの価値の高い顧客」といったセグメントを作成し、アウトバウンドキャンペーンやパーソナライズされたカスタマーエクスペリエンスに向けた正確なターゲティングを実現できます。\n  これらの新しいセグメンテーション機能は、既存のセグメンテーション機能とともに提供されます。いずれもセグメントメンバーシップコール、フローブロック、アウトバウンドキャンペーンとシームレスに連携するため、ユースケースに最適なアプローチを選択できます。\n  開始方法: Customer Profiles のページからデータストアを有効にして、新しいセグメンテーション機能を使用できます。\n  利用可能な国や地域: Amazon Connect Customer Profiles が提供されているすべての AWS リージョンでご利用いただけます。\n  詳細については、Amazon Connect 管理者ガイドの「Build customer segments in Amazon Connect」を参照してください。"
+    },
+    {
+      "id": "f6d2b5918417ffaa3b761a9902443cedd35baece",
+      "title": "Amazon Q で SES Eメール送信の分析が可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-q-analyze-ses-email-sending/",
+      "pubDate": "2025-12-05T08:00:00.000Z",
+      "contentSnippet": "本日、Amazon Q  (Q) が、Amazon Simple Email Service (SES) での E メール送信分析に対応するようになりました。これに伴い、お客様は SES リソースの設定と使用パターンについて Q に質問できるようになりました。Q は、設定の最適化や配信性能に関する問題のトラブルシューティングを支援します。これにより、技術的知識が少なくても SES の運用アクティビティをより簡単に管理できます。\n  これまで、お客様は Virtual Deliverability Manager などの SES 機能を活用して、SES リソースの設定と使用状況を管理および確認していました。お客様は、SES の便利なダッシュボードビューとクエリツールを活用して情報を検索していましたが、サービスを利用するには E メール送信の概念に対する深い理解が必要となっていました。今後は、リソース設定の最適化や配信性能の課題のトラブルシューティングに関する支援を Q に求めることができます。Q は、お客様の使用パターンと SES リソース設定を評価し、お客様が求めている回答を見つけます。さらに、事前の知識や手動による調査なしにコンテキストを理解できるようお客様を支援します。\n  Q による SES リソース分析は、SES と Q が利用可能なすべての AWS リージョンでサポートされています。\n  詳細については、Q のドキュメントで、Q を通じた SES の操作に関する情報をご覧ください。"
+    },
+    {
+      "id": "651a0bfdc4a000dc4a002d84ca85e8520fea0995",
+      "title": "AWS Elastic Beanstalk が Python 3.14 on Amazon Linux 2023 のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/elastic-beanstalk-python-314-linux-2023/",
+      "pubDate": "2025-12-05T08:00:00.000Z",
+      "contentSnippet": "AWS Elastic Beanstalk により、お客様は Amazon Linux 2023 (AL2023) プラットフォームで Python 3.14 アプリケーションを構築してデプロイできるようになりました。この最新のプラットフォームのサポートにより、開発者は AL2023 の強化されたセキュリティとパフォーマンスを活用しながら、Python の最新機能と改善点を活用できます。\n \nAWS Elastic Beanstalk は、アプリケーションを実行するインフラストラクチャを心配することなく、AWS でアプリケーションをデプロイおよび管理できるようにするサービスです。AL2023 上の Python 3.14 では、インタラクティブインタープリタ機能が強化され、エラーメッセージが改善され、セキュリティと API の重要な改善が行われています。開発者は、Elastic Beanstalk コンソール、CLI、または API を使用して、AL2023 上の Python 3.14 を実行する Elastic Beanstalk 環境を作成できます。\n \nこのプラットフォームは、AWS GovCloud (米国) リージョンを含む、Elastic Beanstalk が利用可能なすべての商用 AWS リージョンで利用できます。リージョンおよび提供サービスの一覧については、AWS リージョン表をご覧ください。\n \nAmazon Linux 2023 での Python 3.14 の詳細については、AWS Elastic Beanstalk デベロッパーガイドを参照してください。 その他の情報については、AWS Elastic Beanstalk の製品ページをご覧ください。"
+    },
+    {
+      "id": "ca845f0dcd7f1a979abfadcffb771b18302bdae1",
+      "title": "AWS が Amazon CloudWatch における AWS CloudTrail イベントの簡素化されたイネーブルメントをリリース",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/key-enhancements-cloudtrail-events-cloudwatch/",
+      "pubDate": "2025-12-05T08:00:00.000Z",
+      "contentSnippet": "本日、AWS は Amazon CloudWatch における AWS CloudTrail イベントの簡素化されたイネーブルメントをリリースしました。Amazon CloudWatch は、AWS リソースおよびアプリケーションからのログデータを収集、監視、分析するのに役立つモニタリングおよびロギングサービスです。今回のリリースにより、Amazon VPC フローログや Amazon EKS コントロールプレーンログなどの他の一般的な AWS ログソースとともに、CloudWatch の CloudTrail イベントの収集を一元的に設定できるようになりました。CloudWatch の取り込みエクスペリエンスでは、統合ビューを通じて AWS Organization 内のアカウントの各種ソースからのテレメトリ収集が簡素化されます。これにより、AWS 環境全体の包括的なモニタリングおよびデータ収集が可能になります。\n  この新たな統合では、サービスリンクチャネル  (SLC) を活用して、証跡を必要とせずに CloudTrail からイベントを受信できます。さらに、安全性チェックや終了保護などのメリットも得られます。カスタムログの料金に基づいて、CloudTrail イベント配信料金と CloudWatch ログの取り込み料金の両方が発生します。\n  CloudWatch における CloudTrail イベントのイネーブルメントとサポートされている AWS リージョンについて詳しくは、Amazon CloudWatch のドキュメントをご覧ください。"
+    },
+    {
+      "id": "3c2914d1a6810db8ba1a53db464326c961986132",
+      "title": "AWS Directory Service for Microsoft AD と AD Connector がアジアパシフィック (ニュージーランド) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-directory-service-microsoft-ad-ad-connector-new-zealand-region/",
+      "pubDate": "2025-12-05T05:00:00.000Z",
+      "contentSnippet": "AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD とも呼ばれる) と AD Connector がアジアパシフィック (ニュージーランド) リージョンで利用できるようになりました。\n \n\n AWS Managed Microsoft AD は、実際の Microsoft Active Directory (AD) 上に構築されているため、AD 対応のアプリケーションを移行できるだけでなく、AWS クラウド上で AD インフラストラクチャの管理作業を軽減することもできます。Microsoft AD の認証情報を使用して EC2 インスタンスをドメインに追加したり、コンテナと Kubernetes クラスターを管理したりすることもできます。既存の Microsoft AD でアイデンティティを保持したり、AWS マネージドディレクトリでアイデンティティを作成/管理したりできます。\n  AD Connector は AWS アプリケーションで既存のオンプレミス AD アイデンティティを使用できるようにするプロキシです。AWS クラウド上の AD インフラストラクチャは必要ありません。また、AD Connector を使用すると、オンプレミス AD ドメインに Amazon EC2 インスタンスを結合し、既存のグループポリシーオブジェクトを使用してインスタンスを管理できます。\n  AWS Managed Microsoft AD と AD Connector が利用可能なすべての AWS リージョンをご覧ください。詳細については、AWS Directory Service をご覧ください。"
+    },
+    {
+      "id": "c92b155d1a8e581bebba2b5b14b511ffc70ccbdd",
+      "title": "Amazon Bedrock が OpenAI の Responses API をサポートするようになりました",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-bedrock-responses-api-from-openai/",
+      "pubDate": "2025-12-04T12:00:00.000Z",
+      "contentSnippet": "Amazon Bedrock は、新しい OpenAI API 互換サービスエンドポイントで Responses API をサポートするようになりました。Responses API を使用すると、デベロッパーは長時間実行される推論ワークロードの非同期推論を実現でき、エージェンティックワークフローのツール使用統合が簡素化され、ステートフルな会話管理もサポートされます。Responses API を使用すると、デベロッパーは各リクエストで会話履歴全体を渡さなければならない代わりに、手動で履歴を管理しなくてもコンテキストを自動的に再構築できます。これらの新しいサービスエンドポイントは、ストリーミングモードと非ストリーミングモードの両方をサポートし、Chat Completions API 内での推論サポートを可能にします。また、デベロッパーはベース URL を変更するだけで OpenAI SDK 互換の既存のコードベースに統合できます。\n  \n 推論サポートが付いたチャット補完機能は、Project Mantle (Amazon Bedrock で提供される大規模機械学習モデル用の新しい分散推論エンジン) を搭載したすべての Amazon Bedrock モデルで利用できます。Project Mantle は、Amazon Bedrock への新しいモデルのオンボーディングを簡素化および迅速化し、高度なサービス品質管理による高性能で信頼性の高いサーバーレス推論を提供し、自動容量管理と統合プールによってデフォルトのカスタマークォータを増やし、OpenAI API 仕様とのすぐに使用できる互換性を提供します。Responses API のサポートは、OpenAI のGPT OSS 20B/120B モデルから今すぐ利用可能で、他のモデルも間もなくサポートされる予定です。\n 使用を開始するには、こちらのサービスドキュメントをご覧ください"
+    },
+    {
+      "id": "1bf213e270559f1bb9f1a9b4453447151d57b47c",
+      "title": "AWS Graviton5 プロセッサを搭載した新しい Amazon EC2 M9g インスタンスを発表 (プレビュー)",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-m9g-instances-graviton5-processors-preview/",
+      "pubDate": "2025-12-04T09:00:00.000Z",
+      "contentSnippet": "本日より、AWS Graviton5 プロセッサを搭載した新しい汎用 Amazon Elastic Compute Cloud (Amazon EC2) M9g インスタンスがプレビュー版で利用できるようになりました。AWS Graviton5 は、AWS によってカスタム設計された Graviton ファミリーのプロセッサの最新製品で、Amazon EC2 のワークロードで最高の価格性能比を実現します。これらのインスタンスは、AWS Graviton4 ベースの M8g インスタンスよりも最大 25% 優れたコンピューティングパフォーマンスと、より高いネットワーキングと Amazon Elastic Block Store (Amazon EBS) の帯域幅を提供します。M8g と比較して、データベースでは最大 30%、ウェブアプリケーションでは最大 35%、機械学習ワークロードでは最大 35% 高速です。\n  M9g インスタンスは、AWS が設計したハードウェアとソフトウェアのイノベーションを組み合わせた AWS Nitro System 上に構築されています。AWS Nitro System は、分離されたマルチテナンシー、プライベートネットワーキング、高速ローカルストレージを備えた効率的で柔軟かつ安全なクラウドサービスの提供を可能にします。Amazon EC2 M9g インスタンスは、アプリケーションサーバー、マイクロサービス、ゲームサーバー、中規模データストア、キャッシュフリートなどのワークロードに最適です。\n  詳細について、または M9g プレビューへのアクセスをリクエストするには、Amazon EC2 M9g インスタンスを参照してください。Graviton の利用を開始するには、「Level up your compute with AWS Graviton」ページにアクセスしてください。"
+    },
+    {
+      "id": "345f08595809708ea4ebac6bd80b8e09c2c508d0",
+      "title": "Amazon SageMaker HyperPod でチェックポイントレストレーニングのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-sagemaker-hyperpod-checkpointless-training",
+      "pubDate": "2025-12-03T15:00:00.000Z",
+      "contentSnippet": "Amazon SageMaker HyperPod で、チェックポイントレストレーニングのサポートを開始しました。この新しい基盤モデルのトレーニング機能を使用すると、障害復旧のためにチェックポイントベースのジョブレベルの再起動を行う必要性を軽減できます。チェックポイントレストレーニングでは、障害が発生してもトレーニングの進行を維持するため、復旧にかかる時間が数時間から数分に短縮されます。これは、従来のチェックポイントベースの復旧からの根本的な転換となります。従来の方法では、障害発生時にトレーニングクラスター全体を一時停止し、問題を手動で診断し、保存されたチェックポイントから復旧を行う必要がありました。このプロセスでは、コストのかかる AI アクセラレータが何時間もアイドル状態になり、無駄なコンピューティングコストが発生する可能性があります。\n \nチェックポイントレストレーニングでは、この従来の方法から脱却し、モデルトレーニングの状態を分散クラスター全体で維持し、障害のあるトレーニングノードをその場で自動的に交換して、正常なアクセラレータから状態をピアツーピアで転送して障害復旧を行います。 復旧時のチェックポイントへの依存が軽減されるため、組織はアイドル状態の AI アクセラレータのコストを節約し、トレーニングにかかる時間を短縮できます。大規模なトレーニングであっても、Amazon SageMaker HyperPod のチェックポイントレストレーニングにより、数千の AI アクセラレータを持つクラスター規模で 95% 以上のトレーニンググッドプットを実現できます。\n \nSageMaker HyperPod のチェックポイントレストレーニングは、Amazon SageMaker HyperPod が利用可能なすべての AWS リージョンでご利用いただけます。 Llama や GPT OSS などの一般的な公開モデルで HyperPod レシピを使用すると、コード変更なしでチェックポイントレストレーニングを実行できます。カスタムモデルアーキテクチャの場合、PyTorch ベースのワークフローに最小限の変更を加えるだけで、チェックポイントレストレーニングのコンポーネントを統合できます。そのため、分散型トレーニングの専門知識がないチームでも使用できます。\n \n使用を開始するには、Amazon SageMaker HyperPod の製品ページにアクセスしてください。実装ガイダンスについては、チェックポイントレストレーニングの GitHub ページをご覧ください。"
+    },
+    {
+      "id": "736e2e303e55b235a1ad2907d672fe0b436715a2",
+      "title": "Strands Agents での TypeScript サポート (プレビュー) などを発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/typescript-strands-agents-preview",
+      "pubDate": "2025-12-03T14:00:00.000Z",
+      "contentSnippet": "AWS は 5 月に、Strands Agents SDK をオープンソース化しました。Strands Agents SDK は、わずか数行のコードで AI エージェントを構築および実行するモデルドリブンアプローチを採用したオープンソース Python フレームワークです。本日、TypeScript サポートがプレビューで利用可能になったことを発表いたします。これにより、開発者は Strands Agents を構築する際に Python と TypeScript のどちらかを選択できるようになりました。\n  Strands での TypeScript サポートは、完全な型安全性、async/await のサポート、最新の JavaScript/TypeScript パターンを備えた、慣用的な TypeScript エクスペリエンスを実現するように設計されています。Strands は、クライアントアプリケーション、ブラウザ、AWS Lambda や Bedrock AgentCore などのランタイムのサーバーサイドアプリケーションで簡単に実行できます。開発者は、AWS CDK を使用して Typescript でスタック全体を構築することもできます。\n  さらに、Strands SDK の 3 つの追加アップデートも発表いたします。まず、Strands Agents のエッジデバイスサポートの一般提供が開始されました。この SDK の拡張では、双方向ストリーミングが導入されたほか、llama.cpp などのローカルモデルプロバイダーが追加されたため、ローカルモデルを使用して小規模デバイスでエージェントを実行できるようになりました。次に、Strands Steering が試験的な機能として利用可能になりました。これにより、開発者はモジュール式のプロンプトメカニズムを利用して、ライフサイクルの適切なタイミングでエージェントにフィードバックを提供し、厳格なワークフローなしでエージェントを望ましい結果へと導くことができます。最後に、Strands Evaluations がプレビュー版で利用可能になりました。Evaluations を使用すると、開発者はエージェントの行動を体系的に検証し、改善点を測定して、開発サイクル中に自信を持ってデプロイを行うことができます。\n  Strands Agents の GitHub  にアクセスして、構築を始めましょう。"
+    },
+    {
+      "id": "2379419c497922710cfe1119f61f4f358397f6e1",
+      "title": "Amazon SageMaker AI の新しいサーバーレスモデルカスタマイズ機能",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/new-serverless-model-customization-capability-amazon-sagemaker-ai",
+      "pubDate": "2025-12-03T14:00:00.000Z",
+      "contentSnippet": "Amazon Web Services (AWS) は、新しいサーバーレスモデルカスタマイズ機能を発表しました。この機能により、AI 開発者は教師ありファインチューニングや強化学習などの最新技術を使用して、一般的なモデルを迅速にカスタマイズできるようになりますす。 Amazon SageMaker AI は、あらゆるユースケースにおいて、高性能で低コストの AI モデル開発を実現する幅広いツールを統合したフルマネージドサービスです。 \n \n多くの AI 開発者は、所有データを使ってモデルをカスタマイズし、その精度を高めたいと考えていますが、この作業には長いイテレーションサイクルが必要になることがよくあります。例えば、ユースケースを定義してデータを準備し、モデルとカスタマイズ手法を選択し、モデルをトレーニングしてから、デプロイするモデルを評価する必要があります。 今回のリリースにより、AI 開発者は、データの準備から評価、デプロイまでのエンドツーエンドのモデルカスタマイズワークフローを簡素化し、プロセスを加速できるようになりました。使いやすいインターフェイスにより、Amazon Nova、Llama、Qwen、DeepSeek、GPT-OSS などの一般的なモデルをすぐに使い始めることができ、独自のデータを使用してカスタマイズできます。カスタマイズには、教師ありファインチューニングや最新の技術 (強化学習や直接選好最適化など) を使用できます。さらに、AI 開発者は、AI エージェントガイド付きワークフロー (プレビュー中) や自然言語を使用して、完全にサーバーレスで合成データの生成、データ品質の分析、モデルのトレーニングと評価を行うことができます。 \n \nこの使いやすいインターフェイスは、欧州 (アイルランド)、米国東部 (バージニア北部)、アジアパシフィック (東京)、米国西部 (オレゴン) の AWS リージョンでご利用いただけます。 AI エージェントガイド付きワークフローへのアクセスを申請するには、サインアップページをご覧ください。 \n \n詳細については、SageMaker AI のモデルカスタマイズに関するページとブログを参照してください。"
+    },
+    {
+      "id": "9c31bc9aca62069c3aee0f5ccbd4420d033193b9",
+      "title": " Amazon SageMaker HyperPod のエラスティックトレーニングのご紹介",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/elastic-training-amazon-sagemaker-hyperpod/",
+      "pubDate": "2025-12-03T08:00:00.000Z",
+      "contentSnippet": "Amazon SageMaker HyperPod で、エラスティックトレーニングのサポートを開始しました。このトレーニングでは、リソースの可用性とワークロードの優先順位に基づいてトレーニングワークロードが自動的にスケールされるため、基盤モデルのトレーニングにかかる時間を短縮できます。これにより、固定されたリソースセットを使用するトレーニングから根本的に転換し、コンピューティングの可用性に基づくトレーニングジョブの再設定に費やしていたエンジニアリング時間を節約できます。\n \nこれまでは、コンピューティングの可用性に変化が生じた場合、手動でトレーニングを停止し、トレーニングパラメータを再設定して、ジョブを再開する必要がありました。このプロセスでは、分散型トレーニングの専門知識が必要となるほか、トレーニングジョブの再設定時にコストの高い AI アクセラレータがアイドル状態のままになります。エラスティックトレーニングでは、トレーニングジョブを自動的に拡張してアイドル状態の AI アクセラレータを吸収し、優先度の高いワークロードにリソースが必要な場合は、シームレスにトレーニングを縮小します。これらはすべて、トレーニングを完全に停止することなく行われます。\n \n手動による再設定のオーバーヘッドがなくなり、利用可能なコンピューティングを継続的に活用できるようになるため、これまでインフラストラクチャ管理に費やしていた時間を節約できます。また、クラスターの使用率を最大限に高めてコストを削減し、市場投入までの時間を短縮できます。最小限のリソースでトレーニングをすぐに開始して、キャパシティが使用可能になったら必要に応じてトレーニングを拡張できます。\n \nSageMaker HyperPod のエラスティックトレーニングは、Amazon SageMaker HyperPod が利用可能なすべてのリージョンでご利用いただけます。Llama や GPT OSS などの公開モデルで HyperPod レシピを使用すると、コード変更なしでエラスティックトレーニングを実行できます。カスタムモデルアーキテクチャの場合、設定をわずかに更新し、最小限のコード変更を行うだけでエラスティックトレーニング機能を統合できるため、分散型システムの専門知識がないチームでも使用できます。\n \n使用を開始するには、Amazon SageMaker HyperPod の製品ページにアクセスしてください。実装ガイダンスについては、エラスティックトレーニングのドキュメントをご覧ください。"
+    },
+    {
+      "id": "2704df6a7fca40dc868cee89aa75a7578a97ced5",
+      "title": "Amazon Bedrock で強化学習によるファインチューニングのサポートを開始: ベースモデルと比較して平均で 66% の精度向上を実現可能",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/bedrock-reinforcement-fine-tuning-66-base-models/",
+      "pubDate": "2025-12-03T08:00:00.000Z",
+      "contentSnippet": "Amazon Bedrock で、強化学習によるファインチューニングのサポートを開始しました。これにより、機械学習に関する深い専門知識や大量のラベル付きデータがなくても、モデルの精度を向上させることが可能になりました。強化学習によるファインチューニングのワークフローは Amazon Bedrock によって自動化されるため、開発者は日常的にこの高度なモデルカスタマイズ手法を利用できます。従来のファインチューニング手法では大量のデータが必要でしたが、モデルは大量のデータではなく少数のプロンプトを使用して、ユーザーの特定の要件を満たすよう学習します。そのため、チームはすぐにファインチューニングを開始できます。この機能は、同じプロンプトに対する複数の応答候補に関するフィードバックによってモデルに学習させ、どのような応答が適切かをモデルがより適切に判断できるようにします。Amazon Bedrock の強化学習によるファインチューニングでは、基本モデルと比較して平均で 66% の精度向上を実現できます。そのため、高品質を維持しながら、より小規模で高速な、費用対効果の高いモデルバリアントを使用できます。\n \n組織は、AI モデルを独自のビジネスニーズに適応させるのに苦労しており、平均的なパフォーマンスを備えた汎用モデルか、専門的な人材、インフラストラクチャ、リスクの高いデータ移動が必要な高価で複雑なカスタマイズのどちらかを選択せざるを得ません。Amazon Bedrock の強化学習によるファインチューニングを使用すると、高度なモデルのカスタマイズを自動化して迅速かつ安全に実行できるため、この複雑さが解消されます。モデルをトレーニングするには、コンピュータからトレーニングデータを直接アップロードするか、Amazon S3 に既に保存されているデータセットから選択します。ラベル付けされたデータセットは不要です。報酬関数の定義には、検証可能なルールベースの採点器または AI ベースのジャッジを使用できます。また、組み込みのテンプレートを使用すれば、コード生成や数学推論などの客観的タスクと、指示の実行やチャットボットとの対話といった主観的タスクの両方に対応するようにモデルを最適化できます。お客様の所有データはカスタマイズプロセス全体を通して安全で管理された AWS 環境内に留まるため、セキュリティとコンプライアンスの懸念を軽減できます。\n \nAmazon Bedrock の強化学習によるファインチューニングは、Amazon Bedrock コンソールおよび Amazon Bedrock API を使用して開始できます。リリース時点では、Amazon Nova 2 Lite で強化学習によるファインチューニングをご利用いただけます。その他のモデルも今後サポートされる予定です。Amazon Bedrock の強化学習によるファインチューニングの詳細については、リリースブログ、料金ページ、ドキュメントをご覧ください。"
+    },
+    {
+      "id": "50be67446002d2314427fa744e4d52d2c8130363",
+      "title": "Amazon EC2 汎用 M8azn インスタンスの発表 (プレビュー)",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-amazon-ec2-m8azn-preview",
+      "pubDate": "2025-12-02T16:00:00.000Z",
+      "contentSnippet": "本日より、新しい汎用高頻度ハイネットワークの Amazon Elastic Compute Cloud (Amazon EC2) M8azn インスタンスがプレビューできるようになりました。これらのインスタンスは、第 5 世代 AMD EPYC (旧コード名 Turin) プロセッサを搭載し、クラウドで最も高い CPU 周波数である 5 GHz を提供します。M8azn インスタンスは、前世代の M5zn インスタンスと比較して最大 2 倍のコンピューティングパフォーマンスを提供します。また、これらのインスタンスは M8a インスタンスよりも 24% 高いパフォーマンスを発揮します。\n  M8azn インスタンスは、AWS が設計したハードウェアとソフトウェアのイノベーションを組み合わせた AWS Nitro System 上に構築されています。AWS Nitro System は、分離されたマルチテナンシー、プライベートネットワーキング、高速ローカルストレージを備えた効率的で柔軟かつ安全なクラウドサービスの提供を可能にします。これらのインスタンスは、自動車、航空宇宙、エネルギー、電気通信業界向けのゲーム、高性能コンピューティング、高頻度取引 (HFT)、CI/CD、シミュレーションモデリングなどのアプリケーションに最適です。\n  詳細について、または M8azn インスタンスプレビューへのアクセスをリクエストするには、Amazon EC2 M8a ページをご覧ください。"
+    },
+    {
+      "id": "6554a4397c5dd956444d931259ae605faee95f80",
+      "title": "Amazon EMR 用の Apache Spark アップグレードエージェントの発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/apache-spark-upgrade-agent-amazon-emr",
+      "pubDate": "2025-12-02T15:00:00.000Z",
+      "contentSnippet": "AWS は、EC2 上の Amazon EMR と EMR Serverless 向けに Apache Spark バージョンアップグレードを高速化する新機能である Apache Spark アップグレードエージェントを発表しました。エージェントは、コード分析と変換を自動化することで、通常は数か月かかる複雑なアップグレードプロセスを、数週間にわたるプロジェクトに変換します。組織は、Spark のアップグレード中に、API の変更の分析、競合の解決、アプリケーションの検証に多大なエンジニアリングリソースを費やしています。エージェントには、エンジニアがコード変更を完全に制御しながら、アップグレード要件を自然言語で表現できる会話型インターフェイスが導入されています。\n  Apache Spark アップグレードエージェントは、PySpark アプリケーションと Scala アプリケーションの全体で API と動作の変更を自動的に識別します。エンジニアは、MCP (モデルコンテキストプロトコル) の互換性を利用して、SageMaker Unified Studio、Kiro CLI、または選択した IDE から直接、アップグレードを開始することができます。エージェントはアップグレードプロセス中に既存のコードを分析して具体的な変更を提案するので、エンジニアは実装前に変更をレビューして承認できます。エージェントは、データ品質検証を通じて機能正確性を検証します。エージェントは現在、Spark 2.4 から 3.5 へのアップグレードをサポートしており、アップグレードプロセスの全体を通じてデータ処理の正確性を維持します。\n  Apache Spark アップグレードエージェントは、SageMaker Unified Studio が利用可能なすべての AWS リージョンで利用できるようになりました。エージェントの使用を開始するには、SageMaker Unified Studio にアクセスして IDE スペースを選択するか、Kiro CLI をインストールしてください。詳細な実装ガイダンス、リファレンスドキュメント、移行例については、ドキュメントをご覧ください。"
+    },
+    {
+      "id": "f17fc1f9ec3bfab97a6e4b4c9f10cd2fa70cd1b4",
+      "title": "リアルタイムな会話型 AI を実現する Amazon Nova 2 Sonic を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-nova-2-sonic-real-time-conversational-ai/",
+      "pubDate": "2025-12-02T15:00:00.000Z",
+      "contentSnippet": "Amazon は本日、自然でリアルタイムな会話型 AI を実現する音声合成モデルである Amazon Nova 2 Sonic の提供を発表しました。  このモデルは、クラス最高のストリーミング音声理解と、バックグラウンドノイズおよびユーザーの話し方に対する堅牢性を備え、会話の効率的な処理、複数の言語をネイティブに話すことができる表現力豊かな音声 (多言語音声) による音声生成が可能です。また、推論、指示の実行、ツール呼び出しの精度が以前のモデルよりも向上しています。\n \nNova 2 Sonic には、オリジナルの Nova Sonic モデルで導入された機能をベースに、言語サポートの拡大 (ポルトガル語とヒンディー語を追加)、モデルが異なる言語を同じ音声でネイティブの表現力で話すことができる多言語音声、開発者がポーズ感度を低、中、高に設定できるターンテイキング制御などの新機能が導入されています。このモデルには、クロスモーダルインタラクション機能も追加されているため、ユーザーは同じセッション内で音声とテキストをシームレスに切り替えることができます。また、非同期のツール呼び出しにより、会話の流れを中断することなく複数ステップのタスクをサポートできるほか、100 万トークンのコンテキストウィンドウによって持続的なインタラクションが可能です。\n \n開発者は、Amazon Bedrock の双方向ストリーミング API を使用して、Nova Sonic 2 をリアルタイム音声システムに直接統合できます。Nova Sonic 2 は、Amazon Connect やその他の主要なテレフォニープロバイダー (Vonage、Twilio、AudioCodes など)、オープンソースフレームワーク (LiveKit や Pipecat など) ともシームレスに統合できます。\n \nAmazon Nova 2 Sonic は、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (東京) の AWS リージョンで、Amazon Bedrock を通じてご利用いただけます。詳細については、AWS ニュースブログと Amazon Nova Sonic ユーザーガイドをご覧ください。Amazon Bedrock で Nova Sonic 2 の使用を開始するには、Amazon Bedrock コンソールにアクセスしてください。"
+    },
+    {
+      "id": "f85d527c4bf12dcbe1a548b2d1db9343c7cd9915",
+      "title": "新しいメモリ最適化 Amazon EC2 X8aedz インスタンスの発表 ",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/memory-optimized-amazon-ec2-x8aedz-instances/",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "AWS は、第 5 世代 AMD EPYC プロセッサ (旧コード名 Turin) を搭載した次世代のメモリ最適化インスタンスである Amazon EC2 X8aedz を発表しました。これらのインスタンスの最高 CPU 周波数は、クラウド上で最大の 5 GHz です。前世代の X2iezn インスタンスと比較して、最大 2 倍高いコンピューティングパフォーマンスを実現します。\n  X8aedz インスタンスは、最新の第 6 世代 AWS Nitro Cards を使用して構築されており、高いシングルスレッドパフォーマンスと大きなメモリ容量が必要な、物理レイアウトや物理検証ジョブなどの Electronic Design Automation (EDA) ワークロードやリレーショナルデータベースに最適です。5 GHz プロセッサとローカル NVMe ストレージの組み合わせにより、フロアプランニング、ロジック配置、クロックツリー合成 (CTS)、ルーティング、電力/信号インテグリティ解析など、メモリを大量に消費するバックエンド EDA ワークロードの処理を高速化できます。\n  X8aedz インスタンスは、メモリと vCPU の比率が 32:1 で、2～96 個の vCPU、64～3,072 GiB のメモリ構成を持つ 8 種類が用意され、2 つのベアメタル構成を含み、最大 8 TB のローカル NVMe SSD ストレージを利用できます。\n  X8aedz インスタンスは、米国西部 (オレゴン) およびアジアパシフィック (東京) リージョンで利用できるようになりました。X8aedz インスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入できます。使用を開始するには、AWS マネジメントコンソールにサインインしてください。詳細については、Amazon EC2 X8aedz インスタンスページまたは AWS ニュースブログをご覧ください。"
+    },
+    {
+      "id": "5b199f92449179a669e41bd187187faed8f76831",
+      "title": "Amazon FSx for NetApp ONTAP が Amazon S3 アクセスのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-fsx-netapp-ontap-s3-access",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "Amazon S3 Access Points を Amazon FSx for NetApp ONTAP ファイルシステムにアタッチして、ファイルデータを、S3 内に保存されているかのように扱えるようになりました。この新機能により、FSx for NetApp ONTAP 内のファイルデータは、そのまま FSx for NetApp ONTAP に置かれながらも、S3 に対応した幅広い人工知能、機械学習、分析サービスおよびアプリケーションで容易に利用できるようになります。\n  Amazon FSx for NetApp ONTAP は、クラウドで利用できる最初で唯一のフルマネージド NetApp ONTAP ファイルシステムです。これにより、NetApp ONTAP やその他の NAS アプライアンスに依存するオンプレミスアプリケーションを、データの管理方法を変更することなく AWS に移行できます。S3 アクセスポイントは、さまざまなアプリケーションやユーザーがデータにアクセスする方法を制御および簡素化するのに役立つエンドポイントです。今回の FSx for NetApp ONTAP 向け S3 Access Points により、AWS に移行したデータを使って新たなインサイトを得たり、より迅速にイノベーションを進めたり、さらに高度なデータ主導の意思決定を行えるようになります。例えば、データを使用して、Amazon Bedrock で生成 AI アプリケーションを強化したり、Amazon SageMaker で機械学習モデルをトレーニングしたり、Amazon Glue やさまざまな AWS のデータおよび分析のコンピテンシーパートナーソリューションを使用して分析を実行したり、S3 ベースのクラウドネイティブアプリケーションを使用してワークフローを実行したりできます。\n  この機能を利用するには、Amazon FSx コンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS ソフトウェア開発キット (AWS SDK) のいずれかを使用して S3 アクセスポイントを作成し、これを NetApp ONTAP ファイルシステム用の新しい FSx にアタッチします。既存の FSx for NetApp ONTAP ファイルシステムに対するサポートは、今度の週次メンテナンス期間中に提供される予定です。この新機能は、一部の AWS リージョンで利用できます。\n  使用を開始するには、以下のリソースのリストをご覧ください。\n  \n \n \nAmazon FSx for NetApp ONTAP\n \n \nAmazon S3 Access Points\n \n \nAWS ニュースブログ"
+    },
+    {
+      "id": "5458bd459c631a0bb11e2513f819332e20ad4db1",
+      "title": "Amazon EC2 メモリ最適化 X8i インスタンス (プレビュー) の発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-x8i-instances-preview",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "Amazon Web Services は、次世代のメモリ最適化インスタンスである Amazon EC2 X8i のプレビューを発表しました。X8i インスタンスは、カスタム Intel Xeon 6 プロセッサを搭載しており、クラウドにおける同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリを提供します。X8i インスタンスは、前世代の X2i インスタンスと比較して 1.5 倍のメモリ容量 (最大 6TB) と最大 3.4 倍のメモリ帯域幅を提供します。\n  X8i インスタンスは SAP 認定を受けており、ミッションクリティカルな SAP ワークロード向けに、X2i インスタンスと比較して 46% 高い SAPS を提供します。X8i インスタンスは、インメモリデータベースや分析、大規模な従来型データベース、Electronic Design Automation (EDA) など、メモリ集約型ワークロードに最適です。X2i インスタンスと比較した場合、X8i インスタンスのパフォーマンスは 35% 向上し、一部のワークロードではより高いパフォーマンスが実現します。\n  X8i インスタンスのプレビューの詳細やアクセス権のリクエストについては、Amazon EC2 X8i ページをご覧ください。"
+    },
+    {
+      "id": "cff14ac532f0894433377e6633adeb67d4f75d5f",
+      "title": "Amazon S3 ストレージレンズにパフォーマンスメトリクス、数十億のプレフィックスのサポート、S3 Tables へのエクスポート機能が追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-s3-storage-lens-performance-metrics-prefixes-export-tables",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "Amazon S3 ストレージレンズでは、ストレージの使用状況とアクティビティを組織全体で可視化でき、コストの最適化、パフォーマンスの向上、データ保護の強化に役立ちます。本日、S3 ストレージレンズに 3 つの新機能を追加します。これにより、S3 ストレージ使用状況とアプリケーションパフォーマンスに関するより深いインサイトが得られます。新機能は、アプリケーションが S3 データとどのように相互作用しているかを把握するパフォーマンスメトリクス、バケット内の数十億のプレフィックスに対する分析、S3 Tables へのメトリクスの直接エクスポートによる簡易なクエリと分析です。\n  3 つの特定のタイプのパフォーマンスメトリクスが追加されました。アクセスパターンメトリクスは、過度に小さく不要なネットワークオーバーヘッドを引き起こすリクエストなど、非効率的なリクエストを識別します。クロスリージョンリクエスト数などのリクエストオリジンメトリクスは、アプリケーションがリージョン間でデータにアクセスしている状況を示し、レイテンシーとコストへの影響を把握します。オブジェクトアクセス数メトリクスは、アプリケーションが少数の特定オブジェクトを頻繁に読み取っている状況を明らかにし、キャッシュや高性能ストレージへの移行によって最適化できる可能性を示します。\n  S3 ストレージレンズのプレフィックス分析を拡張して、バケットごとに数十億のプレフィックスを分析できるようにします。これまで、メトリクスは、サイズと深さの最小しきい値を満たす最大プレフィックスのみが対象でした。これにより、すべてのプレフィックスにわたるストレージの使用状況とアクティビティを可視化できます。最後に、メトリクスをマネージド S3 Tables に直接エクスポートできるようにしました。これにより、Amazon QuickSight などの AWS 分析サービスですぐにクエリを実行できるようになり、このデータを他の AWS サービスデータと組み合わせてより深いインサイトを得ることができるようになります。\n  使用を開始するには、S3 ストレージレンズの高度なメトリクスのダッシュボード設定でパフォーマンスメトリクスまたは拡張プレフィックスを有効にします。これらの機能は、AWS 中国リージョンと AWS GovCloud (米国) リージョンを除くすべての AWS リージョンで利用できます。S3 Tables が利用可能な AWS リージョンの無料および高度なダッシュボード設定の両方で、マネージド S3 Tables へのメトリクスのエクスポートを有効にできます。詳細については、S3 ストレージレンズの概要ページ、ドキュメント、S3 料金ページ、AWS ニュースブログをお読みください。"
+    },
+    {
+      "id": "2b94a5dd5027c268e1812c5421dda67ff036cda5",
+      "title": "Amazon RDS for SQL Server で新世代のインスタンスに対応した CPU 最適化機能の提供を開始し、料金の最大 55% 引き下げを実現",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-rds-sql-server-optimized-cpu-lower-prices",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "Amazon RDS for SQL Server で、M7i および R7i インスタンスファミリーに対応した CPU 最適化機能の提供を開始しました。これにより、同等の前世代のインスタンスと比較して価格が最大 55% 引き下げられます。CPU 最適化機能により、Simultaneous Multi-threading (SMT) の設定が最適化され、商用ソフトウェアの料金が引き下げられます。お客様は、同等の第 6 世代インスタンスから M7i および R7i インスタンスにアップグレードすることでコストを削減できます。さらに、メモリや I/O の負荷が高いデータベースワークロードでは、CPU 最適化の設定を微調整することで、さらにコストを削減できます。\n  データベースインスタンスの消費時間に対する RDS for SQL Server の料金には、Microsoft Windows と Microsoft SQL Server のソフトウェア料金が含まれています。CPU 最適化機能により、物理 CPU コアが 2 つ以上あるインスタンスの SMT は無効になります。これにより、vCPU 数が削減され、それに対応する商用ソフトウェアの料金を 50% 削減できます。なお、物理 CPU コア数は変わらず、ほぼ同等のパフォーマンスを得ることができます。最も大きな節約効果は、2Xlarge 以上のインスタンス、およびマルチ AZ 配置を使用するインスタンスで得られます。この場合、RDS は、ほとんどの使用において 1 つのアクティブノードのみで SQL Server ソフトウェアの料金を削減するように最適化されています。メモリや I/O の負荷が高いワークロードの場合、お客様はアクティブな物理 CPU コア数を微調整することで、さらなる節約が可能です。\n  RDS for SQL Server は、すべての AWS リージョンで M7i および R7i インスタンスをサポートしています。バンドルされていないインスタンス料金体系では、データベースコストは vCPU 時間あたりのサードパーティのライセンス料として別途請求され、サードパーティのライセンス料は、お客様の組織が AWS から受ける割引の対象にはなりません。お客様の使用に関連する Microsoft Windows および SQL Server の料金は、AWS Billing and Cost Management および毎月の請求書でご確認いただけます。詳細については、RDS for SQL Server の料金、Amazon RDS ユーザーガイド、AWS ニュースブログをご覧ください。"
+    },
+    {
+      "id": "a926ba0745afe3581a5a7ec9c5112cfcf69f211c",
+      "title": "Amazon RDS for SQL Server が Developer Edition のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-rds-sql-server-supports-developer-edition/",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "Amazon Relational Database Service (Amazon RDS) for SQL Server が Microsoft SQL Server 2022 Developer Edition の提供を開始しました。SQL Server Developer Edition は SQL Server の無料エディションで、エンタープライズエディションのすべての機能が含まれており、本番環境以外のあらゆる環境で使用できます。これにより、お客様はコストを削減し、本番データベース構成との一貫性を維持しながら、SQL Server を使用してアプリケーションを構築、テスト、デモンストレーションできます。\n  以前は、開発環境およびテスト環境用に Amazon RDS for SQL Server インスタンスを作成したお客様は、SQL Server Standard Edition または SQL Server Enterprise Edition を使用する必要がありました。その結果、本番環境以外の環境における使用でも追加のデータベースライセンスコストが発生していました。お客様が SQL Server Developer Edition を使用することで、Amazon RDS の開発およびテストインスタンスのコストを下げることができるようになりました。さらに、開発とテストを目的とした自動バックアップ、自動ソフトウェア更新、モニタリング、暗号化などの Amazon RDS for SQL Server の機能は、Developer Edition でも利用可能です。\n  ただし、Microsoft SQL Server Developer Edition のライセンスは、その使用を開発およびテスト目的に限定しており、本番環境では使用できません。また、エンドユーザーに直接サービスを提供する商業目的では使用できません。詳細については、Amazon RDS for SQL Server ユーザーガイドを参照してください。料金の詳細、および利用可能なリージョンの詳細については、Amazon RDS for SQL Server の料金を参照してください。"
+    },
+    {
+      "id": "4b1dc89923484a7d9b15302b21443b4faf3f215c",
+      "title": "NVIDIA GB300 NVL72 によってアクセラレーションされた Amazon EC2 P6e-GB300 UltraServers の一般提供が開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-p6e-gb300-ultraservers-nvidia-gb300-nvl72-generally-available",
+      "pubDate": "2025-12-02T14:00:00.000Z",
+      "contentSnippet": "AWS は本日、Amazon Elastic Compute Cloud (Amazon EC2) P6e-GB300 UltraServers の一般提供を開始しました。P6e-GB300 UltraServers は、NVIDIA GB300 NVL72 によってアクセラレーションされ、P6e-GB200 と比較して 1.5 倍の GPU メモリと 1.5 倍の FP4 コンピューティング (スパースなし) を備えています。 \n \nお客様は、より高度なコンテキストを必要とするアプリケーションや、推論やエージェンティック AI などの新しい推論技術を実装するアプリケーション向けに、P6e-GB300 を使用して本番環境で最も強力なモデルのパフォーマンスを最適化できます。\n \nP6e-GB300 UltraServers の使用を開始するには、AWS 営業担当者にお問い合わせください。\n \nP6e UltraServers とインスタンスの詳細については、Amazon EC2 P6 インスタンスをご覧ください。"
+    },
+    {
+      "id": "9b19de024fcbc8d6a9fafef1d01034f7030dd35d",
+      "title": "Amazon EMR Serverless により、Apache Spark ワークロードのローカルストレージのプロビジョニングが不要に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-emr-serverless-local-storage-provisioning-apache-spark-workloads",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon EMR Serverless で、Apache Spark ワークロード向けにローカルストレージプロビジョニングを不要にするサーバーレスストレージが提供されるようになりました。これにより、データ処理コストを最大 20% 削減し、ディスク容量の制約によるジョブの失敗を防ぎます。アプリケーションごとにローカルディスクの種類やサイズを設定する必要がなくなりました。EMR Serverless はシャッフルなどの中間データオペレーションを自動的に処理し、ローカルストレージ料金は発生しません。ジョブが消費したコンピューティングリソースとメモリリソースに対してのみ料金を支払います。\n  EMR Serverless は、中間データオペレーションをフルマネージドかつ自動スケール可能なサーバーレスストレージにオフロードし、転送中および保存中のデータを暗号化し、ジョブ単位で分離します。サーバーレスストレージはストレージをコンピューティングから切り離すため、Spark は一時的なデータを保存するためにワーカーをアクティブにしておくのではなく、アイドル状態になったらすぐにワーカーを解放できるようにします。ディスク容量不足によるジョブの失敗を防ぎ、アイドル状態のワーカーへの課金を回避することでコストを削減します。これは、動的なリソース割り当てを使用するジョブに特に役立ちます。たとえば、数百万件のお客様との対話を処理するレコメンデーションエンジンなど、初期段階で大規模なデータセットを高い並列処理で処理し、データが集約されるにつれてリソースが減少するようなジョブです。\n  この機能は、EMR リリース 7.12 以降で一般提供されています。利用可能なリージョンについては、サポートされている AWS リージョンをご覧ください。使用を開始するには、EMR サーバーレスのドキュメントのサーバーレスストレージをご覧ください。"
+    },
+    {
+      "id": "1a73e059c3173a4e4f2f1dac4a1c6f408b4e7414",
+      "title": "Amazon Bedrock は、18 のフルマネージドオープンウェイトモデルを追加しました。これは、これまでで最大の新規モデルの拡張です",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-bedrock-fully-managed-open-weight-models",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon Bedrock は、本番規模で生成 AI アプリケーションとエージェントを構築するためのプラットフォームです。Amazon Bedrock では、統合 API を通じて主要 AI 企業の幅広いフルマネージドモデルにアクセスできます。これにより、アプリケーションの書き換えや、インフラストラクチャの変更を行わずに、新しいモデルの評価、切り替え、採用が可能になります。Amazon Bedrock は本日、18 のフルマネージド型オープンウェイトモデルをモデルラインナップに追加しました。これは、これまでで最大の新規モデルの拡張です。\n \n以下のモデルが Amazon Bedrock で利用可能になりました。\n  \nGoogle: Gemma 3 4B、Gemma 3 12B、Gemma 3 27B\n \nMiniMax AI: MiniMax M2\n \nMistral AI:  Mistral Large 3、Ministral 3 3B、Ministral 3 8B、Ministral 3 14B、Magistral Small 1.2、Voxtral Mini 1.0、Voxtral Small 1.0\n \nMoonshot AI: Kimi K2 Thinking\n \nNVIDIA: NVIDIA Nemotron Nano 2 9B、NVIDIA Nemotron Nano 2 VL 12B\n \nOpenAI: gpt-oss-safeguard-20b、gpt-oss-safeguard-120b\n \nQwen: Qwen3-Next-80B-A3B, Qwen3-VL-235B-A22B\n \n利用可能な AWS リージョンの全リストについては、ドキュメントを参照してください。\n \nAmazon Bedrock が提供するすべてのモデルの詳細については、Amazon Bedrock モデル選択ページをご覧ください。Amazon Bedrock でこれらのモデルの使用を開始するには、リリースブログを読み、Amazon Bedrock コンソールにアクセスしてください。"
+    },
+    {
+      "id": "93f0cac1095b81dbc85fc18a2a802638d659b90b",
+      "title": "Amazon S3 Vectors は、プレビュー時の 40 倍の規模で一般提供されています。",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-s3-vectors-generally-available",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon S3 Vectorsは、ベクトルの保存とクエリをネイティブにサポートする初のクラウドオブジェクトストレージで、一般公開されるようになりました。S3 Vectors は、AI エージェント、推論、検索拡張生成 (RAG)、セマンティック検索向けに、数十億ベクトル規模で動作する専用のコスト最適化されたベクトルストレージを提供します。S3 Vectors は、Amazon S3 と同等の弾力性、耐久性、可用性を提供するように設計されており、ベクトルのアップロード、保存、クエリにかかる総コストを最大 90% 削減します。一般提供では、1 つのインデックスあたり最大 20 億ベクトルを保存およびクエリでき、1 つのベクトルバケットあたり最大 10,000 のベクトルインデックスまで柔軟にスケールできます。頻度の低いクエリは 1 秒未満で結果を返し続けますが、頻繁の高いクエリでは、レイテンシーが約 100 ミリ秒以下になるようになりました。アプリケーションでは、単一ベクトルの更新をインデックスにストリーミングする際に、1 秒あたり 1,000 ベクトルの書き込みスループットを達成できます。また、1 つのクエリで最大 100 件の検索結果を取得し、各ベクトルと一緒に最大 50 のメタデータキーを保存して、クエリできめ細かくフィルタリングできるようにします。\n \nS3 Vectors では、耐久性に優れた低コストのベクトルストレージに最適化された新しいバケットタイプ、つまりベクトルバケットを利用できます。ベクトルバケット内では、ベクトルインデックスを使用してベクトルデータを整理し、インフラストラクチャをプロビジョニングすることなくベクトルを保存、アクセス、クエリするための専用の API セットを利用できます。S3 Vectors は デフォルトで S3 マネージドキー (SSE-S3) を使用したサーバー側の暗号化で、ベクトルバケット内のすべてのベクトルデータを暗号化します。また、オプションで、AWS Key Management Service (SSE-KMS) を使用してデフォルトのお客様管理キーを設定して、ベクトルバケット内のすべての新しいベクトルインデックスを暗号化することもできます。また、ベクトルインデックスごとにお客様管理専用のキーを設定できるようになったため、スケーラブルなマルチテナントアプリケーションを構築し、規制やガバナンスの要件に対応するのに役立ちます。また、属性ベースのアクセス制御 (ABAC) 用にベクトルバケットとインデックスにタグを付けたり、AWS Billing and Cost Management を使用してコストを追跡および整理したりすることもできます。\n \nS3 Vectors は Amazon Bedrock ナレッジベースと統合されているため、RAG に大規模なベクトルデータセットを使用する際のコストを削減できます。Amazon Bedrock または Amazon SageMaker Unified Studio でナレッジベースを作成する際、既存の Amazon S3 ベクトルインデックスを選択するか、クイック作成ワークフローを使用して新しいベクトルインデックスを作成できます。Amazon OpenSearch Service を使用すると、S3 におけるベクトルストレージを自動的に管理するように OpenSearch を設定することで、ハイブリッド検索ワークロードのコストを最適化できます。\n \nS3 Vectors は、プレビュー時の 5 リージョンから拡大し、現在は 14 の AWS リージョンで一般提供されています。詳細については、製品ページ、S3 の料金ページ、ドキュメント、AWS ニュースブログをご覧ください。"
+    },
+    {
+      "id": "771ccf3ce1a42b39d8427778508b54296e3c7f42",
+      "title": "AWS サポートの変革: 信頼できる人間の専門知識による AI を活用した運用",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-support-transformation-ai-powered-operations",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS サポートは、サポートポートフォリオを、ビジネスサポート +、エンタープライズサポート、統合運用という 3 つのインテリジェントなエクスペリエンス主導型プランに簡略化したことを発表しました。各プランは、AI のスピードと精度を AWS エンジニアの専門知識と組み合わせたものです。上位プランになるほど、前のプランを基盤としつつ、より高速な応答時間、より積極的なガイダンス、よりスマートな運用が追加されています。その結果、エンジニアリングの負担が軽減され、信頼性と回復力が強化され、クラウド運用の合理化が実現しました。\n  ビジネスサポート + は、お客様の状況を理解する AI を活用した支援を 24 時間 365 日提供し、重大な問題については AWS の専門家に 30 分以内に直接対応します。これは現在のプランの 2 倍の速さです。エンタープライズサポートでは、これに加えて、専任のテクニカルアカウントマネージャー (TAM) が加わり、生成 AI によるインサイトと人間の判断力を組み合わせて、回復力、コスト、効率に関する戦略的な運用ガイダンスを提供します。また、追加料金なしの AWS Security Incident Response も含まれており、お客様はこれをアクティブ化してセキュリティアラートの調査とトリアージを自動化できます。最上位プランである Unified Operations は、ミッションクリティカルなワークロード向けに設計されており、指定された専門家からなるグローバルチームが、アーキテクチャレビュー、ガイド付きテスト、プロアクティブな最適化、重大なインシデントに対する 5 分間の状況に応じた応答を提供します。AWS DevOps エージェント (プレビュー) を使用しているお客様は、必要に応じて調査画面からワンクリックで AWS サポートと連携でき、AWS の専門家にコンテキストがすぐに伝わり、より迅速な解決が可能になります。AWS DevOps エージェントは、インシデントを解決し、さらに事前に防止するフロンティアエージェントであり、AWS、マルチクラウド、ハイブリッド環境におけるアプリケーションの信頼性とパフォーマンスを継続的に向上させます。\n  ビジネスサポート +、エンタープライズサポート、統合オペレーションは、すべての商用 AWS リージョンで利用可能です。既存のお客様は、現在のプランを継続することも、パフォーマンスと効率を向上させる新しいサービスを検討することもできます。AWS が AI インテリジェンスと人間の専門知識を融合させてクラウド運用を変革する方法については、AWS サポートの製品ページをご覧ください。"
+    },
+    {
+      "id": "88b45344cee418bac73f430c4b2ca42a4e46b162",
+      "title": "AWS セキュリティエージェント (プレビュー): プロアクティブなアプリケーションセキュリティのための AI エージェント",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-security-agent-preview",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "本日、AWS は、開発ライフサイクル全体を通じてアプリケーションを積極的に保護する AI 搭載エージェントである AWS セキュリティエージェントのプレビューを発表しました。AWS セキュリティエージェントは、組織の要件に合わせた自動セキュリティレビューを実施し、状況に応じたペネトレーションテストを行います。設計からデプロイまで継続的にセキュリティを検証することで、あらゆる環境において開発初期の段階で脆弱性を防止するのに役立ちます。\n \nセキュリティチームは、承認された暗号化ライブラリ、認証フレームワーク、ログ標準などの組織のセキュリティ要件を AWS セキュリティエージェントのコンソールで一度だけ定義します。その後、AWS セキュリティエージェントは、アーキテクチャ文書とコードをお客様が定義した基準に照らして評価し、開発全体を通じてこれらの要件を自動的に検証して、違反が検出された場合は具体的なガイダンスを提供します。デプロイ時の検証では、セキュリティチームがペネトレーションテストの範囲を定義し、AWS セキュリティエージェントがアプリケーションコンテキストを開発し、高度な攻撃チェーンを実行し、脆弱性を発見し、検証します。これにより、すべてのチームに一貫したセキュリティポリシーの適用が可能となり、開発速度に合わせてセキュリティレビューをスケールでき、従来のペネトレーションテストを定期的なボトルネックからオンデマンドな機能へと変革し、リスクの露出を大幅に削減します。\n \nAWS セキュリティエージェント (プレビュー) は現在、米国東部 (バージニア北部) リージョンで利用できます。すべてのデータは安全かつプライベートに保たれます。クエリやデータがモデルのトレーニングに使用されることはありません。AWS セキュリティエージェントは、監査とコンプライアンス対応のために API アクティビティを AWS CloudTrail に記録します。\n \nAWS セキュリティエージェントの詳細については、製品ページにアクセスしてリリースのお知らせをお読みください。技術的な詳細や利用開始方法については、AWS セキュリティエージェントのドキュメントをご覧ください。"
+    },
+    {
+      "id": "ea8a85bf3cc9691613195ab9d6785c010f826cad",
+      "title": "Amazon Bedrock AgentCore にポリシー (プレビュー)、評価 (プレビュー) などが含まれるように",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-bedrock-agentcore-policy-evaluations-preview",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "本日、Amazon Bedrock AgentCore は、ポリシー (プレビュー) や評価 (プレビュー) などの新しい機能を導入しました。これにより、チームが組織全体でエージェントデプロイを自信を持ってスケールするために必要な制御と品質保証を提供し、エージェントをプロトタイプから本番稼働のソリューションへと進化させます。\n  AgentCore のポリシーは、AgentCore Gateway と統合され、すべてのツールコールをリアルタイムで傍受し、エージェントが速度を落とすことなく定義された境界内にとどまるようにします。チームは自然言語でポリシーを作成でき、それは AWS のオープンソースポリシー言語である Cedar に自動変換されます。これにより、開発、コンプライアンス、セキュリティチームは、カスタムコードを記述しなくてもルールを設定、理解、監査できます。AgentCore Evaluations は、デベロッパーが実際の行動に基づいてエージェントのパフォーマンスをテストし、継続的に監視することで品質を向上させ、お客様に広範囲にわたる影響を与える前に問題を発見するのに役立ちます。デベロッパーは、有用性、ツールの選択、正確性など、一般的な品質指標に対応した 13 種類のビルトインエバリュエーターを使用したり、カスタムモデルベースのスコアリングシステムを作成したりできます。これにより、評価インフラストラクチャの開発に必要な労力を大幅に削減できます。すべての品質メトリクスには、Amazon CloudWatch を基盤とした統合ダッシュボードからアクセスできます。また、より高度なエージェント機能をサポートするために、AgentCore Memory、AgentCore Runtime、AgentCore Identity に新機能を追加しました。AgentCore Memory はエピソード記憶が含むようになり、エージェントは経験から学習および適応できるようになり、時間をかけて知識を蓄積し、より人間らしい対話を実現できるようになりました。AgentCore Runtime は、双方向ストリーミングをサポートし、エージェントが会話中に同時に聞き取り、応答し、中断やコンテキスト変更にも対応できる自然な対話を実現し、強力な音声エージェントのユースケースを可能にします。AgentCore Identity は、カスタムクレームをサポートし、選択した ID プロバイダーとのシームレスな統合を維持しながら、マルチテナント環境全体で高度な認証ルールを実現できるようになりました。\n  AgentCore Evaluations は、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (シドニー)、欧州 (フランクフルト) の 4 つの AWS リージョンでプレビューとして利用できます。AgentCore のポリシーは、AgentCore が利用可能なすべての AWS リージョンでプレビューとして利用できます。\n  AgentCore の詳細についてはブログをご覧いただき、AgentCore リソースによる詳細な解説を確認してください。使用を開始するには、AgentCore スターターツールキットをご利用ください。AgentCore は、初期費用なしで消費ベースの価格設定を提供しています。"
+    },
+    {
+      "id": "695538c3ea7286fe10f6b5a7d8897b5ded1f2095",
+      "title": "Amazon Nova 2 基盤モデルが Amazon Bedrock で利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は本日、業界トップクラスの価格パフォーマンスで推論機能を提供する次世代の汎用モデルである Amazon Nova 2 を発表しました。Amazon Bedrock で現在ご利用いただける新しいモデルは次のとおりです。\n \n• Amazon Nova 2 Lite: 日常的なワークロード向けの高速でコスト効率に優れた推論モデル。\n \n• Amazon Nova 2 Pro (プレビュー): 複数のステップからなる非常に複雑なタスク向けの最もインテリジェントなモデル。\n \nAmazon Nova 2 Lite と Amazon Nova 2 Pro (プレビュー) は、前世代のモデルに比べて大幅に進歩しています。これらのモデルは、段階的な推論とタスク分解による拡張思考をサポートし、3 つの思考強度レベル (低、中、高) を備えています。そのため、デベロッパーは速度、インテリジェンス、コストのバランスを制御できます。また、コードインタープリターやウェブグラウンディングなどの組み込みのツールを利用できるほか、リモート MCP ツールもサポートされています。さらに、100 万トークンのコンテキストウィンドウにより、より豊かなインタラクションを実現できます。\n \nNova 2 Lite は日常のさまざまなタスクに使用でき、価格、パフォーマンス、速度の最適なバランスを実現します。先行アクセスを利用しているお客様は、カスタマーサービスのチャットボット、ドキュメント処理、ビジネスプロセスの自動化に Nova 2 Lite を活用しています。Nova 2 Lite は、Amazon Bedrock と Amazon SageMaker で教師ありファインチューニング (SFT) を使用してカスタマイズでき、Amazon SageMaker ではフルファインチューニングも可能です。Amazon Nova 2 Pro (プレビュー) は、マルチドキュメント分析、動画推論、ソフトウェア移行などの非常に複雑なエージェントタスクに使用できます。\n \nAmazon Nova 2 Lite と Nova 2 Pro (プレビュー) は現在、複数の場所でのグローバルなクロスリージョン推論を通じて、Amazon Bedrock 上でご利用いただけます。Nova 2 Pro はプレビュー段階にあり、Amazon Nova Forge のすべてのお客様が先行アクセスを利用できます。アクセスをご希望の方は、AWS アカウントチームまでお問い合わせください。\n \n詳細については、AWS ニュースブログ、Amazon Nova モデルの製品ページ、Amazon Nova ユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "b9ca1f508426905fbc73fbfdeafd693ad9e6f878",
+      "title": "AWS Lambda、複数ステップからなるアプリケーションと AI ワークフロー向けの永続関数を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/lambda-durable-multi-step-applications-ai-workflows/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS Lambda は永続関数を発表しました。これにより、デベロッパーは、Lambda の開発体験のままで、信頼性の高い複数ステップからなるアプリケーションや AI ワークフローを構築できるようになります。永続関数は、自動的に進捗状況のチェックポイントを作成し、長時間実行中のタスクの実行を最大 1 年間中断し、障害から回復します。いずれも場合も、追加のインフラストラクチャを管理したり、カスタムの状態管理やエラー処理コードを作成したりする必要はありません。\n  お客様が Lambda を使用する理由は、イベント駆動型のプログラミングモデルのシンプルさと豊富な統合機能です。従来の Lambda 関数は存続期間の短い単一タスクの処理に優れていますが、注文処理、ユーザーオンボーディング、AI 支援ワークフローなどの複雑な複数ステップからなるアプリケーションを構築する場合、デベロッパーは、以前はカスタムの状態管理ロジックを実装するか、外部のオーケストレーションサービスと統合する必要がありました。Lambda 永続関数は、Lambda プログラミングモデルに「ステップ」や「待機」などの新しい操作を追加することで、この機会に対応しました。これにより、進捗をチェックポイントとして記録し、コンピューティング料金を発生させることなく実行を一時停止することが可能になります。このサービスは、状態管理、エラー回復、長時間実行タスクの効率的な一時停止と再開を処理するため、ユーザーはコアビジネスロジックに集中できます。\n  Lambda 永続関数は、米国東部 (オハイオ) で一般的に提供されており、Python (バージョン 3.13 と 3.14) と Node.js (バージョン 22 と 24) のランタイムをサポートしています。最新のリージョン対応状況については、AWS 機能 (リージョン別) ページをご覧ください。\n  永続関数 は、AWS Lambda API、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (AWS CLI)、AWS Cloud Formation、AWS サーバーレスアプリケーションモデル (AWS SAM)、AWS SDK、AWS Cloud Development Kit (AWS CDK) を使用して、Python または Node.js ベースの新しい Lambda 関数に対して有効にできます。永続関数の詳細については、AWS Lambda デベロッパーガイドとリリースブログ投稿をご覧ください。料金については、AWS Lambda の料金をご覧ください。"
+    },
+    {
+      "id": "1c5d4cbcb330df1a9810761a171b53cee7e1680d",
+      "title": "Amazon S3 Tables が Apache Iceberg テーブルの自動レプリケーションのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/s3-tables-automatic-replication-apache-iceberg-tables/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon S3 Tables は、AWS リージョンとアカウント間の Apache Iceberg テーブルの自動レプリケーションをサポートするようになりました。この新機能により、すべてのスナップショットとメタデータを含むテーブル構造全体がレプリケートされ、クエリの待ち時間が短縮され、グローバルな分析ワークロードのデータアクセシビリティが向上します。\n  S3 Tables レプリケーションは、ターゲットテーブルバケットに読み取り専用のレプリカテーブルを自動的に作成し、ソーステーブルの最新の状態でバックフィルし、レプリカの同期を維持するために新しい更新を継続的に監視します。レプリカテーブルは、コンプライアンスとデータ保護の要件を満たすために、ソーステーブルから独立したスナップショット保持ポリシーと暗号化キーを使用して構成できます。レプリカテーブルは、Amazon SageMaker Unified Studio または Amazon Athena、Amazon Redshift、Apache Spark、DuckDB などの任意の Iceberg 互換エンジンを使用してクエリできます。\n  S3 Tables レプリケーションは、S3 Tables がサポートされているすべての AWS リージョンで利用できるようになりました。料金の詳細については、Amazon S3 の料金ページをご覧ください。S3 Tables の詳細については、製品ページ、ドキュメントにアクセスし、AWS ニュースブログをお読みください。"
+    },
+    {
+      "id": "a40433bfe626278830e997251a8bf3d7593c1e00",
+      "title": "AWS Security Hub がほぼリアルタイムのリスク分析機能とともに一般提供されるように ",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/security-hub-near-real-time-risk-analytics/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon Web Services (AWS) は、重要なセキュリティ問題に優先順位を付け、大規模な対応、セキュリティリスクの軽減、チームの生産性の向上に役立つ統合クラウドセキュリティソリューションである AWS Security Hub の一般提供を発表しました。一般提供に伴い、Security Hub には、ほぼリアルタイムのリスク分析、高度なトレンド分析、統合された有効化および管理、複数の AWS セキュリティサービスでの一元化された料金設定が含まれるようになりました。Security Hub は、Amazon GuardDuty、Amazon Inspector、AWS Security Hub CSPM からのセキュリティシグナルを相互に関連付けて強化することで重大なリスクを検出し、クラウド環境でアクティブなリスクをすばやく特定して優先順位を付けることができます。\n  Security Hub は、ほぼリアルタイムのリスク分析と高度なトレンド分析を提供するようになり、強化された視覚化とコンテキストエンリッチメントにより、相関するセキュリティシグナルを実用的なインサイトに変換できるようになりました。Security Hub は、個々のアカウントで有効にすることも、デプロイと管理を一元化して AWS 組織全体で有効にすることもできます。これらの新機能は、漏えい調査、セキュリティに焦点を当てたアセットインベントリ、攻撃経路の視覚化、チケットシステム統合による自動対応ワークフローなどの既存の機能を補完します。この一元管理により、複数のコンソール間で手動で関連付ける必要性が減り、潜在的な運用上の中断を最小限に抑えながら、大規模な合理化された修復を可能にします。また、複数の AWS セキュリティサービスにわたる料金を統合する合理化された価格設定により、コストの予測可能性が向上しました。このサービスは、攻撃者がどのように脅威、脆弱性、設定ミスを連鎖させて重要なリソースを危険にさらす可能性があるかを示すことで、潜在的な攻撃経路を自動的に視覚化し、より包括的な分析によってより深いリスクコンテキストを提供します。\n  Security Hub が利用可能な AWS 商用リージョンの詳細については、AWS リージョン表をご覧ください。このサービスは既存の AWS セキュリティサービスと統合されるため、運用上のオーバーヘッドを増やすことなく、より包括的なセキュリティ体制を実現できます。Security Hub の詳細を確認し、使用を開始するには、AWS Security Hub コンソールまたは AWS Security Hub 製品ページをご覧ください。"
+    },
+    {
+      "id": "c1205de8169c0dc279df2823e832d655ca0fbb78",
+      "title": "Amazon RDS for Oracle/SQL Server は、追加のストレージボリュームを追加して最大 256 TiB のストレージのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/rds-oracle-sql-server-256-tib-storage-support/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon Relational Database Service (Amazon RDS) for Oracle/SQL Server は、データベースインスタンスあたりのストレージサイズを 4 倍にした最大 256 TiB をサポートするようになりました。お客様は、プライマリストレージボリュームに加えて最大 3 つのストレージボリューム (それぞれ最大 64 TiB のストレージ) をデータベースインスタンスに追加できます。追加のストレージボリュームは、アプリケーションのダウンタイムなしにデータベースインスタンスに追加、スケールアップ、または削除できるため、お客様は変化するワークロード要件に基づいて、時間の経過とともにストレージボリュームを柔軟に追加および調整できます。\n  ストレージボリュームを追加することで、お客様はプライマリボリュームで使用可能な最大ストレージサイズを超えてデータベースストレージをスケールし続けることができます。また、月末のデータ処理やローカルストレージからのデータのインポートなど、ストレージの追加が短期的に必要になった場合は、一時的にボリュームを追加し、不要になったら未使用のボリュームを削除できます。さらに、お客様はデータベースインスタンスに高性能のプロビジョンド IOPS SSD (io2) ボリュームと汎用 (gp3) ボリュームを組み合わせて使用することで、コストパフォーマンスを最適化できます。たとえば、一貫した IOPS パフォーマンスを必要とするデータを io2 ボリュームに保存し、アクセス頻度の低い履歴データを gp3 ボリュームに保存して、ストレージコストを最適化できます。\n  使用を開始するには、お客様は AWS マネジメントコンソール、AWS CLI、または SDK を使用して、新規または既存のデータベースインスタンスに追加のストレージボリュームを作成できます。詳細については、RDS for Oracle ユーザーガイドおよびRDS for SQL Server ユーザーガイドをご覧ください。お客様がストレージボリュームを増やすことでどのようなメリットが得られるかについて詳しくは、AWS ニュースブログ投稿をご覧ください。追加のストレージボリュームは、AWS のすべての商用リージョンと AWS GovCloud (米国) リージョンで利用できます。"
+    },
+    {
+      "id": "bed507903c709efbf7f89dc6080a86bd45a0881c",
+      "title": "AWS AI Factory の紹介",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-ai-factories",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS AI Factory が利用できるようになり、お客様のデータセンターに迅速にデプロイ可能で高性能な AWS AI インフラストラクチャが提供されるようになりました。最新の AWS Trainium アクセラレーターと NVIDIA GPU、専用の低レイテンシーネットワーク、高性能ストレージ、AWS AI サービスを組み合わせることで、AI Factories は、単独で構築する場合と比較して、AI の構築を数か月または数年短縮できます。AWS AI Factory は、20 年近くにわたる AWS クラウドのリーダーシップに関する専門知識を活用することで、通常 AI の取り組みを遅らせるような調達、セットアップ、最適化の複雑さを解消します。\n \nAmazon Bedrock や Amazon SageMaker などの統合された AWS AI サービスを使用すると、個々のモデルプロバイダーと個別に契約交渉を行うことなく、主要な基盤モデルにすぐにアクセスできます。  AWS AI Factory は、お客様またはお客様が指定した信頼できるコミュニティ専用に構築された専用環境として動作し、より広範な AWS サービスと統合しながらも、完全な分離と運用上の独立性を確保します。このアプローチは、各国政府や企業がデジタル主権の要件を満たすのを支援しつつ、AWS クラウドの比類ないセキュリティ、信頼性、および機能の恩恵を受けることを可能にします。お客様がすでに取得済みのデータセンターのスペースと電力容量を提供し、AWS がインフラストラクチャをデプロイおよび管理します。 \n \nAWS AI Factory は、厳格なデータレジデンシー要件を備えた安全で分離された環境を求めるあらゆる業界の企業や政府機関に、高度な AI テクノロジーを提供します。これらの専用環境では、パブリッククラウドリージョンと同じ高度なテクノロジーを利用できるため、AI を活用したアプリケーションを構築したり、所有データを使用して大規模な言語モデルをトレーニングおよびデプロイしたりできます。AWS では、独自にキャパシティを構築するのに何年も費やすのではなく、デプロイのスケジュールを短縮できるため、インフラストラクチャの複雑化ではなくイノベーションに集中できます。 \n \nデータセンターに AWS AI Factory をデプロイする方法と、専用の AI インフラストラクチャを大規模に構築および維持してきた AWS の実績ある専門知識を活用して AI の取り組みを加速する方法の詳細については、AWS アカウントチームにお問い合わせください。"
+    },
+    {
+      "id": "f3183a5beecc7d1b1c1f198a6d063fc72d682fa1",
+      "title": "新しいコンピューティング最適化 Amazon EC2 C8a インスタンスの発表 ",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/compute-optimized-amazon-ec2-c8a-instances/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、コンピューティング最適化 Amazon EC2 C8a インスタンスの一般提供を開始したことを発表しました。C8a インスタンスは、最大周波数が 4.5 GHz の第 5 世代 AMD EPYC プロセッサ (旧コード名 Turin) を搭載しており、C7a インスタンスと比較してパフォーマンスが最大 30%、コスト効率が最大 19% 向上します。\n  C8a インスタンスは C7a インスタンスと比較して、メモリ帯域幅が 33% 広いため、レイテンシーの影響を受けやすいワークロードに理想的です。Amazon EC2 C7a インスタンスと比較すると、GroovyJVM の場合は最大 57% 高速になり、Java ベースのアプリケーションの応答時間が短縮されます。C8a インスタンスには、2 つのベアメタルサイズを含む 12 のサイズがあります。さまざまなインスタンスサイズが用意されているため、お客様はワークロード要件に正確に対応できます。\n  C8a インスタンスは AWS Nitro System 上に構築され、バッチ処理、分散分析、ハイパフォーマンスコンピューティング (HPC)、広告配信、高度にスケーラブルなマルチプレイヤーゲーム、ビデオエンコーディングなど、パフォーマンスが高く計算量の多いアプリケーションに最適です。\n  C8a インスタンスは、米国東部 (バージニア北部)、米国東部 (オハイオ)、および米国西部 (オレゴン) の AWS リージョンで利用できます。使用を開始するには、AWS マネジメントコンソールにサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。詳細については、Amazon EC2 C8a インスタンスのページをご覧ください。"
+    },
+    {
+      "id": "f7295bc069919ea977e3f868e28e414b44d7e120",
+      "title": "より迅速で低コストの生成 AI トレーニングを実現する Amazon EC2 Trn3 UltraServers の発表 ",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-trn3-ultraservers",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、第 4 世代 AI チップ Trainium3 を搭載した Amazon Elastic Compute Cloud (Amazon EC2) Trn3 UltraServers の一般提供を発表しました。これは、次世代のエージェンシー、推論、動画生成アプリケーションに最適のトークンエコノミクスを提供することを目的として構築された、最初の 3nm AWS AI チップです。\n  各 AWS Trainium3 チップは 2.52 ペタフロップス (PFLOP) の FP8 コンピューティングを提供し、メモリ容量は Trainium2 の 1.5 倍で、帯域幅は 1.7 倍に増加し、HBM3e メモリは 144 GBで、メモリ帯域幅は 4.9 Tb/s です。Trainium3 は、高度なデータ型 (MXFP8およびMXFP4) を備え、リアルタイム、マルチモーダル、推論タスクのためのメモリと計算のバランスが改善された高密度ワークロードとエキスパート並列ワークロードの両方向けに設計されています。\n  Trn3 UltraServers は、最大 144 個の Trainium3 チップ (合計 362 個の FP8 PFLOP) までスケールアップでき、EC2 UltraClusters 3.0 では数十万個のチップまでスケールできます。完全構成の Trn3 UltraServers は、最大 20.7 TB の HBM3e と 706 TB/秒の総メモリ帯域幅を提供します。次世代の Trn3 UltraServer は、Trn2 UltraServer のチップ間インターコネクト帯域幅を 2 倍にするオールツーオールファブリックである NeuronSwitch-V1 を採用しています。\n  Trn3 は、Trn2 UltraServers と比較して、最大 4.4 倍のパフォーマンス、3.9 倍のメモリ帯域幅、4 倍高いワットあたりのパフォーマンスを提供し、強化学習、Mixture-of-Experts (MoE)、推論、ロングコンテキストアーキテクチャなど、最先端スケールのモデルのトレーニングと提供において最適なコストパフォーマンスを実現します。Amazon Bedrock では、Trainium3 が最速のアクセラレーターであり、ユーザーあたりのレイテンシーは同程度で、メガワットあたりの出力トークンは 5 倍以上高く、Trainium2 の最大 3 倍のパフォーマンスを提供します。\n  新しい Trn3 UltraServers は AI 研究者向けに構築され、AWS Neuron SDK を搭載しているため、画期的なパフォーマンスを実現できます。PyTorch のネイティブ統合により、デベロッパーはモデルコードを一行も変更せずにトレーニングやデプロイを行うことができます。AI パフォーマンスエンジニア向けに、Trainium3 へのより深いアクセスを可能にしました。これにより、パフォーマンスのファインチューニング、カーネルのカスタマイズ、モデルのさらなる拡張が可能になります。イノベーションはオープン性によって成り立つため、私たちはオープンソースのツールやリソースを通じてデベロッパーと交流することに全力を注いでいます。"
+    },
+    {
+      "id": "ff09be0624885bdebfc790b5c7f7033ebd10ad7f",
+      "title": "Amazon GuardDuty Extended Threat Detection が Amazon EC2 と Amazon ECS のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/guardduty-extended-threat-detection-ec2-ecs/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、AWS Fargate または Amazon EC2 で実行されている Amazon Elastic Compute Cloud (Amazon EC2) インスタンスと Amazon Elastic Container Service (Amazon ECS) クラスターを標的とする多段階攻撃を検出する新機能により、Amazon GuardDuty Extended Threat Detection をさらに強化したことを発表しました。GuardDuty Extended Threat Detection では、AWS 規模でトレーニングされた人工知能と機械学習のアルゴリズムを使用し、セキュリティシグナルを自動的に相互に関連付けて重大な脅威を検出します。ネットワークアクティビティ、プロセス実行時の動作、マルウェアの実行、AWS APIアクティビティにわたる複数のセキュリティシグナルを長期間にわたって分析し、他の方法では気付かれないような高度な攻撃パターンを検出します。\n  今回の発表により、GuardDuty は、AttackSequence:EC2/CompromisedInstanceGroup と AttackSequence:ECS/CompromisedCluster という2つの新しい重大度調査を導入しました。これらの調査結果は攻撃シーケンス情報を提供し、初期分析にかかる時間を短縮し、重大な脅威への対応により多くの時間を費やすことができるため、ビジネスへの影響を最小限に抑えることができます。たとえば、GuardDuty では、永続化を試みた疑わしいプロセス、暗号マイニングアクティビティ、リバースシェルの作成などを識別し、これらの関連イベントを 1 つの重大度検出結果として表示できます。各検出結果には、詳細な概要、詳細なイベントタイムライン、MITRE ATT&CK® の戦術と手法へのマッピング、修復のレコメンデーションが含まれています。\n  GuardDuty Extended Threat Detection は、GuardDuty のお客様には追加費用なしで自動的に有効になりますが、その検出の包括性は、有効にしている GuardDuty 保護プランによって異なります。Amazon EC2 インスタンスの攻撃シーケンスカバレッジと脅威分析を改善するには、EC2 の Runtime Monitoring を有効にします。侵害された ECS クラスターの検出を有効にするには、インフラストラクチャのタイプに応じて Fargate または EC2 のRuntime Monitoring を有効にします。\n  使用を開始するには、コンソールまたは API で GuardDuty 保護プランを有効にします。GuardDuty の新規のお客様は 30 日間の無料トライアルから始めることができ、Runtime Monitoring をまだ使用していない既存のお客様も 30 日間無料でお試しいただけます。追加情報については、ブログ投稿と Amazon Guard Duty 製品ページをご覧ください。"
+    },
+    {
+      "id": "24030b40dbfcd4ac0c379e17baef3dd7f346ea04",
+      "title": "Amazon OpenSearch Service に GPU アクセラレーションと自動最適化ベクトルインデックスを追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-opensearch-service-gpu-accelerated-auto-optimized-vector-indexes",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon OpenSearch Service で GPU アクセラレーションを使用して、10 億規模のベクトルデータベースを 1 時間以内に構築できるようになりました。さらに、ベクトルインデックスを自動で最適化し、検索品質、速度、コストの最適なトレードオフを実現できるようになりました。\n  これまで、大規模なベクトルインデックスの構築には数日かかっていました。また、それらを最適化するには、専門家が何週間もかけて手動でチューニングする必要がありました。時間、コスト、労力が負担となり、イノベーションが遅れ、お客様はコストとパフォーマンスの最適化を諦めざるを得ない状況でした。今回のリリースにより、サーバーレスの自動最適化ジョブを実行して、最適化のレコメンデーションを生成できるようになりました。検索レイテンシーとリコール要件を指定するだけで、これらのジョブがインデックス設定 (k-NN アルゴリズム、量子化、エンジン設定) を自動的に評価します。その後、ベクトル GPU アクセラレーションを使用して、最適化されたインデックスを最大 10 倍高速に構築できます。インデックス作成コストは 4 分の 1 に削減されます。サーバーレス GPU により、ドメインまたはコレクションが動的に有効され、高速化されるため、料金が発生するのは高速化の効果が得られた場合のみです。なお、GPU インスタンスを管理する必要はありません。\n  これらの機能により、セマンティック検索、レコメンデーションエンジン、エージェントシステムなどの AI アプリケーションをより効率的にスケールできます。最適化された大規模なベクトルデータベースの構築を簡素化し、高速化することで、チームはより迅速にイノベーションを進められるようになります。\n  ベクトル GPU アクセラレーションは、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (シドニー)、欧州 (アイルランド)、アジアパシフィック (東京) の各リージョンで、ベクトルコレクションと OpenSearch 3.1 以上のドメインでご利用いただけます。ベクトル自動最適化は、米国東部 (オハイオ)、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (ムンバイ)、アジアパシフィック (シンガポール)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、欧州 (フランクフルト)、欧州 (アイルランド) で、ベクトルコレクションと OpenSearch 2.17 以上のドメインでご利用いただけます。詳細はこちらをご覧ください。"
+    },
+    {
+      "id": "f79ec9ae7e2148835870cbae9f22bed1f04d8882",
+      "title": "最大 35% の節約が可能になる Database Savings Plans の発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/database-savings-plans-savings",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は本日、新しい柔軟な料金モデルである Database Savings Plans を発表しました。この料金モデルでは、1 年間にわたって一定の使用量 (USD/時間単位) を契約していただくと、最大 35% の節約が可能になります。なお、前払い料金は不要です。\n  Database Savings Plans は、サポートされるエンジン、インスタンスファミリー、サイズ、デプロイオプション、AWS リージョンに関わらず、対象となるサーバーレスインスタンスやプロビジョンドインスタンスの使用に自動的に適用されます。例えば、Database Savings Plan を使用することで、Aurora db.r7g インスタンスと db.r8g インスタンスの切り替え、欧州 (アイルランド) から米国 (オハイオ) へのワークロードの移行、Amazon RDS for Oracle から Amazon Aurora PostgreSQL、または RDS から Amazon DynamoDB へのモダナイズを行っても、Database Savings Plans が提供する割引料金のメリットを引き続き活用することができます。\n  Database Savings Plans は本日より、中国リージョンを除くすべての AWS リージョンでご利用いただけます。サポートされるのは、Amazon Aurora、Amazon RDS、Amazon DynamoDB、Amazon ElastiCache、Amazon DocumentDB (MongoDB 互換)、Amazon Neptune、Amazon Keyspaces (Apache Cassandra 向け)、Amazon Timestream、AWS Database Migration Service (DMS) です。\n  Database Savings Plans の使用は、AWS Billing and Cost Management コンソールから、または AWS CLI を使用して開始することができます。最大節約額を実現するには、コンソールで提供される購入推奨事項を使用して Savings Plans にコミットできます。さらにカスタマイズされた分析を行うには、Savings Plans 購入アナライザーを使用して、カスタム購入シナリオで実現可能なコスト節約額を見積もることができます。詳細については、Database Savings Plans の料金ページと AWS Savings Plans のよくある質問をご覧ください。"
+    },
+    {
+      "id": "974b8b74a2d47bff5ae0628aa75ee98124fb7bd6",
+      "title": "プレビュー版の Amazon Nova 2 Omni のご紹介",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-nova-2-omni-preview",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、新マルチモーダル推論と画像生成のためのオールインワンモデルである Amazon Nova 2 Omni を発表しました。これは、テキスト、画像、動画、音声の入力をサポートしつつ、テキストと画像の両方の出力を生成できる業界初の推論モデルです。これにより、マルチモーダル理解、自然言語を使用した画像生成と編集、音声書き起こしが可能になります。\n  従来のアプローチでは、異なる入力形式と出力形式をサポートする複数の専門モデルを組み合わせる必要がありましたが、Nova 2 Omni を使用することで複数の AI モデルを管理する複雑さが解消されます。これにより、複雑さとコストを軽減しながらアプリケーション開発を加速することができます。そのため、デベロッパーは、マーケティングコンテンツの作成やカスタマーサポート通話の書き起こしから、動画分析や視覚的支援によるドキュメンテーションまで、さまざまなタスクに取り組めるようになります。\n  このモデルは、100 万トークンのコンテキストウィンドウ、200 以上の言語によるテキスト処理、10 言語の音声入力をサポートしています。自然言語を使用して高品質の画像を生成および編集できるため、文字の一貫性の確保、画像内でのテキストレンダリング、オブジェクトや背景の変更が可能になります。Nova 2 Omni には、ネイティブな推論機能に基づく高度な音声理解が備わっているため、複数話者の会話の書き起こし、翻訳、要約を行えます。また、推論の深さや予算を柔軟に制御できるため、デベロッパーはさまざまなユースケースで最適なパフォーマンス、精度、コスト管理を実現できます。\n  Nova 2 Omni はプレビュー段階にあり、すべての Nova Forge のお客様が先行アクセスを利用できます。アクセスをご希望の方は、AWS アカウントチームにお問い合わせください。Amazon Nova 2 Omni の詳細については、ユーザーガイドをお読みください。"
+    },
+    {
+      "id": "958e1cf2e3d1f7de628c21869eac732260bff4f0",
+      "title": "Amazon Nova Forge: Nova を使用して独自のフロンティアモデルを構築",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-nova-forge-frontier-models-nova/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、Nova を使用して独自のフロンティアモデルを構築できる新しいサービス、Nova Forge の一般提供を開始しました。\n  Nova Forgeを使用すると、トレーニング前、トレーニング中、トレーニング後といったフェーズごとに初期の Nova チェックポイントから、SageMaker AI でのモデル開発を開始できます。所有データを Amazon Nova がキュレーションしたデータと組み合わせてモデルをトレーニングできます。また、Nova Forge でのみ利用可能なモデル開発機能を活用することもできます。これには、独自環境内で報酬関数を用いた Reinforcement Fine Tuning (RFT) を実行する機能や、組み込みの責任ある AI ツールキットを使ってカスタムの安全ガードレールを実装する機能が含まれます。Nova Forge を使用すると、組織独自の知識を深く理解し、専門性を反映するモデルを構築しつつ、推論などの一般的能力を維持し、破滅的忘却のようなリスクを最小限に抑えることができます。さらに、Nova Forge のお客様は、Nova 2 Pro や Nova 2 Omni などの新しい Nova モデルへの早期アクセスを利用できます。\n  Nova Forge は、本日より米国東部 (バージニア北部) の AWS リージョンで利用でき、今後数か月以内に他のリージョンでも利用できるようになります。Nova Forge の詳細については、AWS ニュースブログ、Amazon Nova Forge 製品ページ、または Amazon Nova Forge ユーザーガイドをご覧ください。本日より、Amazon Nova Forge コンソールから Nova Forge を利用できます。"
+    },
+    {
+      "id": "373bd87282aa9118eef224acc2a0ceb8bd4e0d18",
+      "title": "Mistral Large 3 および Ministral 3 ファミリーが Amazon Bedrockで最初に発売",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/mistral-large-3-ministral-3-family-available-amazon-bedrock",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "お客様は、Amazon Bedrock で最初に発売された Mistral Large 3 および Ministral 3 ファミリーのモデルだけでなく、生産規模で生成 AI アプリケーションとエージェントを構築するためのプラットフォームである Amazon Bedrock で Voxtral Mini 1.0、Voxtral Small 1.0、Magistral Small 1.2 などの追加モデルを使用できるようになりました。\n \nMistral Large 3は最先端のオープンウェイトの汎用マルチモーダルモデルで、41B のアクティブパラメータと 675B の合計パラメータを特徴とするきめ細かな Mixture-of-Experts アーキテクチャを採用しており、信頼性と長期的なコンテキストの理解を目的として設計されています。14B、8B、3B モデルで構成される Ministral 3 ファミリーは、言語、ビジョン、インストラクションのバリエーションにわたって競合チェックポイントを提供し、デベロッパーがカスタマイズとデプロイに適したスケールを選択できるようにします。 Amazon Bedrock は、これらの最先端モデルを提供する最初のプラットフォームであり、お客様は Mistral AI の最新のイノベーションに早くアクセスできます。Mistral Large 3 は、256K のコンテキストウィンドウと強力なエージェント機能をサポートしているため、プロダクショングレードのアシスタント、検索拡張システム、複雑なエンタープライズワークフローに優れています。Ministral 3 ファミリーは、柔軟な導入オプションでこれを補完します。Ministral 3 14B はローカル展開向けの高度なマルチモーダル機能を提供し、Ministral 3 8B はエッジデプロイメントとシングル GPU 運用にクラス最高のテキストおよびビジョン機能を提供し、Ministral 3 3B は低リソース環境向けのコンパクトなパッケージで堅牢な機能を提供します。これらのモデルを合わせると、フロンティアインテリジェンスから効率的なエッジコンピューティングまで、あらゆる分野に及びます。\n \nこれらのモデルは現在 Amazon Bedrock で利用できます。利用可能な AWS リージョンの全リストについては、ドキュメントを参照してください。\n \nAmazon Bedrock でこれらのモデルの使用を始めるには、Amazon Bedrock Mistral AI ページをご覧ください"
+    },
+    {
+      "id": "c510b311a234be57ac4e047e2735bbe801dad16a",
+      "title": "Amazon S3 で最大オブジェクトサイズが 50 TB に増加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-s3-maximum-object-size-50-tb/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon S3 は、オブジェクトの最大サイズを従来の 5 TB の制限から 10倍の 50 TB に増加させました。これにより、高解像度ビデオ、地震データファイル、AI トレーニングデータセットなどの大きなオブジェクトの処理が簡単になります。50 TB のオブジェクトをすべての S3 ストレージクラスに保存でき、すべての S3 機能で使用できます。\n  AWS SDK の最新の AWS Common Runtime (CRT) と S3 Transfer Manager を使用して、大きなオブジェクトのアップロードとダウンロードのパフォーマンスを最適化できます。S3 のストレージ管理機能をこれらのオブジェクトに適用できます。たとえば、S3 ライフサイクルを使用してアクセス頻度の低いオブジェクトを S3 Glacier ストレージクラスに自動的にアーカイブしたり、S3 レプリケーションを使用して AWS アカウントまたはリージョン間でオブジェクトをコピーしたりできます。\n  Amazon S3 は、すべての AWS リージョンで最大 50 TB のオブジェクトをサポートします。大きなオブジェクトとの連携について詳しくは、S3 のユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "196e96415a38a31cd5d837accae4231e1edfbc07",
+      "title": "オペレーショナルエクセレンスを実現するフロンティアエージェントである AWS DevOps エージェント (プレビュー) の紹介",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/devops-agent-preview-frontier-agent-operational-excellence/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS DevOps エージェントのプレビューをリリースすることについてお知らせします。これは、インシデントを解決し、さらに事前に防止するフロンティアエージェントであり、AWS、マルチクラウド、ハイブリッド環境におけるアプリケーションの信頼性とパフォーマンスを継続的に向上させます。AWS DevOps エージェントは、経験豊富な DevOps エンジニアと同じように、リソースとその関係を学習し、オブザーバビリティツール、ランブック、コードリポジトリ、CI/CD パイプラインを使用し、それらすべてにわたってテレメトリ、コード、デプロイデータを相互に関連付けて、アプリケーションリソース間の関係を把握することで、インシデントを調査し、運用上の改善点を特定します。\n \nAWS DevOps エージェントはインシデントを自律的に優先順位付けし、平均解決時間 (MTTR) を短縮するためにチームを迅速な解決へと導きます。AWS DevOps エージェントは、午前2時でも、ピーク時でも、アラートを受け取った瞬間に調査を開始し、アプリケーションを最適なパフォーマンスにすばやく復元します。過去のインシデント全体のパターンを分析して、オブザーバビリティ、インフラストラクチャの最適化、デプロイメントパイプラインの強化などの主要領域を強化する実用的なレコメンデーションを提示します。AWS DevOps エージェントを使用すると、ワークフローを変更することなく、運用データやツールに含まれる新たなインサイトにアクセスできます。\n \nAWS DevOps エージェントは、米国東部 (バージニア北部) リージョンでのプレビュー中に追加料金なしで利用できます。詳細については、AWS ニュースブログを読み、はじめにをお読みください。"
+    },
+    {
+      "id": "f0de5c3ebde7e0e23c32d433f2cd4b81038d7adb",
+      "title": "Amazon Nova Act (GA) を使用して本番 UI ワークフローを自動化するエージェントを構築",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/build-automate-production-ui-workflows-nova-act/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon Nova Act が一般提供されることをお知らせいたします。Amazon Nova Act は、プロダクション UI ワークフローを自動化するための信頼性の高いエージェント群を開発および管理するためのデベロッパー向けの新しい AWS サービスです。Nova Act はカスタム Nova 2 Lite モデルを採用しており、比類のないコスト効率、価値実現までの時間の短縮、大規模な実装の容易さにより、高い信頼性を実現します。\n  Nova Act は、反復的な UI ワークフローをブラウザで確実に完了し、API やツールを実行し (PDFへの書き込みなど)、必要に応じて人間のスーパーバイザーにエスカレーションします。企業全体で繰り返しの多いプロセスを自動化する必要があるデベロッパーは、自然言語の柔軟性とより確定的な Python コードを組み合わせたワークフローを定義できます。Nova Act を使用する技術チームは、nova.amazon.com/act のオンラインプレイグラウンドですぐにプロトタイプ作成を開始し、Nova Act IDE 拡張機能を使用してスクリプトを改良してデバッグし、わずか数ステップで AWS にデプロイできます。\n  Nova Act は本日、米国東部 (バージニア北部) の AWS リージョンで利用できるようになりました。\n  Nova Act の詳細をご覧ください。"
+    },
+    {
+      "id": "25641a74120bbef4c9a053c448adcf6fb74ec1d7",
+      "title": "AWS が EC2 C8ine インスタンスをプレビュー",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-previews-ec2-c8ine-instances",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "AWS は、カスタムの第 6 世代インテル Xeon スケーラブルプロセッサー (Granite Rapids) と最新の AWS Nitro v6 カードを搭載した Amazon EC2 C8ine インスタンスのプレビューを開始します。これらのインスタンスは、データプレーンのパケット処理ワークロード専用に設計されています。\n  Amazon EC2 C8ine インスタンス設定では、前世代の C6in インスタンスと比較して、vCPU あたりのパケットパフォーマンスが最大 2.5 倍向上します。既存の C6in ネットワーク最適化インスタンスと比較して、インターネットゲートウェイを介して最大 2 倍のネットワーク帯域幅を提供し、最大 3 倍の Elastic Network Interface (ENI) を提供できます。小さなパケットサイズで高いパフォーマンスを必要とするパケット処理ワークロードに最適です。これらのワークロードには、セキュリティ仮想アプライアンス、ファイアウォール、ロードバランサー、DDoS 保護システム、および Telco 5G UPF アプリケーションが含まれます。\n  これらのインスタンスは、AWS アカウントチームからのリクエストに応じてプレビューできます。サインアップするには、アカウント担当者に連絡してください。"
+    },
+    {
+      "id": "b7a54695dec05538cc279cbfe1922373c95c65a2",
+      "title": "Amazon EC2 M4 Max Mac インスタンスの発表 (プレビュー)",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-m4-max-mac-instances-preview",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon Web Services は、最新の Mac Studio ハードウェアを搭載した Amazon EC2 M4 Max Mac インスタンスのプレビューを発表しました。Amazon EC2 M4 Max Mac インスタンスは次世代の EC2 Mac インスタンスであり、Apple のデベロッパーは、最も要求の厳しいビルドおよびテストワークロードを AWS に移行できるようになりました。これらのインスタンスは、iOS、macOS、iPadOS、tvOS、watchOS、visionOS、Safari などの Apple プラットフォーム向けのアプリケーションを構築してテストするのに最適です。\n  M4 Max Mac インスタンスは AWS Nitro System を搭載しており、最大 10 Gbps のネットワーク帯域幅と 8 Gbps の Amazon Elastic Block Store (Amazon EBS) ストレージ帯域幅を提供します。これらのインスタンスは、16 コア CPU、40 コア GPU、16 コア Neural Engine、128 GB の統合メモリを搭載した Apple M4 Max Mac Studio コンピューター上に構築されています。EC2 M4 Pro Mac インスタンスと比較すると、M4 Max インスタンスは 2 倍の GPU コアと 2.5 倍以上の統合メモリを備えているため、インスタンス機能を特定のワークロード要件に合わせて選択できる選択肢が広がり、AWS での Apple シリコン Mac ハードウェアの選択肢がさらに広がります。\n \nAmazon EC2 M4 Max Mac インスタンスのプレビューの詳細の確認やアクセス権のリクエスについては、Amazon EC2 Mac ページをご覧ください。"
+    },
+    {
+      "id": "99f1555d6be2798950f92e70b5afa07122270d46",
+      "title": "Amazon CloudWatch がオペレーション、セキュリティ、コンプライアンスデータの統合管理と分析を開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-cloudwatch-unified-management-analytics",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon CloudWatch は、AWS 環境とサードパーティのソース全体で運用、セキュリティ、コンプライアンスデータを統合できる新しいデータ管理および分析機能を提供します。DevOps チーム、セキュリティアナリスト、コンプライアンス担当者がすべてのデータに 1 か所からアクセスできるようになり、複数の個別のデータストアや複雑な (抽出、変換、ロード) ETL パイプラインを維持する必要がなくなりました。CloudWatch では、CloudWatch をネイティブに使用している場合も、Apache Iceberg 互換のツールを使用する場合も、お客様がこのデータからインサイトを取得する場所と方法について、これまで以上に柔軟に対応できるようになりました。\n  統合データストアの機能強化により、お客様は、地理的境界、事業単位、またはペルソナ固有の要件に合わせて、AWS アカウントやリージョンのログを簡単に収集して集計できるようになりました。AWS CloudTrail、Amazon VPC、Amazon WAF などの AWS ソースに対して AWS 組織全体での有効化が可能であり、Crowdstrike、Okta、Palo Alto Networks などのサードパーティソースのマネージドコレクターが用意されていることで、CloudWatch はより多くのログを統合しやすくします。お客様はパイプラインを使用して、セキュリティ分析用のOpen Cybersecurity Schema Framework (OCSF) などの標準形式にログを変換および付加し、より迅速なインサイト導出のためにファセットを定義できます。お客様は、追加のストレージ料金なしでデータをマネージド Amazon S3 Tables に保存でき、チームは、そのデータを Amazon SageMaker Unified Studio、Amazon Quick Suite、Amazon Athena、Amazon Redshift、または任意の Apache Iceberg 互換分析ツールでクエリできるようになります。\n  使用を開始するには、CloudWatch コンソールの「取り込み」ページにアクセスして、1 つ以上のデータソースを追加します。Amazon CloudWatch 統合データストアの詳細については、製品ページ、料金ページ、ドキュメントをご覧ください。リージョンごとの提供状況については、AWS ビルダーセンターをご覧ください。"
+    },
+    {
+      "id": "5a7a2ebf4052cc807c7b3b66e04c87cb9c9be62e",
+      "title": "Amazon S3 バッチオペレーションによりパフォーマンスが向上",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/s3-batch-operations-performance-improvements/",
+      "pubDate": "2025-12-02T13:00:00.000Z",
+      "contentSnippet": "Amazon S3 バッチオペレーションでは、1 つのジョブで最大 200 億個のオブジェクトを処理する規模で、ジョブが最大 10 倍速く完了するようになり、大規模なストレージオペレーションが加速されます。\n  S3 バッチオペレーションを使用すると、ステージングバケットと本番バケット間でのオブジェクトのコピー、S3 ライフサイクル管理のためのオブジェクトのタグ付け、保存されたデータセットの内容を確認するためのオブジェクトチェックサムの計算など、大規模な操作を実行できます。S3 バッチオペレーションでは、追加の設定やコストなしで、数百万のオブジェクトを処理するジョブについて、オブジェクトの前処理、ジョブの実行、完了レポートの生成が最大 10 倍高速になりました。使用を開始するには、AWS マネジメントコンソールでジョブを作成し、オペレーションタイプと、バケット、プレフィックス、作成日などのフィルターを指定します。S3 はオブジェクトリストを自動的に生成し、必要に応じてアクセス権限ポリシーを含む AWS Identity and Access Management (IAM) ロールを作成し、ジョブを開始します。\n  S3 バッチオペレーションのパフォーマンス向上は、AWS 中国リージョンと AWS GovCloud (米国) リージョンを除くすべての AWS リージョンで利用できます。料金情報については、Amazon S3 料金ページの「管理とインサイト」タブをご覧ください。S3 バッチオペレーションの詳細については、概要ページとドキュメントをご覧ください。"
+    },
+    {
+      "id": "aac7e53901b9e3a16d29f49a8d2b960976237a86",
+      "title": "Amazon Bedrock AgentCore Runtime が双方向ストリーミングのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/bedrock-agentcore-runtime-bi-directional-streaming/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon Bedrock AgentCore Runtime は双方向ストリーミングをサポートするようになりました。これにより、エージェントは会話の中断やコンテキストの変化に対応しながら、同時に聞き取りと応答を行うリアルタイムの会話が可能になります。この機能により、対話全体を通してコンテキストが維持される継続的な双方向のコミュニケーションが可能になり、会話の摩擦が解消されます。\n  従来のエージェントは、ユーザーが応答し終わるまで待ってから説明や訂正を行う必要があり、特に音声アプリケーションでは、会話の流れを断ち切り、不自然に感じるような停止と開始を繰り返す対話が発生していました。双方向ストリーミングは、継続的なコンテキスト処理を可能にすることでこの制限に対処します。これにより、音声エージェントは、ユーザーが会話の途中で中断、説明、方向転換を行うことができる自然な会話体験を提供できると同時に、応答性の向上によるテキストベースの対話を強化できます。AgentCore Runtime に組み込まれているこの機能により、リアルタイムストリーミング機能を構築するために必要だった数か月にわたるエンジニアリング作業が不要になり、デベロッパーは複雑なストリーミングインフラストラクチャの管理に煩わされることなく、革新的なエージェントエクスペリエンスの構築に集中できます。\n  この機能は、Amazon Bedrock AgentCore Runtime が利用可能なすべての 9 つの AWS リージョン (米国東部 (バージニア北部)、米国東部 (オハイオ)、米国西部 (オレゴン)、アジアパシフィック (ムンバイ)、アジアパシフィック (シンガポール)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、欧州 (フランクフルト)、欧州 (アイルランド)) でご利用いただけます。\n  AgentCore Runtime 双方向ストリーミングの詳細については、ブログを読み、AgentCore のドキュメントにアクセスしたりしてください。使用を開始するには、AgentCore スターターツールキットをご利用ください。AgentCore Runtime の従量制料金では、エージェントの実行中に消費されたアクティブなリソースに対してのみ支払いが発生し、アイドル時間に対する費用や初期費用はかかりません。"
+    },
+    {
+      "id": "1bbed7b537b60f41f92babcf9ec132ef27574bb6",
+      "title": "Amazon S3 Tables で Intelligent-Tiering ストレージクラスの提供が開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/s3-tables-intelligent-tiering-storage-class/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon S3 Tables では、Intelligent-Tiering ストレージクラスが提供されるようになりました。このクラスは、パフォーマンスへの影響や運用上のオーバーヘッドを発生させることなく、アクセスパターンに基づいてコストを最適化します。Intelligent-Tiering は、アクセスパターンの変化に応じて、テーブル内のデータを 3 つの低遅延アクセス階層にわたって自動的に移行し、ストレージコストを最大 80% 削減します。さらに、圧縮、スナップショットの有効期限、未参照ファイルの削除などのメンテナンス操作が S3 Tables で自動化されているため、データが上位層に移行することはありません。これにより、ストレージコストを節約しながらテーブルを最適化できます。\n  Intelligent-Tiering ストレージクラスでは、30 日間連続でアクセスされていないテーブルのデータは、自動的に低頻度アクセス層に移行されます (高頻度アクセス層よりもコストが 40% 低くなります)。90 日間アクセスされていないデータは、アーカイブインスタントアクセス層に移行されます (低頻度アクセス層よりもコストが 68% 低い)。テーブルを作成するときに Intelligent-Tiering をストレージクラスとして選択したり、テーブルバケット内のすべての新しいテーブルのデフォルトとして設定したりできるようになりました。\n  Intelligent-Tiering ストレージクラスは、S3 Tables が利用可能なすべての AWS リージョンで利用できます。料金の詳細については、Amazon S3 の料金ページをご覧ください。S3 Tables の詳細については、製品ページ、ドキュメントにアクセスし、AWS ニュースブログをお読みください。"
+    },
+    {
+      "id": "f4ad1cbe6554c735479c9fb7d8284bd411fdb1fc",
+      "title": "Amazon API Gateway に MCP プロキシサポートが追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/api-gateway-mcp-proxy-support/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon API Gateway はモデルコンテキストプロトコル (MCP) プロキシをサポートするようになりました。これにより、既存の REST API を MCP 互換のエンドポイントに変換できます。この新機能により、組織は自社の API を AI エージェントや MCP クライアントが利用できるようになります。Amazon Bedrock AgentCore Gateway サービスとの統合により、お客様は REST API をエージェント互換のツールに安全に変換するとともに、セマンティック検索によるインテリジェントなツール検出を可能にできます。\n  MCP プロキシ機能と Bedrock AgentCore Gateway サービスには、3 つの主なメリットがあります。1 つ目に、REST API がプロトコル変換を通じて AI エージェントや MCP クライアントと通信できるようになるため、アプリケーションを変更したり、追加のインフラストラクチャを管理したりする必要がなくなります。2 つ目に、二重認証による包括的なセキュリティを提供します。つまり、インバウンドリクエストに対するエージェント ID を検証すると同時に、アウトバウンドコールに対する REST API への安全な接続を管理します。最後に、AI エージェントはプロンプトコンテキストに最も合致する最も関連性の高い REST API を検索して選択できます。\n  この機能の料金については、Amazon Bedrock AgentCore の料金ページをご覧ください。Amazon API Gateway MCP プロキシ機能は、Amazon Bedrock AgentCore が利用可能な 9 つの AWS リージョン (アジアパシフィック (ムンバイ)、アジアパシフィック (シンガポール)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、欧州 (ダブリン)、欧州 (フランクフルト)、米国東部 (バージニア北部)、米国東部 (オハイオ)、米国西部 (オレゴン) で利用できます。使用を開始するには、Amazon API Gateway のドキュメントをご覧ください。"
+    },
+    {
+      "id": "e96adb778f7c06b618a1dd0ee438fc146271244e",
+      "title": "Amazon SageMaker AI が AI 開発をより迅速に行うためのサーバーレス MLflow 機能を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/sagemaker-ai-serverless-mlflow-ai-development/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon SageMaker AI は、AI モデル開発タスクをサポートするように動的にスケールするサーバーレス MLflow 機能の提供を開始しました。MLflow を使用すると、AI デベロッパーはインフラストラクチャのセットアップを待たずに実験の追跡、比較、評価を開始できます。\n  さまざまな業界のお客様が AI 開発を加速するにあたって、実験を追跡し、動作を観察し、AI モデル、アプリケーション、エージェントのパフォーマンスを評価する機能が求められています。ただし、MLflow インフラストラクチャを管理するには、管理者による追跡サーバーの継続的な維持およびスケール、複雑なキャパシティプランニングの決定、データを分離するための個別のインスタンスのデプロイを行う必要があります。このインフラストラクチャ運用の負担は、中核的な AI 開発からリソースを奪い、チームの生産性と費用対効果に影響するボトルネックを生じさせます。\n  今回の更新により、MLflow は動的にスケールして、要求の厳しい予測不可能なモデル開発タスクでは高速なパフォーマンスを提供し、アイドル時間にはスケールダウンするようになりました。また、管理者は Resource Access Manager (RAM) を使用してクロスアカウントアクセスを設定することで生産性を向上させ、組織の境界を越えたコラボレーションを容易にできます。\n  Amazon SageMaker AI のサーバーレス MLflow 機能は追加料金なしで提供され、SageMaker AI JumpStart、SageMaker Model Registry、SageMaker Pipelines などの使い慣れた Amazon SageMaker AI モデル開発機能とネイティブに連携します。お客様は自動バージョン更新により Amazon SageMaker AI 上の MLflow の最新バージョンにアクセスできます。\n  MLflow を搭載した Amazon SageMaker AI が、一部の AWS リージョンで利用できるようになりました。詳細については、Amazon SageMaker AI ユーザーガイドと AWS ニュースブログをご覧ください。"
+    },
+    {
+      "id": "24ea65fa69402bde36eb819e0c5a3d8c7aeca4bb",
+      "title": "Amazon CloudWatch GenAI オブザーバビリティが Amazon AgentCore Evaluations 評価のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/cloudwatch-genai-observability-agentcore-evaluations/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon CloudWatch では、AgentCore Evaluations を通じて AI エージェントの品質評価を自動化できるようになりました。この新機能により、デベロッパーは実際の対話に基づいてエージェントのパフォーマンスを継続的に監視および改善できるため、チームはお客様に影響が及ぶ前に品質問題を特定して対処できるようになります。\n  AgentCore Evaluations には、有用性、ツール選択、応答精度などの重要な品質側面をカバーする 13 種類の評価機能が事前に組み込まれており、カスタムのモデルベースのスコアリングシステムもサポートしています。CloudWatch ダッシュボードで統一された品質メトリクスとエージェントテレメトリにアクセスでき、エンドツーエンドのトレース機能で評価メトリクスをプロンプトやログと関連付けて確認できます。この機能は、Application Signals、アラーム、機密データ保護、Logs Insights などの CloudWatch の既存の機能とシームレスに統合されます。この機能により、チームがカスタム評価インフラストラクチャを構築して維持する必要がなくなり、高品質の AI エージェントのデプロイが加速されます。デベロッパーは、CloudWatch GenAI オブザーバビリティコンソールの AgentCore セクションからエージェントフリート全体をモニタリングできます。\n \nAgentCore Evaluations は、米国東部 (バージニア北部)、米国西部 (オレゴン)、欧州 (フランクフルト)、アジアパシフィック (シドニー) で利用できるようになりました。使用を開始するには、ドキュメントと価格の詳細をご覧ください。基礎となるテレメトリデータには、標準の CloudWatch 料金が適用されます。"
+    },
+    {
+      "id": "d3e4629f221b4bd1c43811ceb9fa968d34cc1f73",
+      "title": "Amazon SageMaker Catalog は、アセットのメタデータのクエリ可能なデータセットとしてのエクスポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/sagemaker-catalog-asset-metadata-queryable-dataset/",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "Amazon SageMaker Catalog は、Amazon S3 Tables を介してアセットのメタデータを Apache Iceberg テーブルとしてエクスポートするようになりました。これにより、カスタム ETL インフラストラクチャを構築することなく、標準 SQL を使用して「先月登録されたアセットはどれくらいか?」、「どのアセットが機密として分類されてるか?」、「事業内容が記載されていないアセットはどれか?」といった質問に対して、カタログインベントリへ直接クエリを実行できるようになります。\n \nこの機能は、カタログアセットのメタデータをクエリ可能なテーブルに自動的に変換し、Amazon Athena、SageMaker Unified Studio ノートブック、AI エージェント、その他の分析ツールや BI ツールからアクセスできるようにします。エクスポートされるテーブルには、テクニカルメタデータ (resource_id、resource_type など)、ビジネスメタデータ (asset_name、business_description など)、所有権の詳細、タイムスタンプが含まれます。データはタイムトラベルクエリ用に snapshot_date ごとに分割され、SageMaker Unified Studio の aws-sagemaker-catalog バケットの下に自動的に表示されます。\n \nこの機能は、SageMaker Catalog がサポートされているすべての AWS リージョンで追加料金なしで利用できます。S3 Tables ストレージや Amazon Athena クエリなど、基盤となるサービスに対してのみ支払いが発生します。エクスポートされるテーブルに保持ポリシーを設定して、指定した期間より古いレコードを自動的に削除することで、ストレージコストを管理できます。\n  使用を開始するには、AWS CLI を使用してデータセットのエクスポートを有効にし、その後 24 時間以内に S3 Tables または SageMaker Unified Studio の [データ] タブからアセットテーブルにアクセスしてください。クエリは、Amazon Athena、Studio ノートブックを使用するか、S3 Tables Iceberg REST Catalog エンドポイントを介して外部の BI ツールに接続することで実行できます。手順については、Amazon SageMaker ユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "e083dcdf40873bebb34dee6fd3dd18e22a73b575",
+      "title": "新しいメモリ最適化 Amazon EC2 X8aedz インスタンスの発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/new-memory-optimized-amazon-ec2-x8aedz-instances",
+      "pubDate": "2025-12-02T08:00:00.000Z",
+      "contentSnippet": "AWS は、第 5 世代 AMD EPYC プロセッサ (旧コード名 Turin) を搭載した次世代のメモリ最適化インスタンスである Amazon EC2 X8aedz を発表しました。これらのインスタンスの最高 CPU 周波数は、クラウド上で最大の 5 GHz です。前世代の X2iezn インスタンスと比較して、最大 2 倍高いコンピューティングパフォーマンスを実現します。\n  X8aedz インスタンスは、最新の第 6 世代 AWS Nitro Cards を使用して構築されており、高いシングルスレッドパフォーマンスと大きなメモリ容量が必要な、物理レイアウトや物理検証ジョブなどの Electronic Design Automation (EDA) ワークロードやリレーショナルデータベースに最適です。5 GHz プロセッサとローカル NVMe ストレージの組み合わせにより、フロアプランニング、ロジック配置、クロックツリー合成 (CTS)、ルーティング、電力/信号インテグリティ解析など、メモリを大量に消費するバックエンド EDA ワークロードの処理を高速化できます。\n  X8aedz インスタンスは、メモリと vCPU の比率が 32:1 で、2～96 個の vCPU、64～3,072 GiB のメモリ構成を持つ 8 種類が用意され、2 つのベアメタル構成を含み、最大 8 TB のローカル NVMe SSD ストレージを利用できます。\n  X8aedz インスタンスは、米国西部 (オレゴン) およびアジアパシフィック (東京) リージョンで利用できるようになりました。X8aedz インスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入できます。使用を開始するには、AWS マネジメントコンソールにサインインしてください。詳細については、Amazon EC2 M8a インスタンスページまたは AWS ニュースブログをご覧ください。"
+    },
+    {
+      "id": "e816356b415ca468d2acf9a92a83da16c91fd6f5",
+      "title": "AWS Transform がフルスタックの Windows モダナイズのための AI エージェントをリリース",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-transform-ai-agent-full-stack-windows-modernization",
+      "pubDate": "2025-12-01T15:00:00.000Z",
+      "contentSnippet": "AWS Transform が、その機能を .NET モダナイズエージェントから拡張して、フルスタック Windows モダナイズエージェントが含まれるようになりました。これは、.NET アプリケーションとそれに関連するデータベースの両方を処理します。新しいエージェントは、.NET アプリケーションと Microsoft SQL Server データベースの Amazon Aurora PostgreSQL への変換を自動化し、それらを Amazon ECS または Amazon EC2 Linux 上のコンテナにデプロイします。AWS Transform は、運用コストを最大 70% 削減しながら、アプリケーションレイヤーとデータベースレイヤーにまたがるフルスタックの Windows モダナイズのスピードを 5 倍向上させます。\n  AWS Transform を利用すると、お客様は検出、変換、デプロイを自動化することで、フルスタックのモダナイズ工程を高速化できます。フルスタックの Windows モダナイズエージェントは、Amazon EC2 や Amazon RDS のインスタンス内の Microsoft SQL Server データベースをスキャンし、ソースリポジトリ (GitHub、GitLab、Bitbucket、Azure Repos) から.NET アプリケーションコードをスキャンして、カスタマイズされた、編集可能なモダナイズ計画を作成します。これは、SQL Server スキーマを Aurora PostgreSQL に自動的に変換し、データベースを新規または既存の Aurora PostgreSQL ターゲットクラスターに移行します。.NET アプリケーションの変換では、エージェントがソースコード内のデータベース接続を更新し、Entity Framework と ADO.NET 内に記述されているデータベースアクセスコードを Aurora PostgreSQL と互換性を持つように変更します。これらはすべて、人間の監督の下、統一されたワークフローで行います。変換されたコードはすべて新しいリポジトリブランチにコミットされます。最後に、変換されたアプリケーションとデータベースを新しい環境または既存の環境にデプロイして、変換されたアプリケーションとデータベースを検証できます。お客様は、作業ログの更新やインタラクティブなチャットを通じて変換の進捗状況を監視でき、詳細な変換のサマリーを次のステップの推奨事項や、AI コードコンパニオンへの簡単な引き継ぎに使用できます。\n  フルスタックの Windows モダナイズのための AWS Transform は、米国東部 (バージニア北部) の AWS リージョンで利用できます。\n  詳細については、概要ページと AWS Transform ドキュメントをご覧ください。"
+    },
+    {
+      "id": "91bb4e093f31e916bc31bebd9c622a8c0f430ff9",
+      "title": "AWS Transform for mainframe がアプリケーションの再構築のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/transform-mainframe-application-reimagining/",
+      "pubDate": "2025-12-01T15:00:00.000Z",
+      "contentSnippet": "AWS Transform for mainframe に、データとアクティビティの新たな分析機能が導入されました。これらの機能では、包括的なインサイトを抽出して、メインフレームアプリケーションの再構築を促進できます。これらのインサイトは、ビジネスロジックの抽出と組み合わせることで、レガシーアプリケーションを論理的なビジネス分野に分解する作業に役立てることができます。これらが一体となって、Kiro などのコーディングエージェントがアプリケーションをクラウドネイティブアーキテクチャに再構築するための包括的な仕様の基礎になります。\n  これらの新機能により、組織がレガシーワークロードを再構築できるようになり、自動化されたコードとデータ構造の分析、アクティビティの分析、技術ドキュメントの生成、ビジネスロジックの抽出、インテリジェントなコード分解を含む包括的なリバースエンジニアリングワークフローが構築されます。AWS Transform でのデータとアクティビティの詳細な分析を通じて、使用率やビジネス価値が高いアプリケーションコンポーネントを特定できます。そのため、チームはモダナイズの取り組みを最適化し、データに基づいたアーキテクチャ上の意思決定を行うことができます。\n  AI を活用したチャットインターフェイスでは、ユーザーが柔軟なジョブプランを通じてモダナイズアプローチをカスタマイズできます。これにより、事前に定義された包括的なワークフロー (モダナイズ全体、分析中心、ビジネスロジック中心) を選択したり、特定の目的に基づいて機能を独自に組み合わせたりできます。\n  AWS Transform for mainframe の再構築機能は現在、米国東部 (バージニア北部)、アジアパシフィック (ムンバイ)、アジアパシフィック (ソウル)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、カナダ (中部)、欧州 (フランクフルト)、欧州 (ロンドン) の各リージョンで利用できます。\n  AWS Transform for mainframe によるメインフレームアプリケーションの再構築について詳しくは、AWS ニュースブログの記事または AWS Transform 製品ページをご覧ください。"
+    },
+    {
+      "id": "44c537e389fbb1286efdab3438d32d577ab83c2f",
+      "title": "AWS Transform がエンタープライズ VMware への移行のための新しいエージェンティック AI 機能を追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/transform-vmware-agentic-ai-enterprise-migration/",
+      "pubDate": "2025-12-01T08:00:00.000Z",
+      "contentSnippet": "AWS Transform に、VMware の AWS への移行を自動化するための強力な新しいエージェンティック AI 機能が追加されます。移行エージェントは移行チームと協力してビジネスの優先事項を理解し、数千台のサーバーにまたがる数百のアプリケーションをインテリジェントに計画して移行することで、手作業による労力、時間、複雑さを大幅に軽減します。\n  エージェントが、AWS Transform 検出ツール、さまざまなサードパーティの検出ツールからのインベントリデータ、ドキュメント、メモ、ビジネスルールなどの非構造化データを使用して、オンプレミス環境を検出し、移行するアプリケーションに優先順位を付けることができるようになりました。インフラストラクチャ、データベース、アプリケーションの詳細を分析し、依存関係をマッピングし、所有権、部門、機能、サブネット、オペレーティングシステムなどのビジネス上および技術上の優先事項別にグループ化した移行計画を生成します。ハブアンドスポーク型の隔離されたネットワーク構成によるネットワークの生成、柔軟な IP アドレス管理オプションの提供、複数のアカウントへのデプロイ、AWS Landing Zone に対するネットワーク設定の生成、NSX、Palo Alto、Fortigate、Cisco ACI などのソース環境からの移行を行います。エージェントはサーバーを安全かつ反復的に AWS に順次移行し、デプロイ全体を通して明確な進捗状況を提供します。Windows と Linux x86 のサーバー、VMware、HyperV、Nutanix、KVM などのハイパーバイザー、ベアメタル物理環境も複数のターゲットアカウントに移行します。移行中は、ステップの繰り返しやスキップ、計画の調整が行われているかどうかという、意思決定の指針になる質問をエージェントに尋ねることができます。内部承認を簡素化するために、エージェントは移行計画と、ネットワーク、サーバー、アプリケーションのマッピングを含む詳細なレポートも生成します。\n  AWS Transform を使用すると、価値創出までの時間を短縮し、リスクを低減し、VMware 移行の複雑さを軽減できます。これらの新機能は、AWS Transform が提供されている AWS リージョンすべてで利用でき、16 の AWS リージョンへのサーバーとネットワークの移行がサポートされています。\n  製品ページとユーザーガイドで詳細を確認し、AWS Transform の使用を開始しましょう。"
+    },
+    {
+      "id": "68b8d349096c55692bb444970d8f764d6467a3c2",
+      "title": "AWS Transform for mainframe が新しいテスト自動化機能を提供",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/transform-mainframe-testing-automation/",
+      "pubDate": "2025-12-01T08:00:00.000Z",
+      "contentSnippet": "AWS Transform for mainframe で、メインフレームのモダナイズプロジェクトを促進するためのテスト計画と自動化の機能が提供されるようになりました。新機能には、テスト計画の自動生成、テストデータ収集スクリプト、テストケース自動化スクリプトのほか、継続的デリバリーとリグレッションテスト用の機能テスト環境ツールが含まれていて、メインフレームのモダナイズプロジェクト中のテストと検証の高速化とリスク軽減に役立ちます。\n  これらの新機能は、モダナイズライフサイクル全体にわたるテストの主要な課題に対処し、通常、プロジェクト期間の 50% 以上を占めるメインフレームのモダナイズテストに必要な時間と労力を削減します。テスト計画の自動生成により、チームが事前の計画作業を減らすことができ、リスクの軽減とモダナイズの確実な成功に必要な重要な機能テストを調整できます。一方、テストデータ収集スクリプトが、メインフレームデータの収集というエラーが発生しやすく複雑なプロセスの進行を早めます。次にテスト自動化スクリプトが、テスト環境のステージング、テストケースの実行、期待される結果に対する結果の検証を自動化することで、テストケースのスケーラブルな実行を可能にします。\n  複雑なテストタスクを自動化し、希少なメインフレームの専門知識への依存を減らすことで、組織は一貫性のある自動化されたプロセスを通じて精度を向上させながら、確信的にアプリケーションをモダナイズできるようになりました。\n  AWS Transform for mainframe の新しいテスト機能は現在、米国東部 (バージニア北部)、アジアパシフィック (ムンバイ)、アジアパシフィック (ソウル)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、カナダ (中部)、欧州 (フランクフルト)、欧州 (ロンドン) の各リージョンで利用できます。\n  AWS Transform for mainframe の自動テストの詳細と、それが組織のモダナイズの促進にどのように役立つかについては、AWS ニュースブログ、AWS Transform for mainframe 製品ページ、または AWS Transform ユーザーガイドをご覧ください。"
+    },
+    {
+      "id": "50dfde60b6a2addbcf8af73ccd8b74df6526000e",
+      "title": "AWS Transform が .NET 変換機能を拡張して開発者エクスペリエンスが向上",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/transform-net-transformation-developer-experience/",
+      "pubDate": "2025-12-01T08:00:00.000Z",
+      "contentSnippet": "本日、AWS は、AWS Transform の .NET 変換機能の拡張と開発者エクスペリエンスの向上の一般提供を発表しました。お客様は、.NET Framework と .NET コードを .NET 10 または .NET Standard にモダナイズできるようになりました。新しい変換機能には、ASP.NET Core 上で Blazor に ASP.NET Web Forms を UI 移植する機能や、Entity Framework ORM コードを移植する機能が含まれます。AWS Toolkit for Visual Studio 2026 または 2022 で利用できる新しい開発者エクスペリエンスは、カスタマイズ可能で、インタラクティブで、反復型です。編集可能な変換計画、推定変換時間、変換中のリアルタイム更新、改訂された計画で変換を繰り返す機能、AI コードコンパニオンへの簡単な引き継ぎのための次のステップのマークダウンが含まれています。これらの機能強化により、AWS Transform はより多くの種類のプロジェクトに対応する最新の .NET へのパスを提供し、.NET と Visual Studio の最新リリースをサポートして、開発者が変換を監視して制御できるようにします。\n \n開発者は、強化された IDE エクスペリエンスにより、.NET のモダナイズを合理化できるようになりました。このプロセスは、カスタマイズ可能な変換計画を生成する自動コード分析から始まります。開発者は、パッケージ更新をファインチューニングするなど、変換計画をカスタマイズできます。変換全体を通して、透明性の高い進捗追跡と詳細なアクティビティログの利点を活用できます。完了すると、Linux の準備要件などの、残りのタスクの概要が記載された次のステップのドキュメントが開発者に届きます。タスクには、AWS Transform をさらに繰り返すか、Kiro などの AI コードコンパニオンツールを活用することで対応できます。\n \nAWS Transform は、米国東部 (バージニア北部)、アジアパシフィック (ムンバイ)、アジアパシフィック (ソウル)、アジアパシフィック (シドニー)、アジアパシフィック (東京)、カナダ (中部)、欧州 (フランクフルト)、欧州 (ロンドン) の AWS リージョンで利用できます。\n \nAWS Transform の使用を開始するには、AWS Transform ドキュメントを参照してください。"
+    },
+    {
+      "id": "1b23688a4d36172a0c09e3c0434d6b8f41753170",
+      "title": "AWS が組織全体のアプリケーションのモダナイズを加速する AWS Transform カスタムをリリース",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/transform-custom-organization-wide-modernization/",
+      "pubDate": "2025-12-01T08:00:00.000Z",
+      "contentSnippet": "AWS Transform カスタムの一般提供が開始され、エージェンティック AI を使用して組織固有のコードやアプリケーションの大規模なモダナイズを加速できるようになりました。AWS Transform は、Windows、メインフレーム、VMware などの変革を加速し、技術的負債を減らし、テクノロジースタックを AI 対応にする最初のエージェンティック AI サービスです。組織でレガシーシステムや時代遅れのコードが維持されている場合、技術的負債が蓄積され、ソフトウェア開発リソースの 20～30% を反復可能なクロスコードベースの変換タスクに割り当てなければなりません。さらに、このタスクは手動で実行する必要があります。AWS Transform では、バージョンアップグレード、ランタイムの移行、フレームワークの移行、言語翻訳の反復可能な変換を大規模に自動化できるため、多くの場合、自動化の専門知識がなくても実行時間を 80% 以上短縮できます。\n \nAWS Transform のカスタム変換エージェントは、構築済みのソリューションとカスタムソリューションの両方を提供します。Python や Node.js のランタイムアップグレード、Lambda 関数のモダナイズ、複数言語にまたがる AWS SDK の更新、Java 8 から 17 へのアップグレード (Gradle や Maven を含むあらゆるビルドシステムをサポート) など、一般的なシナリオに対応する変換をすぐに利用できます。チームは、組織固有のニーズに応じて自然言語、参照ドキュメント、コードサンプルを使用してカスタム変換を定義できます。ユーザーは自律的な変換をシンプルな 1 行の CLI コマンドでトリガーでき、スクリプト化したり、既存のパイプラインやワークフローに組み込んだりできます。エージェントは組織内で、開発者のフィードバックと実行結果から継続的に学習します。そのため、変換の精度を高め、エージェントのパフォーマンスを組織の優先事項に厳密に合わせることができます。このアプローチにより、組織は大規模な技術的負債に体系的に対処でき、開発者がイノベーションや影響の大きいタスクに集中している間に、エージェントが継続的に機能を向上させます。\n \nAWS Transform カスタムは現在、米国東部 (バージニア北部) の AWS リージョンでご利用いただけます。\n \n詳細については、ユーザーガイド、概要ページ、料金ページをご覧ください。"
+    },
+    {
+      "id": "29bd18ca11c9a2210a356afa62497c394c777987",
+      "title": "Amazon Connect で AI エージェントの分析とモニタリングを改善",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/11/amazon-connect-improved-analytics-monitoring-ai-agents",
+      "pubDate": "2025-11-30T18:00:00.000Z",
+      "contentSnippet": "Amazon Connect は、セルフサービスとエージェント支援エクスペリエンス全体にわたって AI エージェントに分析とモニタリングの機能を提供するようになりました。今回のリリースにより、AI エージェント主導の対話数、ハンドオフ率、会話ターン、平均処理時間などの主要なメトリクスを提供するカスタマイズしやすいダッシュボードを通じて、AI エージェントのパフォーマンスと顧客の成果を測定し、継続的に改善できます。バージョン間で AI エージェントのパフォーマンスを比較して最適な設定を特定し、インサイトを確認して AI エージェントが適切に機能している箇所と改善が必要な箇所を把握することもできます。さらに、今回のリリースでは、セルフサービスの問い合わせが感情スコアが低い人間の担当者に転送されたときにアラートを送信するなどの自動アクションをトリガーするルールを設定できます。Amazon Connect では、リクエストと応答のペイロードやツールの呼び出しなどの詳細情報を含む AI エージェントトレースも API 経由で提供されるため、AI エージェントのアクションと意思決定がわかりやすく、トラブルシューティングを迅速に行うことができます。\n  この機能は、Amazon Connect の AI エージェントが提供されているすべての AWS リージョンで利用できます。AI エージェント分析の詳細については、Amazon Connect の管理者ガイドを参照してください。クラウド上のサービスソリューションとしての AWS コンタクトセンターである Amazon Connect の詳細については、Amazon Connect のウェブサイトをご覧ください。"
+    }
+  ],
+  "lastUpdated": "2025-12-30T07:29:57.693Z"
+}
