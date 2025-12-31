@@ -3,6 +3,14 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "3JViz6pizQGAYI7cc9B8d7",
+      "title": "AWS Lambda Managed Instances でデフォルトの CPU 使用率ベースのスケーリングの挙動を確認してみた",
+      "link": "https://dev.classmethod.jp/articles/aws-lambda-managed-instances-default-cpu-scaling-behavior/",
+      "pubDate": "2025-12-31T15:56:07.000Z",
+      "contentSnippet": "結論: CPU 使用率40%でインスタンスが2台追加起動される挙動となりました。",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "2aovmG0yPE4COT52W2KLW8",
       "title": "[AIM380][Code Talk] ツール呼び出しを強化するために Amazon Nova モデルをカスタマイズする #AWSreInvent",
       "link": "https://dev.classmethod.jp/articles/aim380-code-talk-amazon-nova-awsreinvent/",
@@ -387,5 +395,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2025-12-31T15:14:01.567Z"
+  "lastUpdated": "2025-12-31T18:19:56.414Z"
 }
