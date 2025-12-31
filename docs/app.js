@@ -5,6 +5,13 @@ let articlesData = {};
 let isSearchMode = false;
 let searchKeyword = '';
 
+// 期間フィルタの状態管理
+let dateFilter = {
+  mode: 'all', // 'all' | 'today' | 'week' | 'month'
+  startDate: null, // Date object or null
+  endDate: null    // Date object or null
+};
+
 // ダークモード管理
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
@@ -105,6 +112,9 @@ async function init() {
     // 検索機能のイベントリスナーを設定
     setupSearchListeners();
 
+    // 期間フィルタのイベントリスナーを設定
+    setupDateFilterListeners();
+
     // トップに戻るボタンを初期化
     initScrollToTop();
   } catch (error) {
@@ -163,6 +173,12 @@ async function selectCategory(categoryIds) {
       tab.classList.remove('active');
     }
   });
+
+  // タイトルを「Article List」に戻す
+  const titleEl = document.getElementById('categoryTitle');
+  if (titleEl) {
+    titleEl.textContent = 'Article List';
+  }
 
   // カテゴリ情報を取得
   const categories = categoriesData.filter(cat => categoryIds.includes(cat.id));
@@ -237,14 +253,17 @@ async function loadAndRenderMultipleCategories(categoryIds, categories) {
     // 日付の降順でソート
     allArticles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
+    // フィルタを適用
+    const filteredArticles = applyAllFilters(allArticles, searchKeyword, dateFilter);
+
     // 記事数を更新
     const countEl = document.getElementById('articlesCount');
     if (countEl) {
-      countEl.textContent = `${allArticles.length} Articles`;
+      countEl.textContent = `${filteredArticles.length} Articles`;
     }
 
     // 記事を表示
-    renderArticles(allArticles);
+    renderArticles(filteredArticles);
   } catch (error) {
     console.error('Article failed to load:', error);
     showError('Article failed to load');
@@ -428,6 +447,78 @@ function extractSnippetWithKeyword(text, keyword, maxLength = 150) {
   return snippet;
 }
 
+// 期間フィルタリング関数
+function filterByDate(articles, filterConfig) {
+  // フィルタなしの場合はそのまま返す
+  if (filterConfig.mode === 'all') {
+    return articles;
+  }
+
+  const now = new Date();
+  let startDate, endDate;
+
+  // プリセット期間の場合
+  if (filterConfig.mode === 'today') {
+    startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
+    endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+  } else if (filterConfig.mode === 'week') {
+    startDate = new Date(now);
+    startDate.setDate(startDate.getDate() - 7);
+    startDate.setHours(0, 0, 0, 0);
+    endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+  } else if (filterConfig.mode === 'month') {
+    startDate = new Date(now);
+    startDate.setDate(startDate.getDate() - 30);
+    startDate.setHours(0, 0, 0, 0);
+    endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+  }
+
+  // 記事をフィルタリング
+  return articles.filter(article => {
+    if (!article.pubDate) return false;
+
+    const pubDate = new Date(article.pubDate);
+
+    // 開始日のみ指定されている場合
+    if (startDate && !endDate) {
+      return pubDate >= startDate;
+    }
+
+    // 終了日のみ指定されている場合
+    if (!startDate && endDate) {
+      return pubDate <= endDate;
+    }
+
+    // 両方指定されている場合
+    if (startDate && endDate) {
+      return pubDate >= startDate && pubDate <= endDate;
+    }
+
+    return true;
+  });
+}
+
+// 全フィルタを適用（期間フィルタ + 検索フィルタ）
+function applyAllFilters(articles, keyword, dateFilterConfig) {
+  let filteredArticles = articles;
+
+  // 期間フィルタを適用
+  filteredArticles = filterByDate(filteredArticles, dateFilterConfig);
+
+  // 検索キーワードがある場合は検索フィルタを適用
+  if (keyword && keyword.trim() !== '') {
+    const lowerKeyword = keyword.toLowerCase();
+    filteredArticles = filteredArticles.filter(article => {
+      const titleMatch = article.title.toLowerCase().includes(lowerKeyword);
+      const snippetMatch = article.contentSnippet &&
+        article.contentSnippet.toLowerCase().includes(lowerKeyword);
+      return titleMatch || snippetMatch;
+    });
+  }
+
+  return filteredArticles;
+}
+
 // 検索機能のイベントリスナーを設定
 function setupSearchListeners() {
   const searchInput = document.getElementById('searchInput');
@@ -439,6 +530,53 @@ function setupSearchListeners() {
 
   if (clearBtn) {
     clearBtn.addEventListener('click', clearSearch);
+  }
+}
+
+// 期間フィルタのイベントリスナーを設定
+function setupDateFilterListeners() {
+  // プリセットボタンのイベントリスナー
+  const presetButtons = document.querySelectorAll('.preset-btn');
+  presetButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const preset = button.dataset.preset;
+      handlePresetClick(preset);
+    });
+  });
+}
+
+// プリセットボタンクリック時の処理
+function handlePresetClick(preset) {
+  // すべてのプリセットボタンから active クラスを削除
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  // クリックされたボタンに active クラスを追加
+  const clickedBtn = document.querySelector(`[data-preset="${preset}"]`);
+  if (clickedBtn) {
+    clickedBtn.classList.add('active');
+  }
+
+  // dateFilter状態を更新
+  dateFilter.mode = preset;
+  dateFilter.startDate = null;
+  dateFilter.endDate = null;
+
+  // フィルタを適用
+  applyDateFilter();
+}
+
+// 期間フィルタを適用
+function applyDateFilter() {
+  if (isSearchMode) {
+    // 検索モードの場合は検索を再実行
+    performSearch(searchKeyword);
+  } else {
+    // カテゴリモードの場合は現在のカテゴリを再表示
+    if (currentCategory) {
+      selectCategory(currentCategory);
+    }
   }
 }
 
@@ -550,32 +688,28 @@ async function performSearch(keyword) {
 
 // 記事を検索してフィルタリング
 function searchArticles(keyword) {
-  const results = [];
-  const lowerKeyword = keyword.toLowerCase();
+  const allArticles = [];
 
+  // 全カテゴリの記事を取得
   categoriesData.forEach(category => {
     const articles = articlesData[category.id] || [];
 
     articles.forEach(article => {
-      // タイトルと概要を対象に検索
-      const titleMatch = article.title.toLowerCase().includes(lowerKeyword);
-      const snippetMatch = article.contentSnippet &&
-        article.contentSnippet.toLowerCase().includes(lowerKeyword);
-
-      if (titleMatch || snippetMatch) {
-        results.push({
-          ...article,
-          categoryId: category.id,
-          categoryName: category.name
-        });
-      }
+      allArticles.push({
+        ...article,
+        categoryId: category.id,
+        categoryName: category.name
+      });
     });
   });
 
   // 日付の降順でソート
-  results.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  allArticles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-  return results;
+  // フィルタを適用（期間フィルタ + 検索フィルタ）
+  const filteredArticles = applyAllFilters(allArticles, keyword, dateFilter);
+
+  return filteredArticles;
 }
 
 // 検索結果を表示

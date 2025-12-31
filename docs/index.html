@@ -48,16 +48,25 @@
 
   <main class="main">
     <div class="container">
-      <!-- 検索ボックス -->
-      <div class="search-container">
-        <input
-          type="text"
-          id="searchInput"
-          class="search-input"
-          placeholder="Keyword search... (applies to all categories)"
-          aria-label="記事を検索"
-        />
-        <button id="clearSearch" class="clear-search-btn" aria-label="検索をクリア" style="display: none;">✕</button>
+      <!-- 検索ボックスと期間フィルタ -->
+      <div class="search-and-filter-container">
+        <div class="preset-buttons">
+          <button class="preset-btn active" data-preset="all">All</button>
+          <button class="preset-btn" data-preset="today">Today</button>
+          <button class="preset-btn" data-preset="week">1 Week</button>
+          <button class="preset-btn" data-preset="month">1 Month</button>
+        </div>
+
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Keyword search... (applies to all categories)"
+            aria-label="記事を検索"
+          />
+          <button id="clearSearch" class="clear-search-btn" aria-label="検索をクリア" style="display: none;">✕</button>
+        </div>
       </div>
 
       <!-- カテゴリタブ -->

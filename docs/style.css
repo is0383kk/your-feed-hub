@@ -143,10 +143,19 @@ body {
   min-height: calc(100vh - 200px);
 }
 
-/* 検索ボックス */
-.search-container {
-  position: relative;
+/* 検索ボックスと期間フィルタのコンテナ */
+.search-and-filter-container {
   margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* 検索入力欄のラッパー */
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
 }
 
 .search-input {
@@ -187,6 +196,119 @@ body {
 
 .clear-search-btn:hover {
   color: var(--error-color);
+}
+
+/* プリセットボタン群 */
+.preset-buttons {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.preset-btn {
+  padding: 0.55rem 1.3rem;
+  background-color: var(--card-bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.preset-btn:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--accent-color);
+}
+
+.preset-btn.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+/* カスタム日付ピッカー */
+.custom-date-picker {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--card-bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.date-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.date-input-group label {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  font-weight: 500;
+}
+
+.date-input {
+  padding: 0.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--card-bg-primary);
+  color: var(--text-color);
+  transition: border-color 0.3s;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.apply-date-btn,
+.clear-date-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.apply-date-btn {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.apply-date-btn:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.clear-date-btn {
+  background-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.clear-date-btn:hover {
+  background-color: var(--text-color-light);
+  color: white;
 }
 
 /* カテゴリバッジ */
@@ -413,6 +535,12 @@ body {
     height: 24px;
   }
 
+  .search-and-filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
   .search-input {
     padding: 0.75rem 2.5rem 0.75rem 0.75rem;
     font-size: 0.9rem;
@@ -423,6 +551,14 @@ body {
     right: 0.5rem;
   }
 
+  .preset-buttons {
+    justify-content: stretch;
+  }
+
+  .preset-btn {
+    flex: 1;
+  }
+
   .category-tabs {
     gap: 0.5rem;
   }
@@ -430,6 +566,29 @@ body {
   .category-tab {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+  }
+
+  .preset-buttons {
+    gap: 0.5rem;
+  }
+
+  .preset-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .custom-date-picker {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .date-input-group {
+    width: 100%;
+  }
+
+  .apply-date-btn,
+  .clear-date-btn {
+    width: 100%;
   }
 
   .articles-section {
