@@ -3,6 +3,14 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "5UWCl4nE6SpZ76DIm70I2C",
+      "title": "Claude Code × Obsidian Daily Note運用を半年続けて3つの改善を試してみた",
+      "link": "https://dev.classmethod.jp/articles/claude-code-daily-note-three-improvements/",
+      "pubDate": "2026-01-01T15:00:10.000Z",
+      "contentSnippet": "Claude Code × Obsidian Daily Note運用を半年続けて3つの改善を試してみた",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "6CdygGEtO1Spv6rvqorjSv",
       "title": "VPC Service Controls のサービス境界外（別組織）から BigQuery を参照する",
       "link": "https://dev.classmethod.jp/articles/vpc-service-controls-bigquery/",
@@ -459,5 +467,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2026-01-01T12:27:55.635Z"
+  "lastUpdated": "2026-01-01T15:14:16.029Z"
 }
