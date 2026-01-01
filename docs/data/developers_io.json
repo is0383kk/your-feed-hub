@@ -3,6 +3,14 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "txNYLyvHbhHpE8YGK9c7m",
+      "title": "Amazon GuardDuty が ECS の 拡張脅威検出に対応したため検出させてみた #AWSreInvent",
+      "link": "https://dev.classmethod.jp/articles/amazon-guardduty-ecs-extended-threat-detection-reinvent2025/",
+      "pubDate": "2026-01-01T02:34:26.000Z",
+      "contentSnippet": "Amazon GuardDuty が ECS の 拡張脅威検出に対応したため検出させてみた #AWSreInvent",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "78VKeZNxM2HA4CZqf6A1g6",
       "title": "月の途中で Amazon Q Developer Pro から Kiro Pro へアップグレードして Cost Explorer の料金を観察してみた",
       "link": "https://dev.classmethod.jp/articles/qdev-upgrade-kiro-price/",
@@ -403,5 +411,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2026-01-01T01:12:11.219Z"
+  "lastUpdated": "2026-01-01T04:06:19.604Z"
 }
