@@ -7,9 +7,10 @@ let searchKeyword = '';
 
 // 期間フィルタの状態管理
 let dateFilter = {
-  mode: 'all', // 'all' | 'today' | 'week' | 'month'
+  mode: 'all', // 'all' | 'today' | 'week' | 'specific-month'
   startDate: null, // Date object or null
-  endDate: null    // Date object or null
+  endDate: null,   // Date object or null
+  selectedMonth: null // 'YYYY-MM' format or null
 };
 
 // ダークモード管理
@@ -160,6 +161,22 @@ async function selectCategory(categoryIds) {
     categoryIds = [categoryIds];
   }
 
+  // カテゴリが実際に変更された場合のみ月選択フィルターをリセット
+  const categoryChanged = JSON.stringify(currentCategory?.sort()) !== JSON.stringify([...categoryIds].sort());
+  if (categoryChanged && dateFilter.mode === 'specific-month') {
+    dateFilter.mode = 'all';
+    dateFilter.selectedMonth = null;
+
+    // 「ALL」ボタンをアクティブにする
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    const allBtn = document.querySelector('[data-preset="all"]');
+    if (allBtn) {
+      allBtn.classList.add('active');
+    }
+  }
+
   currentCategory = categoryIds;
 
   // タブのアクティブ状態を更新
@@ -207,6 +224,9 @@ async function loadAndRenderArticles(categoryId, dataFile) {
 
     const articles = articlesData[categoryId];
 
+    // 月のオプションを更新（このカテゴリの記事から）
+    generateMonthOptions(articles);
+
     // 記事数を更新
     const countEl = document.getElementById('articlesCount');
     if (countEl) {
@@ -252,6 +272,9 @@ async function loadAndRenderMultipleCategories(categoryIds, categories) {
 
     // 日付の降順でソート
     allArticles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
+    // 月のオプションを更新（このカテゴリグループの記事から）
+    generateMonthOptions(allArticles);
 
     // フィルタを適用
     const filteredArticles = applyAllFilters(allArticles, searchKeyword, dateFilter);
@@ -517,11 +540,12 @@ function filterByDate(articles, filterConfig) {
     startDate.setDate(startDate.getDate() - 7);
     startDate.setHours(0, 0, 0, 0);
     endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
-  } else if (filterConfig.mode === 'month') {
-    startDate = new Date(now);
-    startDate.setDate(startDate.getDate() - 30);
-    startDate.setHours(0, 0, 0, 0);
-    endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+  } else if (filterConfig.mode === 'specific-month' && filterConfig.selectedMonth) {
+    // 特定月の場合（例: '2025-12'）
+    const [year, month] = filterConfig.selectedMonth.split('-').map(Number);
+    startDate = new Date(year, month - 1, 1, 0, 0, 0);
+    // 月の最終日を取得（次の月の0日目 = 今月の最終日）
+    endDate = new Date(year, month, 0, 23, 59, 59);
   }
 
   // 記事をフィルタリング
@@ -584,6 +608,47 @@ function setupSearchListeners() {
   }
 }
 
+// 記事データから利用可能な月のリストを生成
+function generateMonthOptions(articles) {
+  const monthsSet = new Set();
+
+  // 指定された記事から月を抽出
+  if (articles && Array.isArray(articles)) {
+    articles.forEach(article => {
+      if (article.pubDate) {
+        const date = new Date(article.pubDate);
+        const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        monthsSet.add(yearMonth);
+      }
+    });
+  }
+
+  // 月をソート（新しい順）
+  const months = Array.from(monthsSet).sort((a, b) => b.localeCompare(a));
+
+  // ドロップダウンに追加
+  const monthSelector = document.getElementById('monthSelector');
+  if (monthSelector) {
+    // 既存のオプション（「すべての月」以外）をクリア
+    monthSelector.innerHTML = '<option value="">All Months</option>';
+
+    // 月のオプションを追加（YYYY-MM形式）
+    months.forEach(month => {
+      const option = document.createElement('option');
+      option.value = month;
+      option.textContent = month;
+      monthSelector.appendChild(option);
+    });
+
+    // 選択値を復元（dateFilterの状態から）
+    if (dateFilter.mode === 'specific-month' && dateFilter.selectedMonth) {
+      monthSelector.value = dateFilter.selectedMonth;
+    } else {
+      monthSelector.value = '';
+    }
+  }
+}
+
 // 期間フィルタのイベントリスナーを設定
 function setupDateFilterListeners() {
   // プリセットボタンのイベントリスナー
@@ -594,6 +659,14 @@ function setupDateFilterListeners() {
       handlePresetClick(preset);
     });
   });
+
+  // 月選択ドロップダウンのイベントリスナー
+  const monthSelector = document.getElementById('monthSelector');
+  if (monthSelector) {
+    monthSelector.addEventListener('change', (e) => {
+      handleMonthSelect(e.target.value);
+    });
+  }
 }
 
 // プリセットボタンクリック時の処理
@@ -609,8 +682,38 @@ function handlePresetClick(preset) {
     clickedBtn.classList.add('active');
   }
 
+  // 月選択をリセット
+  const monthSelector = document.getElementById('monthSelector');
+  if (monthSelector) {
+    monthSelector.value = '';
+  }
+
   // dateFilter状態を更新
   dateFilter.mode = preset;
+  dateFilter.startDate = null;
+  dateFilter.endDate = null;
+  dateFilter.selectedMonth = null;
+
+  // フィルタを適用
+  applyDateFilter();
+}
+
+// 月選択時の処理
+function handleMonthSelect(monthValue) {
+  if (!monthValue) {
+    // 「すべての月」が選択された場合はAllモードに戻す
+    handlePresetClick('all');
+    return;
+  }
+
+  // すべてのプリセットボタンから active クラスを削除
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  // dateFilter状態を更新
+  dateFilter.mode = 'specific-month';
+  dateFilter.selectedMonth = monthValue;
   dateFilter.startDate = null;
   dateFilter.endDate = null;
 
@@ -719,6 +822,16 @@ async function performSearch(keyword) {
   try {
     // 全カテゴリのデータを読み込む
     await loadAllCategories();
+
+    // 全記事を取得（月のオプション生成用）
+    const allArticles = [];
+    categoriesData.forEach(category => {
+      const articles = articlesData[category.id] || [];
+      allArticles.push(...articles);
+    });
+
+    // 月のオプションを更新（全記事から）
+    generateMonthOptions(allArticles);
 
     // 検索を実行
     const results = searchArticles(keyword);

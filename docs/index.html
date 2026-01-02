@@ -50,13 +50,6 @@
     <div class="container">
       <!-- 検索ボックスと期間フィルタ -->
       <div class="search-and-filter-container">
-        <div class="preset-buttons">
-          <button class="preset-btn active" data-preset="all">All</button>
-          <button class="preset-btn" data-preset="today">Today</button>
-          <button class="preset-btn" data-preset="week">1 Week</button>
-          <button class="preset-btn" data-preset="month">1 Month</button>
-        </div>
-
         <div class="search-wrapper">
           <input
             type="text"
@@ -66,6 +59,15 @@
             aria-label="記事を検索"
           />
           <button id="clearSearch" class="clear-search-btn" aria-label="検索をクリア" style="display: none;">✕</button>
+          <div class="preset-buttons">
+            <button class="preset-btn active" data-preset="all">All</button>
+            <button class="preset-btn" data-preset="today">Today</button>
+            <button class="preset-btn" data-preset="week">1 Week</button>
+            <select id="monthSelector" class="month-selector" aria-label="月を選択">
+              <option value="">All Months</option>
+              <!-- JavaScriptで動的に生成 -->
+            </select>
+          </div>
         </div>
       </div>
 

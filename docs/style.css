@@ -146,73 +146,55 @@ body {
 /* 検索ボックスと期間フィルタのコンテナ */
 .search-and-filter-container {
   margin-bottom: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
 }
 
 /* 検索入力欄のラッパー */
 .search-wrapper {
   position: relative;
-  flex: 1;
-  min-width: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--card-bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding-right: 0.5rem;
+  transition: all 0.3s;
+}
+
+.search-wrapper:focus-within {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .search-input {
-  width: 100%;
-  padding: 0.85rem 3rem 0.85rem 1rem;
+  flex: 1;
+  padding: 0.85rem 1rem;
   font-size: 1rem;
-  border: 2px solid var(--border-color);
-  border-radius: 8px;
-  transition: all 0.3s;
-  background-color: var(--card-bg-primary);
+  border: none;
+  background: transparent;
   color: var(--text-color);
-}
-
-.search-input:focus {
   outline: none;
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .search-input::placeholder {
   color: var(--text-color-light);
 }
 
-.clear-search-btn {
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.3s;
-  line-height: 1;
-}
-
-.clear-search-btn:hover {
-  color: var(--error-color);
-}
-
 /* プリセットボタン群 */
 .preset-buttons {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.25rem;
   flex-wrap: nowrap;
   flex-shrink: 0;
+  margin-right: 0.5rem;
 }
 
 .preset-btn {
-  padding: 0.55rem 1.3rem;
-  background-color: var(--card-bg-primary);
-  border: 2px solid var(--border-color);
-  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--card-bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.85rem;
   transition: all 0.3s;
   font-weight: 500;
   color: var(--text-color);
@@ -228,6 +210,48 @@ body {
   background-color: var(--accent-color);
   color: white;
   border-color: var(--accent-color);
+}
+
+/* 月選択ドロップダウン */
+.month-selector {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--card-bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.month-selector:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--accent-color);
+}
+
+.month-selector:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.clear-search-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.clear-search-btn:hover {
+  color: var(--error-color);
 }
 
 /* カスタム日付ピッカー */
@@ -582,28 +606,38 @@ body {
     height: 24px;
   }
 
-  .search-and-filter-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
+  .search-wrapper {
+    flex-wrap: wrap;
+    padding: 0.5rem;
   }
 
   .search-input {
-    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    flex: 1 1 auto;
+    padding: 0.75rem;
     font-size: 0.9rem;
   }
 
   .clear-search-btn {
     font-size: 1.25rem;
-    right: 0.5rem;
   }
 
   .preset-buttons {
-    justify-content: stretch;
+    flex: 1 1 100%;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
   }
 
   .preset-btn {
     flex: 1;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .month-selector {
+    flex: 1;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+    min-width: auto;
   }
 
   .category-tabs {
