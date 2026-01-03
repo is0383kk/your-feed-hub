@@ -3,6 +3,14 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "1QlDs49pbhy1C3PPNwNxEk",
+      "title": "GKE の Observability 関連の機能についてまとめてみた",
+      "link": "https://dev.classmethod.jp/articles/gke-observability-feature-summary/",
+      "pubDate": "2026-01-03T10:01:26.000Z",
+      "contentSnippet": "GKE の Observability 関連の機能についてまとめてみた",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "2ttvtzUX9EoeDeVC2M3CRc",
       "title": "【JAWS-UG神戸×IoT専門支部コラボ】IoTをこれからやる方も、もっとやっていきたい方も！を開催しました",
       "link": "https://dev.classmethod.jp/articles/jawsug-iot-event-20251212-report/",
@@ -539,5 +547,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2026-01-03T09:14:06.450Z"
+  "lastUpdated": "2026-01-03T12:25:09.751Z"
 }
