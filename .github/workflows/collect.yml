@@ -35,15 +35,24 @@ jobs:
           DISCORD_WEBHOOK_TECH_GENERAL: ${{ secrets.DISCORD_WEBHOOK_TECH_GENERAL }}
         run: npm start
 
-      - name: Commit and Push Changes
+      # データファイルをArtifactとしてアップロード
+      - name: Upload data files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: article-data
+          path: docs/data/
+          retention-days: 90
+
+      # post-history.json のみコミット
+      - name: Commit post-history.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add docs/data/ post-history.json
+          git add post-history.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Article List Updated：$(date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "Update post-history：$(date +'%Y-%m-%d %H:%M:%S')"
             git push
           fi
 
@@ -61,6 +70,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+
+      # Artifactからデータファイルをダウンロード
+      - name: Download data files from artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: article-data
+          path: docs/data/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
