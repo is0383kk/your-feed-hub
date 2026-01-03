@@ -3,6 +3,14 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "1kztlC4rSKgCDDUEQQg4LM",
+      "title": "2025年12月にリリースされたSnowflakeの新機能・変更点のまとめ #SnowflakeDB",
+      "link": "https://dev.classmethod.jp/articles/snowflake-latest-info-202512/",
+      "pubDate": "2026-01-03T15:13:52.000Z",
+      "contentSnippet": "2025年12月にリリースされたSnowflakeの新機能・変更点のまとめ #SnowflakeDB",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "2R3bTultTOgs28T7EqHJ9x",
       "title": "Google Distributed Cloudで始めるおうちGKE",
       "link": "https://dev.classmethod.jp/articles/google-distributed-cloud-gke-at-home/",
@@ -571,5 +579,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2026-01-03T15:12:43.385Z"
+  "lastUpdated": "2026-01-03T18:18:46.974Z"
 }
