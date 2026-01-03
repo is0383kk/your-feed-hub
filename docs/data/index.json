@@ -15,15 +15,15 @@
     {
       "id": "aws",
       "name": "AWS",
-      "articleCount": 150,
+      "articleCount": 164,
       "dataFile": "aws.json"
     },
     {
       "id": "game",
       "name": "ゲーム",
-      "articleCount": 53,
+      "articleCount": 54,
       "dataFile": "game.json"
     }
   ],
-  "generatedAt": "2026-01-03T03:52:15.232Z"
+  "generatedAt": "2026-01-03T06:20:51.532Z"
 }
