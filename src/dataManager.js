@@ -90,7 +90,7 @@ export async function saveCategoryData(categoryId, categoryName, articles) {
     };
 
     const filePath = getDataFilePath(categoryId);
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
+    await fs.writeFile(filePath, JSON.stringify(data), 'utf-8');
     console.log(`データを保存しました: ${filePath}`);
   } catch (error) {
     console.error('データの保存に失敗しました:', error);
@@ -235,7 +235,7 @@ export async function generateIndex(categories) {
     }
 
     const indexPath = path.join(DATA_DIR, INDEX_FILENAME);
-    await fs.writeFile(indexPath, JSON.stringify(index, null, 2), 'utf-8');
+    await fs.writeFile(indexPath, JSON.stringify(index), 'utf-8');
     console.log(`インデックスファイルを生成しました: ${indexPath}`);
   } catch (error) {
     console.error('インデックスファイルの生成に失敗しました:', error);
