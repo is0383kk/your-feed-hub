@@ -9,21 +9,21 @@
     {
       "id": "developers_io",
       "name": "Developers.IO",
-      "articleCount": 64,
+      "articleCount": 72,
       "dataFile": "developers_io.json"
     },
     {
       "id": "aws",
       "name": "AWS",
-      "articleCount": 113,
+      "articleCount": 172,
       "dataFile": "aws.json"
     },
     {
       "id": "game",
       "name": "ゲーム",
-      "articleCount": 52,
+      "articleCount": 57,
       "dataFile": "game.json"
     }
   ],
-  "generatedAt": "2026-01-02T21:11:01.107Z"
+  "generatedAt": "2026-01-03T18:18:49.197Z"
 }

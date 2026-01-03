@@ -3,6 +3,70 @@
   "categoryName": "Developers.IO",
   "articles": [
     {
+      "id": "1kztlC4rSKgCDDUEQQg4LM",
+      "title": "2025年12月にリリースされたSnowflakeの新機能・変更点のまとめ #SnowflakeDB",
+      "link": "https://dev.classmethod.jp/articles/snowflake-latest-info-202512/",
+      "pubDate": "2026-01-03T15:13:52.000Z",
+      "contentSnippet": "2025年12月にリリースされたSnowflakeの新機能・変更点のまとめ #SnowflakeDB",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "2R3bTultTOgs28T7EqHJ9x",
+      "title": "Google Distributed Cloudで始めるおうちGKE",
+      "link": "https://dev.classmethod.jp/articles/google-distributed-cloud-gke-at-home/",
+      "pubDate": "2026-01-03T14:37:48.000Z",
+      "contentSnippet": "Google Distributed Cloudで始めるおうちGKE",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "2psCvzjzQAgHrWMYVZTU2c",
+      "title": "Amazon Bedrock AgentCore GatewayのTargetにAgentCore RuntimeにデプロイしたMCP Serverを指定してみた",
+      "link": "https://dev.classmethod.jp/articles/amazon-bedrock-agentcore-gateway-target-agentcore-runtime-mcp-server/",
+      "pubDate": "2026-01-03T13:39:59.000Z",
+      "contentSnippet": "Amazon Bedrock AgentCore GatewayのTargetにAgentCore RuntimeにデプロイしたMCP Serverを指定してみた",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "2sSY9YIS4KBDow9wWUrNru",
+      "title": "VPC Service Controls のサービス境界外（別組織）から BigQuery Sharing（旧 Analytics Hub）のリスティングをサブスクライブする",
+      "link": "https://dev.classmethod.jp/articles/vpc-service-controls-bigquery-sharing-analytics-hub/",
+      "pubDate": "2026-01-03T12:37:43.000Z",
+      "contentSnippet": "VPC Service Controls のサービス境界外（別組織）から BigQuery Sharing（旧 Analytics Hub）のリスティングをサブスクライブする",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "1QlDs49pbhy1C3PPNwNxEk",
+      "title": "GKE の Observability 関連の機能についてまとめてみた",
+      "link": "https://dev.classmethod.jp/articles/gke-observability-feature-summary/",
+      "pubDate": "2026-01-03T10:01:26.000Z",
+      "contentSnippet": "GKE の Observability 関連の機能についてまとめてみた",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "2ttvtzUX9EoeDeVC2M3CRc",
+      "title": "【JAWS-UG神戸×IoT専門支部コラボ】IoTをこれからやる方も、もっとやっていきたい方も！を開催しました",
+      "link": "https://dev.classmethod.jp/articles/jawsug-iot-event-20251212-report/",
+      "pubDate": "2026-01-03T07:55:48.000Z",
+      "contentSnippet": "【JAWS-UG神戸×IoT専門支部コラボ】IoTをこれからやる方も、もっとやっていきたい方も！を開催しました",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "oFmhJ9CyNCxvPu6OKaDyO",
+      "title": "LaunchInstances API を利用して、指定した特定の AZ に EC2 インスタンスを起動してみた",
+      "link": "https://dev.classmethod.jp/articles/ec2-auto-scaling-launchinstances-api-az/",
+      "pubDate": "2026-01-03T02:00:29.000Z",
+      "contentSnippet": "LaunchInstances API を利用して、指定した特定の AZ に EC2 インスタンスを起動してみた",
+      "siteName": "Developers.IO"
+    },
+    {
+      "id": "2fG7UTvPPkbAedcn6ZJaAd",
+      "title": "OU (Organizations Unit) 再構成後に Temporary elevated access management (TEAM) for AWS IAM Identity Center のリクエスト作成時にアカウントが選択できなくなった",
+      "link": "https://dev.classmethod.jp/articles/team-ou-eligibility-policy/",
+      "pubDate": "2026-01-02T23:40:41.000Z",
+      "contentSnippet": "OU (Organizations Unit) 再構成後に Temporary elevated access management (TEAM) for AWS IAM Identity Center のリクエスト作成時にアカウントが選択できなくなった",
+      "siteName": "Developers.IO"
+    },
+    {
       "id": "7KHFeQtkkJaEcPxEdYB5HF",
       "title": "[小ネタ] Strands AgentsのツールでAmazon Bedrock AgentCore Code Interpreterが簡単に使用できるようになっていた",
       "link": "https://dev.classmethod.jp/articles/strands-agents-builtin-tools-code-interpreter/",
@@ -515,5 +579,5 @@
       "siteName": "Developers.IO"
     }
   ],
-  "lastUpdated": "2026-01-02T21:10:58.950Z"
+  "lastUpdated": "2026-01-03T18:18:46.974Z"
 }

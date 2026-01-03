@@ -99,11 +99,475 @@
       "siteName": "AWS What's New"
     },
     {
+      "id": "a8e2f475b97552d6a1fde2c130fed82fc391daf5",
+      "title": "Amazon EC2 がすべての API でアベイラビリティーゾーン ID をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-az-id-api-support",
+      "pubDate": "2025-12-18T20:55:00.000Z",
+      "contentSnippet": "Amazon EC2 はアベイラビリティーゾーン ID (AZ ID) パラメータをサポートするようになりました。これにより、一貫したゾーン識別子を使用してインスタンス、ボリューム、サブネットなどのリソースを作成および管理できます。AZ ID は、すべての AWS アカウントで同じ物理ロケーションを表す一貫性のある静的な識別子で、リソースの配置を最適化するのに役立ちます。\n  今回のリリース以前は、リソースの作成時に AZ 名を使用する必要がありましたが、これらの名前は物理的に異なる場所にマップされる可能性がありました。このマッピングにより、特に複数のアカウントで運用している場合に、リソースを常に同じ場所に配置することが困難になっていました。今後は、EC2 API で AZ ID パラメータを直接指定することで、リソースの一貫した配置を保証できます。AZ ID はすべてのアカウントで常に同じ物理的なロケーションを参照しているため、アカウント全体で AZ 名を手動でマッピングしたり、ゾーンの追跡や調整の煩雑さに対処したりする必要がなくなります。この機能は、インスタンス、起動テンプレート、ホスト、リザーブドインスタンス、フリート、スポットインスタンス、ボリューム、キャパシティ予約、ネットワークインサイト、VPC エンドポイントとサブネット、ネットワークインターフェイス、高速スナップショット復元、インスタンス接続などのリソースで利用できるようになりました。\n  この機能は、中国リージョンと AWS GovCloud (米国) リージョンを含むすべての AWS リージョンで利用できます。アベイラビリティーゾーン ID の詳細については、ドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
       "id": "7b1751d6510eba88c158cb2c5cb32211df159690",
       "title": "Amazon Aurora が PostgreSQL 17.7、16.11、15.15、14.20、13.23 のサポートを開始",
       "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-aurora-postgresql-17-7-16-11-15-15-14-20-13-23",
       "pubDate": "2025-12-18T17:00:00.000Z",
       "contentSnippet": "Amazon Aurora PostgreSQL 互換エディションは、PostgreSQL バージョン 17.7、16.11、15.15、14.20、13.23 をサポートするようになりました。このアップデートには、PostgreSQL コミュニティの製品改善とバグ修正に加えて、Aurora 固有の機能強化も含まれています。\n  このリリースには、ブルー/グリーンデプロイの改善が含まれており、プライマリインスタンスでの新しいコミットが制限されることでスイッチオーバーの時間が短縮されました。また、クエリプラン管理 (QPM) も強化され、データベース復旧中のコミットログの読み込みを最適化することでインスタンスの復旧時間が短縮されました。\n  Amazon RDS マネジメントコンソールから数回のクリックで、新しい Aurora PostgreSQL 互換データベースを作成し、この最新バージョンを利用できます。既存のデータベースをアップグレードすることもできます。アップグレードについて詳しくは、Aurora のドキュメントをご確認ください。アップグレードの頻度やアップグレードプロセスの計画方法を決定する際には、Aurora バージョンポリシーを参照してください。今回の更新は、AWS のすべての商用リージョンと AWS GovCloud (米国) リージョンでご利用いただけます。\n  Amazon Aurora は MySQL および PostgreSQL との完全な互換性を備えており、圧倒的な高いパフォーマンスおよび可用性を世界規模で実現するように設計されています。このサービスは、組み込みのセキュリティ、継続的なバックアップ、サーバーレスコンピューティング、最大 15 のリードレプリカ、自動化されたマルチリージョンレプリケーション、AWS の他のサービスとの統合を提供します。Amazon Aurora の使用を開始するには、開始方法のページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "e6ccdfc10fb11a4aa8399e348fdd388ff6aaa00c",
+      "title": "Amazon WorkSpaces Applications が Ubuntu Pro 24.04 LTS を利用した Elastic Fleet を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-workspaces-ubuntu-elasticfleets",
+      "pubDate": "2025-12-18T16:00:00.000Z",
+      "contentSnippet": "Amazon WorkSpaces Applications は、Elastic Fleet で Ubuntu Pro 24.04 LTS をサポートするようになりました。これにより、独立系ソフトウェアベンダー (ISV) や中央 IT 組織は、AWS クラウドの柔軟性、スケーラビリティ、費用対効果を活用しながら、Ubuntu デスクトップアプリケーションをユーザーにストリーミングできるようになりました。\n  Amazon WorkSpaces Applications は、どこからでもデスクトップとアプリケーションに即座にアクセスできるようにする、セキュアなデスクトップとアプリケーションのフルマネージドストリーミングサービスです。Amazon WorkSpaces Applications 内では、Elastic Fleet は AWS マネージドのストリーミングインスタンスのプールからエンドユーザーにデスクトップアプリケーションをストリーミングできるようにするサーバーレスのフリートタイプで、使用量を予測したり、スケーリングポリシーを作成および管理したり、イメージを作成したりする必要はありません。Elastic Fleet タイプは、容量を管理したり、WorkSpaces Applications イメージを作成したりすることなく、アプリケーションをユーザーにストリーミングしたいお客様向けに設計されています。\n  使用を開始するには、WorkSpaces Applications 管理コンソールにサインインし、任意の AWS リージョンを 1 つ選択します。WorkSpaces Applications が利用可能なリージョンの一覧については、AWS リージョン表をご覧ください。Amazon WorkSpaces Applications は従量制料金です。詳細については、Amazon WorkSpaces Applications の料金を参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "6e10f59cf6c19a420643be74d3aa5a7eec22abcf",
+      "title": "Amazon ECS マネージドインスタンスが Amazon EC2 スポットインスタンスをサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ecs-managed-instances-ec2-spot-instances",
+      "pubDate": "2025-12-18T15:00:00.000Z",
+      "contentSnippet": "Amazon ECS マネージドインスタンスは Amazon EC2 スポットインスタンスをサポートするようになり、AWS マネージドインフラストラクチャで利用できる機能の範囲が広がりました。今回のリリースにより、AWS がインフラストラクチャ管理を担当する一方で、フォールトトレラントワークロードのオンデマンド価格と比較して最大 90％ の割引で予備の EC2 容量を活用できます。\n  ECS マネージドインスタンスは、インフラストラクチャ管理のオーバーヘッドを排除し、ワークロード要件に合わせてEC2インスタンスを動的にスケールし、タスク配置を継続的に最適化してインフラストラクチャコストを削減するように設計されたフルマネージドコンピューティングオプションです。vCPU の数、メモリサイズ、CPU アーキテクチャなどのタスク要件を定義するだけで、Amazon ECS が AWS 制御のアクセスを使用して AWS アカウント内で最適な EC2 インスタンスを自動的にプロビジョニング、設定、運用します。マネージドインスタンスのキャパシティープロバイダー設定で、GPU 高速化、ネットワーク最適化、バーストパフォーマンスなど、必要なインスタンスタイプを指定して、望ましいインスタンスファミリーでワークロードを実行することもできます。本日のリリースにより、キャパシティプロバイダー構成で新しいパラメーターである capacityOptionType を spot または on-demand として追加で設定できます。\n  EC2 スポットインスタンスのサポートは、Amazon ECS マネージドインスタンスが利用可能なすべての AWS リージョンで利用できます。Amazon EC2 のコストに加えて、プロビジョニングされたコンピューティングの管理料金が請求されます。ECS マネージドインスタンスの詳細については、機能ページ、ドキュメント、AWS ニュースリリースブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "f07a6fcd9cc1114bccf14be763dd4aab0a35f84d",
+      "title": "Amazon EC2 C8a インスタンスが欧州 (スペイン) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-c8a-instances-europe-spain-region",
+      "pubDate": "2025-12-18T15:00:00.000Z",
+      "contentSnippet": "本日より、コンピューティング最適化 Amazon EC2 C8a インスタンスが欧州 (スペイン) リージョンで利用できるようになりました。C8a インスタンスは、最大周波数が 4.5 GHz の第 5 世代 AMD EPYC プロセッサ (旧コード名 Turin) を搭載しており、C7a インスタンスと比較してパフォーマンスが最大 30%、コスト効率が最大 19% 向上します。\n  C8a インスタンスは C7a インスタンスと比較して、メモリ帯域幅が 33% 広いため、レイテンシーの影響を受けやすいワークロードに理想的です。Amazon EC2 C7a インスタンスと比較すると、GroovyJVM の場合は最大 57% 高速になり、Java ベースのアプリケーションの応答時間が短縮されます。C8a インスタンスには、2 つのベアメタルサイズを含む 12 のサイズがあります。さまざまなインスタンスサイズが用意されているため、お客様はワークロード要件に正確に対応できます。\n  C8a インスタンスは AWS Nitro System 上に構築され、バッチ処理、分散分析、ハイパフォーマンスコンピューティング (HPC)、広告配信、高度にスケーラブルなマルチプレイヤーゲーム、ビデオエンコーディングなど、パフォーマンスが高く計算量の多いアプリケーションに最適です。\n  使用を開始するには、AWS マネジメントコンソールにサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。詳細については、Amazon EC2 C8a インスタンスのページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "674e22734d0d6265d44116fc72f747860a039d43",
+      "title": "Amazon MSK Connect が新しいコネクタでデュアルスタック (IPv4 と IPv6) 接続をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-msk-connect-dual-stack-ipv-and-ipv/",
+      "pubDate": "2025-12-18T15:00:00.000Z",
+      "contentSnippet": "Amazon Managed Streaming for Apache Kafka (Amazon MSK) は、Amazon MSK Connect の新しいコネクタでデュアルスタック接続 (IPv4 と IPv6) をサポートするようになりました。この機能により、お客様は既存の IPv4 専用オプションに加えて、IPv4 プロトコルと IPv6 プロトコルの両方を使用して MSK Connect でコネクタを作成できます。これにより、お客様は IPv4 の互換性を維持しながら IPv6 環境向けにアプリケーションをモダナイズできるため、コンプライアンス要件への対応や将来のネットワークアーキテクチャへの準備が容易になります。\n  Amazon MSK Connect は、フルマネージド環境で Apache Kafka Connect コネクタをデプロイおよび運用できるようにするフルマネージドサービスです。以前は、MSK Connect のコネクタはすべての接続オプションで IPv4 アドレスしかサポートしていませんでした。この新機能により、お客様は Amazon MSK コンソール、AWS CLI、SDK、または CloudFormation を使用して、コネクタの作成時にネットワークタイプパラメータを設定することで、新しいコネクタでデュアルスタック接続 (IPv4 と IPv6) を有効にできるようになりました。MSK Connect のすべてのコネクタは、新しいコネクタの作成時にデュアルスタックを明示的に選択しない限り、デフォルトで IPv4 のみの接続を使用します。既存のコネクタは引き続き IPv4 接続を使用します。これを変更するには、コネクタを削除して再作成する必要があります。\n  MSK Connect の新しいコネクタのデュアルスタック接続は、Amazon MSK Connect が利用可能なすべての AWS リージョンで、追加料金なしで利用できるようになりました。Amazon MSK のデュアルスタックのサポート詳細については、Amazon MSK デベロッパーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "3a9ca41506f48af04027b3a629304cf68d95ca59",
+      "title": "Amazon WorkSpaces が IPv6 をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-workspaces-ipv6/",
+      "pubDate": "2025-12-18T15:00:00.000Z",
+      "contentSnippet": "Amazon WorkSpaces は WorkSpaces ドメインと外部エンドポイントで IPv6 をサポートするようになりました。これにより、ユーザーは互換性のあるクライアントから IPv4/IPv6 デュアルスタック構成を介して接続できるようになりました (SAML 認証を除く)。これは、お客様が IPv6 のコンプライアンス要件を満たすのに役立ち、IPv4 と IPv6 間のアドレス変換を処理するための高価なネットワーク機器が不要になります。\n  WorkSpaces のデュアルスタックサポートは、IPv4 よりもはるかに大きなアドレス空間を提供することで、IP アドレスに対するインターネットの需要の高まりに対応します。これにより、仮想プライベートクラウド (VPC) 内で重複するアドレス範囲を管理する必要がなくなります。お客様は、既存の IPv4 システムとの下位互換性を維持しながら、IPv4 プロトコルと IPv6 プロトコルの両方をサポートするデュアルスタックを通じて WorkSpaces をデプロイできます。また、お客様は IPv6 経由で PrivateLink VPC エンドポイントを介して WorkSpaces に接続できるため、パブリックインターネット経由でトラフィックをルーティングすることなく、プライベートにサービスにアクセスできます。\n  IPv4/IPv6 デュアルスタック構成による Amazon WorkSpaces への接続は、AWS GovCloud (米国東部および米国西部) リージョンを含め、Amazon WorkSpaces が利用可能なすべての AWS リージョンでサポートされています。この機能に追加費用は発生しません。\n  IPv6 を有効にするには、Windows、macOS、Linux、PCoIP ゼロクライアント、またはウェブアクセス用の最新の WorkSpaces クライアントアプリケーションを使用する必要があります。Amazon WorkSpaces での IPv6 サポートの詳細については、Amazon WorkSpaces 管理ガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "1a6551300d9086ca66dd6d4c4b08690a0bb863d9",
+      "title": "AWS IoT Core が HTTP ルールアクションにメッセージのバッチ処理を追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-iot-core-message-batching-http-rule-action",
+      "pubDate": "2025-12-18T15:00:00.000Z",
+      "contentSnippet": "AWS IoT Core では、メッセージをダウンストリームの HTTP エンドポイントにルーティングする前に、複数の IoT メッセージを 1 つの HTTP ルールアクションにまとめることができるようになりました。この拡張機能により、IoT ワークロードからテレメトリを取り込む際のコストとスループットのオーバーヘッドを削減できます。\n  AWS IoT Core は、数百万台の IoT デバイスを AWS クラウドに安全に接続するフルマネージド型サービスです。AWS IoT のルールを使用すると、デバイスデータをフィルタリング、処理、デコードし、データを HTTP エンドポイントにルーティングする HTTP ルールアクションなど、20 種類以上の AWS IoT ルールアクションを介して AWS サービスまたはサードパーティのエンドポイントにそのデータをルーティングできます。この新機能により、メッセージのデータセットをダウンストリームの HTTP エンドポイントにルーティングする前に、メッセージをバッチ処理できるようになりました。\n  新しいバッチ機能を使用して IoT メッセージを効率的に処理するには、IoT デバイスを AWS IoT Core に接続し、目的のバッチパラメータを使用して HTTP ルールアクションを定義します。その後、AWS IoT Core はその仕様に従って受信メッセージを処理し、指定された HTTP エンドポイントにメッセージをルーティングします。たとえば、複数のスマートホームデバイスから公開された IoT メッセージを 1 つのバッチにまとめて、スマートホームプラットフォームの HTTP エンドポイントにルーティングできるようになります。\n  この新機能は、AWS GovCloud (米国) と Amazon 中国リージョンを含む、AWS IoT Core が利用可能なすべての AWS リージョンで利用できます。詳細については、デベロッパーガイド、料金ページ、API ドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "6aa02e327c76f951b4edd03dd5b5b115ad09fa00",
+      "title": "AWS Clean Rooms が既存のコラボレーションの変更リクエストをサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/clean-rooms-change-requests-existing-collaborations/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "AWS Clean Rooms は、既存のコラボレーション設定を変更する変更リクエストをサポートするようになりました。これにより、お客様はコラボレーションの管理およびパートナーとの新しいユースケース開発をより柔軟に行うことができるようになります。この新機能により、新しいメンバーの追加、メンバー権限の更新、コラボレーションの自動承認設定の変更など、コラボレーションに関する変更リクエストを送信できます。セキュリティを維持するために、更新が有効になるにはすべてのコラボレーションメンバーが変更リクエストを承認する必要があり、既存のプライバシーコントロールは確実に保護されます。透明性を高めるため、すべての変更リクエストは変更履歴に記録され、メンバーが確認できるようになります。たとえば、パブリッシャーが広告主と Clean Rooms コラボレーションを行う場合、パブリッシャーは広告主のマーケティングエージェンシーを新しいメンバーとして追加し、このメンバーは分析結果をアカウントで直接受け取ることができます。これにより、インサイトを得るまでの時間が短縮され、パブリッシャーとのキャンペーン最適化を合理化できます。このアプローチにより、お客様とパートナーの既存のプライバシーコントロールを維持しながら、オンボーディング時間を短縮できます。\n  AWS Clean Rooms を利用すると、お客様は安全なデータクリーンルームを数分で作成でき、AWS または Snowflake 上で他の企業と協力して、広告キャンペーン、投資についての意思決定、および研究開発に関する独自のインサイトを得ることができます。AWS Clean Rooms を利用できる AWS リージョンの詳細については、AWS リージョン表をご覧ください。AWS Clean Rooms を使用したコラボレーションの詳細については、AWS Clean Rooms をご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "aa5c065dd6d64bf0a5912241247a3e3ad1f23158",
+      "title": "Amazon MSK が Apache Kafka v3.9 を使用する Express ブローカー向けの KRaft サポートを導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-msk-express-brokers-support-kraft/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "Amazon Managed Streaming for Apache Kafka (MSK) で、Express ブローカー向けに Apache Kafka バージョン 3.9 がサポートされるようになりました。このリリースでは、メタデータ管理のための Apache ZooKeeper への依存を排除する Apache Kafka の新しいコンセンサスプロトコルである KRaft (Kafka Raft) のサポートが導入されました。KRaft は、Kafka クラスター内のメタデータ管理を外部の Apache ZooKeeper ノードから Kafka 内のコントローラーのグループに移行します。この変更により、メタデータを Kafka ブローカー内でトピックとして保存およびレプリケートできるようになり、メタデータの伝播速度が上がります。\n \nKafka v3.9を使用して作成された新しい Express ブローカークラスターは、メタデータ管理モードとして自動的に KRaft を使用するため、最初からこの最新のアーキテクチャのメリットを享受できます。既存のクラスターを v3.9 にアップグレードする機能は、今後のリリースで利用可能になる予定です。\n \nKafka v3.9 を利用する Amazon MSK Express ブローカーは、MSK Express がサポートされているすべての AWS リージョンでご利用いただけます。使用を開始するには、新しい Express ブローカークラスターを作成し、AWS マネジメントコンソールで、または AWS CLI あるいは AWS SDK を使用して Kafka バージョン 3.9 を選択します。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "93a8950f92910ca745aece3eb39b702a0ec5ec09",
+      "title": "Amazon ECS で AWS Fargate でのタスク廃止をスケジュールするための週次イベントウィンドウが定義可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ecs-weekly-windows-scheduling-task-retirements-fargate/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "Amazon ECS では、AWS Fargate でタスクの廃止をスケジュールするための週次イベントウィンドウを定義できるようになりました。この機能により、インフラストラクチャの更新やタスクの置き換えをいつ行うかを正確に制御できるため、業務時間のピーク時にミッションクリティカルなワークロードが中断されるのを防ぐことができます。\n  AWS Fargate は、サーバーレスで従量制料金のコンピューティングエンジンであり、サーバーを管理することなくアプリケーションの構築に集中することができます。AWS 責任共有モデルの一環として、Fargate はプラットフォームを定期的に更新して基盤となるインフラストラクチャを維持しています。Fargate はこれらの更新に合わせて自動的にタスクを廃止し、今後のタスクの廃止についてメールと AWS Health Dashboard で通知します。デフォルトでは、タスクは通知から 7 日後に廃止されますが、fargateTaskRetirementWaitPeriod アカウント設定を構成して、廃止期間を 14 日間に延長したり、即時廃止 (0 日) を開始したりできます。以前は、タスクの廃止通知と待機期間を使用して自動化を構築し、サービスの更新やタスクの置き換えを自分のペースで実行できました。本日のリリースにより、Amazon EC2 イベントウィンドウインターフェイスを使用して毎週のイベントウィンドウを定義し、Fargate タスクが廃止されるタイミングを正確に制御できるようになりました。たとえば、週末にのみ廃止が発生するように設定することで、平日に高い稼働時間を必要とするミッションクリティカルなサービスのタスク廃止をスケジュールできます。\n  使用を開始するには、AWS アカウント設定の fargateEventWindows を 1 回限りのセットアップとして有効に設定してください。有効にしたら、時間範囲を指定して Amazon EC2 イベントウィンドウを設定し、関連ターゲットとして Amazon ECS 管理タグを選択して、イベントウィンドウを ECS タスクに関連付けます。ECS クラスター内のタスクをターゲットにする場合は aws:ecs:clusterArn タグ、ECS サービスの場合は aws:ecs:serviceArn タグ、すべての Fargate タスクにウィンドウを適用する場合は aws:ecs:fargateTask を値を true に設定して使用します。この機能は、すべての商用 AWS リージョンでご利用いただけるようになりました。詳細については、ドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "383e09f3577d48b5a999b075b6599441c0c5f6d2",
+      "title": "AWS Control Tower の 176 個の新しい AWS Security Hub コントロールの発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/176-security-hub-controls-control-tower/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "本日、AWS は、AWS Control Tower の Control Catalog において、セキュリティ、コスト、耐久性、運用などのさまざまなユースケースに対応する 176 個の Security Hub コントロールを新たにサポートすることを発表しました。今回のリリースにより、これらの追加コントロールを AWS Control Tower から直接、検索、検出、有効化、管理でき、マルチアカウント環境においてより多くのユースケースを管理できるようになりました。\n  使用を開始するには、AWS Control Tower で Control Catalog に移動し、[コントロールオーナー] フィルターが AWS Security Hub に設定されているコントロールを検索すると、Catalog にあるすべての AWS Security Hub コントロールが表示されます。目的に合致するコントロールが見つかったら、AWS Control Tower コンソールからそのコントロールを直接有効にできます。また、ListControls API、GetControl API、EnableControl API を使用することもできます。\n  新しい AWS Config ルールは、AWS GovCloud (米国) を含む AWS Control Tower が利用可能なすべての AWS リージョンで検索できます。ルールをデプロイする場合は、そのルールがサポートされているリージョンのリストを参照して、有効化できるかどうかをご確認ください。詳細については、AWS Control Tower ユーザーガイドをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "fece98e93a60a5edaf50aadd1700c7cb1593245a",
+      "title": "Amazon SES がメール検証を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ses-email-validation/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "本日、Amazon Simple Email Service (SES) はメール検証機能を発表しました。これは、送信前にメールアドレスを検証することで、お客様がバウンス率を減らし、送信者の評判を保護するのに役立つ新機能です。お客様は、API コールを使用して個々のアドレスを検証したり、すべての送信メールの自動検証を有効にしたりできます。\n \nメール検証は、送信者の評判を損なう可能性のある無効なアドレスを特定することで、お客様がリストの衛生状態を維持し、バウンスを減らし、配信を改善するのに役立ちます。API は、構文チェックや DNS レコードなどの詳細な検証情報を提供します。自動検証を有効にすると、SES はすべての送信メールアドレスを自動的に確認するようになり、コードの変更はいっさい必要ありません。自動検証は、AWS コンソールのシンプルなトグルを使用してアカウントレベルまたは構成セットレベルで設定できるため、既存のワークフローとシームレスに統合できます。\n \nメールの検証は、Amazon SES が利用可能なすべての AWS リージョンで利用できます。\n \n詳細については、Amazon SES デベロッパーガイドでメール検証に関するドキュメントを参照してください。メール検証の使用を開始するには、Amazon SES コンソールにアクセスしてください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "ac5f30808ef878536268ffed26474cabfc2d8ef6",
+      "title": "Amazon EC2 の R8i および R8i-flex インスタンスを利用できる AWS リージョンが拡大",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-r8i-r8i-flex-instances-additional-regions/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) の R8i および R8i-flex インスタンスをアジアパシフィック (ソウル)、南米 (サンパウロ)、アジアパシフィック (東京) の各リージョンでご利用いただけます。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。R8i インスタンスと R8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。R7i インスタンスと比較した場合、パフォーマンスは 20% 向上し、特定のワークロードではさらに高いパフォーマンスが実現します。また、R7i インスタンスと比較して、PostgreSQL データベースでは最大 30%、NGINX ウェブアプリケーションでは最大 60%、AI 深層学習レコメンデーションモデルでは最大 40%高速化されます。\n  R8i-flex は、AWS 初のメモリ最適化 Flex インスタンスです。メモリ負荷の高いほとんどのワークロードにおいて、最も手軽にコストパフォーマンスの利点を得られる選択肢です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。\n  R8i インスタンスは、メモリ負荷の高いワークロード全般に適しています。特に、最大のインスタンスサイズや継続的に高い CPU 使用率を必要とするワークロードに最適です。R8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタルサイズで、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。R8i インスタンスは、SAP 認定を受けており、オンプレミス環境とクラウド環境の同等のマシンにおいて最高となる 142,100 個の aSAPS を達成しています。そのため、ミッションクリティカルな SAP ワークロードにおいて優れたパフォーマンスを発揮します。\n  使用を開始するには、AWS マネジメントコンソールにサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。この新しい R8i と R8i-flex のインスタンスの詳細については、AWS ニュースブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "b83f87b05b92720f4555696690fee9dc926a3301",
+      "title": "AWS Direct Connect が AWS Fault Injection Service による耐障害性テストのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/direct-connect-resilience-testing-fault-injection-service/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "AWS Direct Connect が、AWS Fault Injection Service (FIS) による耐障害性テストのサポートを開始しました。FIS は、制御されたフォールトインジェクション実験を行ってアプリケーションのパフォーマンス、オブザーバビリティ、耐障害性を高めるためのフルマネージド型サービスです。この機能により、仮想インターフェイス上のボーダーゲートウェイプロトコル (BGP) セッションが中断されたときにアプリケーションがどのように反応するかをテストおよび観察し、耐障害性メカニズムを検証できます。\n  この新機能を使用して、制御された環境でアプリケーションが Direct Connect BGP フェイルオーバーをどのように処理するかをテストできます。たとえば、プライマリ仮想インターフェイスの BGP セッションが中断され、アプリケーションが想定どおりに機能し続けた場合、トラフィックが冗長仮想インターフェイスにルーティングされたことを検証できます。この機能は、ネットワーク接続の維持にフェイルオーバーが不可欠な Direct Connect アーキテクチャを積極的にテストする場合に特に役立ちます。\n  この新しいアクションは、AWS FIS が提供されているすべての AWS 商用リージョンで利用できます。詳細については、AWS FIS 製品ページと Direct Connect FIS アクションのユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "c5d0dfdcb8c8a03f39e7f553f3cb5f946a5bbe48",
+      "title": "Amazon Neptune Database が AWS の欧州 (チューリッヒ) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-neptune-zurich-region",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "Amazon Neptune Database のエンジンバージョン 1.4.5.0 以降が欧州 (チューリッヒ) リージョンで利用可能になりました。AWS の欧州 (チューリッヒ) リージョンで R5、R5d、R6g、R6i、X2iedn、T4g、T3 インスタンスタイプを使用して Neptune クラスターを作成できるようになりました。\n  Amazon Neptune Database は高速かつ信頼性の高いフルマネージド Graph Database as a Service です。このサービスでは、高度に接続されたデータセットと連携するアプリケーションを簡単に構築および実行できます。Property Graph モデルで Apache TinkerPop Gremlin または openCypher を使用するか、W3C Resource Description Framework (RDF) で SPARQL クエリ言語を使用してアプリケーションを構築できます。また Neptune は高可用性、自動バックアップ、ネットワーク分離などのエンタープライズ機能を提供し、お客様がアプリケーションを本番環境に迅速にデプロイできるようにします。\n  使用を開始するには、AWS マネジメントコンソール、AWS CLI、またはクイックスタート AWS CloudFormation テンプレートを使用することで、新しい Neptune クラスターを作成できます。料金と利用可能なリージョンについては、Neptune の料金ページと AWS リージョン表を参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "d701fd9d7ee861857d4893afc11d890d2becf24a",
+      "title": "AWS Lambda の永続関数が新たに 14 の AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/lambda-durable-functions-14-additional-regions/",
+      "pubDate": "2025-12-18T08:00:00.000Z",
+      "contentSnippet": "AWS Lambda の永続関数は、デベロッパーが Lambda の開発エクスペリエンスの中で信頼性の高いマルチステップアプリケーションや AI ワークフローを構築できるようにします。本日より、米国東部 (バージニア北部)、米国西部 (オレゴン)、欧州 (アイルランド)、欧州 (フランクフルト)、欧州 (ミラノ)、欧州 (ストックホルム)、欧州 (スペイン)、アジアパシフィック (シドニー)、アジアパシフィック (香港)、アジアパシフィック (東京)、アジアパシフィック (シンガポール)、アジアパシフィック (ムンバイ)、アジアパシフィック (マレーシア)、アジアパシフィック (タイ) の 14 の AWS リージョンで新たに永続関数が利用できるようになりました。\n  Lambda の永続関数は、イベントハンドラーに「steps」や「waits」などの新しいプリミティブを追加して Lambda プログラミングモデルを拡張します。これにより、オンデマンド関数の計算料金を発生させることなく、進行状況のチェックポイント、障害からの自動回復、実行の一時停止が可能になります。今回のリージョン拡大により、注文ワークフロー、ユーザーオンボーディング、AI 支援タスクなどの複雑なプロセスをユーザーとデータの近くでオーケストレーションできるため、単一のサーバーレスプログラミングモデルで標準化しながら、低レイテンシーとデータレジデンシーの要件を満たすことができます。\n  AWS Lambda API、AWS マネジメントコンソール、または AWS SDK を使用して、新しい Python (バージョン 3.13 と 3.14) または Node.js (バージョン 22 と 24) ベースの Lambda 関数で永続関数をアクティブにできます。AWS Cloud Formation、AWS サーバーレスアプリケーションモデル (AWS SAM)、AWS Cloud Development Kit (AWS CDK) などの Infrastructure as Code (IaC) ツールを使用することもできます。\n  永続関数の詳細については、AWS Lambda デベロッパーガイドをご覧ください。料金については、AWS Lambda の料金をご覧ください。最新のリージョン対応状況については、AWS 機能 (リージョン別) ページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "a650ac43305983a4051eb34a1146d22c2046ef3e",
+      "title": "Amazon WorkSpaces Applications が追加の正常性とパフォーマンスのメトリクスを発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-workspaces-applications-health-performance-metrics",
+      "pubDate": "2025-12-17T18:00:00.000Z",
+      "contentSnippet": "本日、Amazon WorkSpaces Applications は、フリート、セッション、インスタンス、ユーザーの正常性とパフォーマンスをモニタリングする新しい Amazon CloudWatch メトリクスのセットを発表しました。管理者やサポート操作の担当者は、フリートル全体のモニタリングを Amazon CloudWatch コンソールから簡単に有効にできます。これらのメトリクスはトラブルシューティングを簡略化し、重要なパフォーマンスメトリクスの最新状態を反映するための動的な更新も実行します。\n  ユーザーは、利用可能なメトリクスのパフォーマンスしきい値を、パフォーマンスや予算の条件に合致するように設定すると、サイズ設定やエンドユーザーのストリーミングインスタンスについて情報に基づいた決定を下すことができます。インスタンスとセッションのパフォーマンスメトリクスを参照すると、エンドユーザーのストリーミングセッションに関連した問題をトラブルシューティングできます。\n  フリートインスタンスに対してこの機能を有効にするには、2025 年 12 月 6 日以降にリリースされた最新のエージェントを使用している WorkSpaces Applications イメージか、2025 年 12 月 5 日以降にリリースされたマネージド WorkSpaces Applications イメージの更新を使用して更新された WorkSpaces Applications イメージを使用する必要があります。\n \nこれらの CloudWatch メトリクスは、現在 Amazon WorkSpaces Applications が利用可能なすべての AWS 商用リージョンと AWS GovCloud (米国) リージョンで利用できます。使用を開始する場合や、詳細を知りたい場合は、Amazon WorkSpaces Applications のメトリクスとディメンションに関するドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "2c0e8beddaf11091630ec57ca0067cc556ae7a4c",
+      "title": "Vercel マーケットプレイスで AWS データベースが入手可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-databases-are-available-on-the-vercel/",
+      "pubDate": "2025-12-17T18:00:00.000Z",
+      "contentSnippet": "現在 Vercel マーケットプレイスで、Amazon Aurora PostgreSQL、Amazon Aurora DSQL、Amazon DynamoDB を含む AWS データベースが一般提供中なので、Vercel から直接 AWS データベースを数秒で作成して接続できます。\n  使用を開始するには、Vercel から新しい AWS アカウントを作成できます。このアカウントには、3 つのデータベースへのアクセス権と 100 USD のクレジットが含まれます。このクレジットは、これらのどのデータベースオプションでも最長 6 か月間使用できます。アカウントを設定すると、数秒で本番対応の Aurora データベースや DynamoDB テーブルを使用して Vercel プロジェクトを稼働できるようになります。また、Vercel ダッシュボードから AWS 設定ポータルにアクセスして、プランの管理、支払い情報の追加、使用状況の詳細の表示をいつでも行うことができます。詳細については、Vercel マーケットプレイスの AWS のランディングページをご覧ください。\n  この統合には、Amazon Aurora PostgreSQL、Amazon Aurora DSQL、Amazon DynamoDB のサーバーレスオプションが含まれており、アプリケーションのニーズを簡略化し、使用していないときにゼロにスケーリングしてコストを削減することができます。データベースは、米国東部 (バージニア北部)、米国東部 (オハイオ)、米国西部 (オレゴン)、欧州 (アイルランド)、欧州 (フランクフルト)、アジアパシフィック (東京)、アジアパシフィック (ムンバイ) の各 AWS リージョンで作成でき、今後さらにリージョンが追加される予定です。\n  AWS データベースは、次なる大きなアイデアのプロトタイプを作成する場合でも、本番環境で AI やデータ駆動型アプリケーションを実行する場合でも、運用上のオーバーヘッドなしでセキュリティ、信頼性、コストパフォーマンスを向上させます。詳細については、AWS データベースのウェブページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "b709f05943046f9ecbf4fe02cb06335409836d0b",
+      "title": "Amazon EC2 M8Gn および M8GB インスタンスの一般提供を開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/generally-available-amazon-ec2-m8gn-m8gb-instances",
+      "pubDate": "2025-12-17T18:00:00.000Z",
+      "contentSnippet": "AWS は本日、新しい Amazon Elastic Compute Cloud (Amazon EC2) M8gn および M8gb インスタンスの一般提供を開始しました。このインスタンスは AWS Graviton4 プロセッサを搭載しており、AWS Graviton3 プロセッサと比較して最大 30% 優れたコンピューティングパフォーマンスを発揮します。M8gn インスタンスには最新の第 6 世代 AWS Nitro Card が搭載されており、最大 600 Gbps のネットワーク帯域幅を提供します。これは、ネットワーク最適化 EC2 インスタンスの中で最も高いネットワーク帯域幅です。M8gb は、最大 150 Gbps の EBS 帯域幅で、同じサイズの同等の Graviton4 ベースインスタンスよりも高い EBS パフォーマンスを実現します。\n  M8gn は、高性能ファイルシステム、分散ウェブスケールインメモリキャッシュ、キャッシングフリート、リアルタイムのビッグデータ分析、5G User Plane Function (UPF) などの通信事業者アプリケーションのような、ネットワーク集約型のワークロードにとって最適です。M8gb は、ハイパフォーマンスデータベースや NoSQL データベースのような、高いブロックストレージパフォーマンスが必要なワークロードにとって最適です。\n \nM8gn インスタンスでは、最大 48xlarge、最大 768 GiB メモリ、最大 600 Gbps のネットワーク帯域幅、Amazon Elastic Block Store (EBS) への最大 60 Gbps の帯域幅までのインスタンスサイズが用意されています。また 16xlarge、24xlarge、48xlarge のサイズの EFA ネットワークをサポートしています。\n  M8gb インスタンスでは、最大 24xlarge、最大 768 GiB メモリ、最大 150 Gbps の EBS 帯域幅、最大 200 Gbps のネットワーク帯域幅までのサイズが用意されています。これは 16xlarge と 24xlarge のサイズの Elastic Fabric Adapter (EFA) ネットワークをサポートしています。これにより、密結合のクラスター上にデプロイされたワークロードのレイテンシーを低減し、クラスターのパフォーマンスを改善できます。\n \nこの新しいインスタンスは、米国東部 (バージニア北部) と米国西部 (オレゴン) の AWS リージョンで利用できます。\n  詳細については、Amazon EC2 M8Gn および M8GB インスタンスに関するページを参照してください。Graviton の利用を開始するには、「AWS Graviton でコンピューティングをレベルアップする」ページにアクセスしてください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "7fbdb3f01a4f4f0465b3ebb7330a329db09a3ce7",
+      "title": "Amazon Aurora が Amazon RDS データベースプレビュー環境で PostgreSQL 18.1 のサポートを開始 ",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-aurora-postgresql-18-1-rds-database-preview",
+      "pubDate": "2025-12-17T17:00:00.000Z",
+      "contentSnippet": "Amazon Aurora PostgreSQL 互換エディションでは、Amazon RDS データベースプレビュー環境で PostgreSQL バージョン 18.1 のサポートを開始しました。これにより、Amazon Aurora PostgreSQL で PostgreSQL 18.1 を評価できます。PostgreSQL 18.1 は、2025 年 9 月 9 日に PostgreSQL コミュニティによってリリースされました。 \n  PostgreSQL 18.1 では、複数列の B ツリーインデックスに対する「スキップスキャン」がサポートされており、OR 条件および IN 条件の WHERE 句の処理が改善されています。また、並列 GIN インデックスの構築が導入され、結合操作が更新されています。オブザーバビリティの改善により、クエリ実行中のバッファ使用回数とインデックスルックアップ、および接続ごとの I/O 使用状況のメトリクスが表示されます。PostgreSQL 18.1 の詳細については、 こちらをご覧ください。\n  \n RDS データベースプレビュー環境のデータベースインスタンスでは、Aurora PostgreSQL データベースソフトウェアのプレビューバージョンを手動インストール、プロビジョニング、管理することなく、新しいデータベースエンジンをテストできます。クラスターは最大 60 日間保持された後、この保持期間後に自動的に削除されます。Amazon RDS データベースプレビュー環境のデータベースインスタンスの料金は、米国東部 (オハイオ) リージョンで作成された本番環境の Aurora インスタンスと同じです。\n  \n Amazon Aurora は MySQL および PostgreSQL との完全な互換性を備えており、圧倒的な高いパフォーマンスおよび可用性を世界規模で実現するように設計されています。このサービスは、組み込みのセキュリティ、継続的なバックアップ、サーバーレスコンピューティング、最大 15 のリードレプリカ、自動化されたマルチリージョンレプリケーション、AWS の他のサービスとの統合を提供します。Amazon Aurora の使用を開始するには、開始方法のページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "7e4119e1de10b1e1364a2b4c2580a95d7289a608",
+      "title": "AWS が AWS Billing Conductor 向けのカスタム明細の管理の強化を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/enhanced-custom-line-item-controls-aws-billing-conductor",
+      "pubDate": "2025-12-17T16:00:00.000Z",
+      "contentSnippet": "本日より、AWS Billing Conductor でカスタム明細項目の使用時の柔軟性が向上します。\n  1 つの AWS サービスか選択した AWS サービスのセットを対象とするサービス固有のカスタム明細項目を作成できるようになりました。また、請求ページ、Cost Explorer、コストと使用状況レコードなどのプロフォーマの請求アーティファクトでこれらの明細項目がどのように表示されるか選択できます。\n  これらの機能強化により、お客様の料金体系をより的確に反映した、より正確な調整済みのチャージバックと再請求の戦略を作成し、プロフォーマのユーザーの追跡可能性に関する環境を向上させることができます。この機能を使用して、Saving Plans の料金に割引率を適用したり、AWS サポートのサービスに基づいて共有の均一なサポート料金を割り当てたりできます。サービス固有のカスタム明細項目は、選択した料金プランのタイプに関係なく標準的な請求グループで使用できます。ただし、お客様が管理する料金プランを選択すると、請求転送の請求グループでのみ使用できます。\n  まず、AWS Billing Conductor コンソールまたは API を使用してカスタムの明細項目を作成し、コスト参照値 (1 つまたは複数の AWS サービス) と表示設定オプション (選択したサービスに基づいて項目別または一括) を指定します。 カスタム明細項目の詳細については、 AWS Billing Conductor に関するドキュメントをご覧ください。\n  この機能は、Sinnet 運営の AWS 中国 (北京) リージョン、NWCD 運営の AWS 中国 (寧夏) リージョンを除く、すべての AWS 商用リージョンでご利用いただけるようになりました。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "3171085d34f21ebc5916e03fb3e4acd8f1bbf30f",
+      "title": "EC2 Auto Scaling で Auto Scaling グループ内のインスタンスを起動するための同期 API の提供を開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-auto-scaling-synchronous-api-launch-instances-auto-scaling-group",
+      "pubDate": "2025-12-17T15:00:00.000Z",
+      "contentSnippet": "本日、EC2 Auto Scaling は LaunchInstances という新しい API をリリースします。これにより、お客様は EC2 Auto Scaling がインスタンスをプロビジョニングする方法をより柔軟に制御できると同時に、利用可能なキャパシティに関するフィードバックを即座に得ることができます。\n  EC2 Auto Scaling は自動フリート管理に使用されています。スケーリングポリシーに従い、EC2 Auto Scaling は、需要が急増した場合は自動的にインスタンスを追加し、トラフィックが減少した場合はインスタンスを削除できるため、お客様のアプリケーションに常に適切な量のコンピューティングを確保できます。EC2 Auto Scaling には、異常なインスタンスを監視して置き換える機能もあります。特定のユースケースで、お客様が EC2 Auto Scaling が追加のインスタンスを起動する場所を正確に指定したい場合や、利用可能なキャパシティに関するフィードバックをすぐに必要とする場合があります。新しい LaunchInstances API を使用すると、Auto Scaling グループ内の任意のアベイラビリティーゾーンやサブネットのオーバーライドを指定することで、インスタンスを起動する場所を正確に制御できると同時に、利用可能なキャパシティに関するフィードバックを即座に得ることができます。この同期オペレーションにより、お客様はスケーリング操作をリアルタイムで把握でき、必要に応じて代替戦略を迅速に実装できます。柔軟性を高めるため、API にはオプションの非同期再試行が含まれており、必要なキャパシティに達するのに役立ちます。\n  この機能は現在、すべての  AWS リージョンと AWS GovCloud (米国) リージョンで、標準的な EC2 と EBS の使用料以外の追加料金なしで利用できます。使用を開始するには、AWS コマンドラインインターフェイス (CLI) と AWS SDK を参照してください。この機能の詳細については、AWS ドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "1b1bd64f2b1f80cb7976f5db297d16b8830491fb",
+      "title": "Amazon ECR Public が米国東部 (バージニア北部) の SDK エンドポイントに対する PrivateLink のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ecr-public-privatelink-us-east-n-virginia-sdk-endpoint",
+      "pubDate": "2025-12-17T15:00:00.000Z",
+      "contentSnippet": "Amazon Elastic Container Registry (ECR) Public が米国東部 (バージニア北部) の SDK エンドポイントに対して PrivateLink のサポートを開始し、ネットワークのセキュリティとプライベート接続が強化されています。この更新により、プライベートネットワーク接続を介してこの ECR Public の SDK エンドポイントにアクセスできるようになり、パブリックインターネットへの露出が軽減されます。\n  この機能強化により、ECR Public リポジトリを作成して管理しながら、Amazon Virtual Private Cloud (VPC) から ECR Public の SDK エンドポイントへのプライベート接続を確立できるようになりました。したがって、組織はネットワークのプライバシーとセキュリティを維持し、機密性の高いネットワークトラフィックの露出を減らし、準拠するネットワークセキュリティ要件を厳格化し、ECR Public リソースにアクセスするためのネットワークアーキテクチャを簡略化できます。\n  今すぐ米国東部 (バージニア北部) の ECR Public の SDK エンドポイントの使用を開始しましょう。\n \n詳細については、ECR に関するドキュメントをご参照ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "b38ff137a706255112f976903a58b85cb232fe7a",
+      "title": "Amazon EC2 C8g、M8g、R8g インスタンスを利用可能なリージョンが増加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-c8g-m8g-r8g-instances-additional-regions",
+      "pubDate": "2025-12-17T15:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) C8g および M8g インスタンスが AWS GovCloud (米国西部) で、また R8g および M8g インスタンスが AWS GovCloud (米国東部) リージョンで利用できるようになりました。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、Graviton3 ベースのインスタンスよりも最大 30% 高いパフォーマンスを発揮します。これらは、CPU 仮想化、ストレージ、およびネットワーク機能を専用のハードウェアとソフトウェアにオフロードして、ワークロードのパフォーマンスとセキュリティを強化する AWS Nitro System 上に構築されています。\n  AWS Graviton4 ベースの Amazon EC2 インスタンスは、Amazon EC2 で実行される幅広いワークロードに最高のパフォーマンスとエネルギー効率をもたらします。これらのインスタンスは、Graviton3 ベースの Amazon C8g、M8g、R8g インスタンスと比較して、インスタンスサイズが大きく、最大 3 倍の vCPU とメモリを備えています。AWS Graviton4 プロセッサは、AWS Graviton3 プロセッサに比べて、データベースでは最大 40%、ウェブアプリケーションでは 30%、大規模な Java アプリケーションでは 45% 高速です。C8g および R8g インスタンスは、2 つのベアメタルサイズを含む 12 種類のインスタンスサイズで利用できます。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。\n  詳細については、Amazon EC2 C8g インスタンス、Amazon EC2 M8g インスタンス、Amazon EC2 R8g インスタンスの各ページを参照してください。ワークロードを Graviton ベースのインスタンスに移行する方法を調べるには、AWS Graviton Fast Start プログラムと Porting Advisor for Graviton をご覧ください。利用を開始するには、AWS GovCloud (米国) コンソールを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "323d4af14d16050ac76d1adc7917c15057acf90c",
+      "title": "Amazon EC2 C8g インスタンスが欧州 (チューリッヒ) で利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-c8g-instances-europe-zurich",
+      "pubDate": "2025-12-17T15:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) C8g インスタンスが AWS 欧州 (チューリッヒ) リージョンで利用可能になりました。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、Graviton3 ベースのインスタンスよりも最大 30% 高いパフォーマンスを発揮します。Amazon EC2 C8g インスタンスは、ハイパフォーマンスコンピューティング (HPC)、バッチ処理、ゲーム、動画エンコーディング、科学的モデリング、分散分析、CPU ベースの機械学習 (ML) 推論、広告配信などのコンピューティングを多用するワークロードに最適です。これらのインスタンスは、CPU 仮想化、ストレージ、およびネットワーク機能を専用のハードウェアとソフトウェアにオフロードして、ワークロードのパフォーマンスとセキュリティを強化する AWS Nitro System 上に構築されています。\n  AWS Graviton4 ベースの Amazon EC2 インスタンスは、Amazon EC2 で実行される幅広いワークロードに最高のパフォーマンスとエネルギー効率をもたらします。これらのインスタンスは、Graviton3 ベースの Amazon C7g インスタンスと比較して、インスタンスサイズが大きく、最大 3 倍の vCPU とメモリを備えています。AWS Graviton4 プロセッサは、AWS Graviton3 プロセッサに比べて、データベースでは最大 40%、ウェブアプリケーションでは 30%、大規模な Java アプリケーションでは 45% 高速です。C8g インスタンスは、2 つのベアメタルサイズを含む 12 種類のインスタンスサイズで利用できます。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。\n  詳細については、Amazon EC2 C8g インスタンスをご覧ください。使用を開始するには、AWS マネジメントコンソールをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "70eda0c8bba1d7210422500e7ee9c7e53ba4248a",
+      "title": "Amazon OpenSearch Service が新しい OI2 インスタンスを発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-opensearch-service-oi2-instances/",
+      "pubDate": "2025-12-17T14:00:00.000Z",
+      "contentSnippet": "Amazon OpenSearch Service では、OI2 インスタンスが導入され、OpenSearch 最適化インスタンスファミリーが拡張されました。新しい OI2 インスタンスは、内部ベンチマークでは OR2 インスタンスと比較して最大 9%、I8g インスタンスと比較して最大 33% 高いインデックス作成スループットを提供します。\n \n新しい OI2 OpenSearch 最適化インスタンスは OR2 インスタンスと同じアーキテクチャを使用しており、Amazon S3 などのクラス最高のクラウドテクノロジーを活用して高い耐久性とコストパフォーマンスを実現し、高いインデックススループットを実現して負荷の高いワークロードのインデックス作成に向いています。各 OpenSearch 最適化インスタンスには、コンピューティング、キャッシュ用の第 3 世代の AWS Nitro SSD、リモート Amazon S3 ベースのマネージドストレージがプロビジョニングされています。OI2 では、従量制料金のリザーブドインスタンスが提供され、NVMe ストレージを含むインスタンスや、プロビジョニングされたマネージドストレージに対して単純な時間単位の料金が適用されます。 OI2 インスタンスには「large」から「24xlarge」までのサイズがあり、コンピューティング、メモリ、最大 22.5 TB のストレージを選択できます。料金の詳細については、Amazon OpenSearch Service の料金ページをご覧ください。\n  OI2 インスタンスファミリーは、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン)、カナダ (中部)、アジアパシフィック (ムンバイ、シンガポール、シドニー、東京)、欧州 (フランクフルト、アイルランド、ロンドン、スペイン) の世界 12 リージョンで Amazon OpenSearch Service 上で利用できるようになりました。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "038d3ec98f5a49a9130b32f13839dc9d5021fe52",
+      "title": "AWS Payment Cryptography がシドニーで AS2805 サポート付きで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-payment-cryptography-in-sydney/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "本日より、AWS Payment Cryptography がオーストラリア (シドニー) リージョンに拡大され、AS2805 機能をサポートするようになりました。この拡張は、このサービスの世界で 13 番目の AWS リージョンとなります。AS2805 の機能により、お客様はこの標準を利用する他社との運用性を維持しながら、より多くの決済ワークロードを AWS に移行できます。\n  オーストラリア、ニュージーランド、その他いくつかの国では、カード決済における組織間の暗号管理の一貫したアプローチとして、Australia Standards 2805 (AS2805) を採用しています。従来、これらの企業は、これらの操作を準拠した互換性のある方法で実行するためにハードウェアセキュリティモジュール (HSM) を必要としていました。AWS Payment Cryptography は、伸縮自在なスケーラブルサービスで、ノード間のユースケースに同等の機能を提供するようになりました。これにより、スタンドアロンハードウェアの調達と管理の運用上の負担がなくなります。お客様は、AWS IAM や AWS CloudTrail と統合された API を使用しながら、サービスの PCI 認定 HSM の使用を全体的なコンプライアンスプログラムの一部として活用できます。\n  AWS Payment Cryptography は、カナダ (モントリオール)、米国東部 (オハイオ、バージニア北部)、米国西部 (オレゴン)、欧州 (アイルランド、フランクフルト、ロンドン)、アフリカ (ケープタウン)、アジアパシフィック (シンガポール、東京、大阪、ムンバイ)、オーストラリア (シドニー) の AWS リージョンでご利用いただけます。\n  サービスの使用を開始するには、最新の AWS CLI/SDK をダウンロードし、追加のコンプライアンス詳細を含め、AWS Payment Cryptography ユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "a64acda3b7ea19da1388cb59235c93c15a14c932",
+      "title": "Amazon Redshift Serverless が IPv6 をサポートするデュアルスタックモードの一般提供開始を発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-redshift-serverless-announces-dual-stack-mode-ipv6/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "Amazon Redshift Serverless は、インターネットプロトコルバージョン 6 (IPv6) をサポートするデュアルスタックモードの一般提供開始を発表しました。この機能強化により、ネットワークインフラストラクチャを最新化し、増大するインターネット接続の需要に対応できます。\n  Redshift Serverless は、IPv4 アドレスと IPv6 アドレスの両方を使用する (デュアルスタック) Redshift ワークグループの設定、または AWS Virtual Private Cloud (VPC) 内での IPv4 のみの設定をサポートしています。新しく Redshift Serverless ワークグループを作成する際に IPv6 サポートを有効にしたり、IPv6 アドレス指定をサポートするように既存のワークグループを変更したりできます。この機能により、IPv6 対応の VPC サブネット内に Redshift ウェアハウスをデプロイし、拡大するアプリケーションのアドレススペース要件に対応するようにネットワーク設定を構成できます。アプリケーションが IPv4 または IPv6 プロトコルを使用して Redshift ウェアハウスと通信できるようになり、既存の、さらには将来のネットワークアーキテクチャとの互換性が確保されます。\n \nこの機能は、Redshift Serverless が提供されているすべての AWS 商用リージョンでご利用いただけます。利用を開始するには、ドキュメントとブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "0b05bb3f8730a4b22ce5dc69667a335b4f49201c",
+      "title": "AWS Security Incident Response が、さらに 10 の AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/security-incident-response-ten-regions/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "AWS Security Incident Response が、アフリカ (ケープタウン)、アジアパシフィック (香港、ハイデラバード、ジャカルタ、メルボルン)、欧州 (チューリッヒ、ミラノ、スペイン)、中東 (UAE、バーレーン) のさらに 10 のオプトイン AWS リージョンで利用できるようになりました。これらの追加リージョンを使用して、セキュリティイベントへの備え、対応、復旧をより迅速かつ効果的に行うことができるようになりました。\n  AWS Security Incident Response は、自動化されたセキュリティ検出結果の監視とトリアージ、AI を活用した調査、封じ込め機能により、セキュリティインシデント対応ライフサイクルのすべてのステップを合理化します。専門的な専門知識が必要な場合、セキュリティインシデントレスポンスを利用すると、AWS のセキュリティ専門家の専任グループに 24 時間 365 日直接連絡でき、数分以内にお客様のリクエストに対応します。この自動化と専門知識の強力な組み合わせにより、セキュリティ運用を確実に拡大できるため、イノベーションと成長に集中できます。\n  詳細については、AWS Security Incident Response ページとドキュメントを参照してください。リージョンと言語のサポートについては、サポートされる設定に関するページを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "bb7adb32119f7de86157cca0e636b0aa0c57ded4",
+      "title": "AWS IAM アイデンティティセンターがアジアパシフィック (台北) AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-iam-identity-center-asia-pacific-taipei-region/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "アジアパシフィック (台北) を含む 37 の AWS リージョンに AWS IAM アイデンティティセンターをデプロイできるようになりました。\n  IAM アイデンティティセンターは、AWS アプリケーションへの従業員によるアクセスを管理するために推奨されるサービスです。IAM アイデンティティセンターを使用すると、従業員の既存の ID ソースを AWS に一度接続するだけで、AWS 全体でユーザーにシングルサインオン環境を提供できます。また、Amazon Q などの AWS アプリケーションが提供するパーソナライズされたエクスペリエンスを向上させ、Amazon Redshift といった AWS のサービスのデータに対するユーザー認識アクセスを定義および監査する機能を強化します。また、複数の AWS アカウントへのアクセスを一元的に管理できます。IAM アイデンティティセンターは、こちらの AWS リージョンで追加料金なしで利用できます。\n  IAM アイデンティティセンターの詳細については、製品の詳細ページをご覧ください。使用を開始するには、IAM アイデンティティセンターユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "7cd21ebebf7ae3b45e48510300cc1f7d6af634a2",
+      "title": "AWS Payment Cryptography が API の料金を最大 63% 値下げし、キーの階層化された料金を導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-payment-cryptography-lower-pricing/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "本日、AWS Payment Cryptography は、既存のすべての層にわたる API リクエストの最大 63% の大幅な値下げを発表し、新しい第 4 層を導入しました。この変更により、すべてのリージョンで価格が統一されるので、料金を気にせずより大量のワークロードをサービスに移行できるようになります。今回の更新の一環として、キーの料金を均一料金から階層化された料金に移行し、大量の暗号化キーを管理する必要があるお客様へのサポートを強化しました。この新しい料金モデルにより、キー管理と支払い処理の両方の業務をコスト効率の高い方法でスケールでき、同時に量にかかわらずコストを最適化できます。\n  AWS Payment Cryptography は、専用の決済ハードウェアセキュリティモジュール (HSM) インスタンスを調達しなくても、Payment Card Industry (PCI) のセキュリティ基準に従って支払い処理に使用される暗号化機能とキー管理へのアクセスを提供するマネージド型 AWS サービスです。このサービスにより、買収企業、決済ファシリテーター、ネットワーク、スイッチ、プロセッサー、銀行などの決済機能を実行するお客様は、クラウド内のアプリケーションに近い場所で決済暗号操作を行うことができるようになり、専用の支払い HSM を含む補助データセンターやコロケーション施設への依存を最小限に抑えることができます。\n  この料金変更は、2025 年 12 月 15 日以降、AWS Payment Cryptography を利用できるすべての AWS リージョンで有効になり、特に何もしなくても自動的にすべてのお客様に適用されます。料金の詳細については、AWS Payment Cryptography の料金ページを参照してください。このサービスの詳細については、AWS Payment Cryptography のユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "7258b87ca3eb23b84766a15e5aa699d1199cc4ec",
+      "title": "Amazon OpenSearch Service が新しい多層ストレージの提供を開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/writeable-warm-tier-opensearch-optimized-instances/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "Amazon OpenSearch Service は、OpenSearch 最適化インスタンスを利用した新しい多層ストレージオプションの提供を開始しました。この新しいアーキテクチャでは、Amazon S3 クラウドのテクノロジーとローカルインスタンスストレージを組み合わせて、耐久性とパフォーマンスを改善できます。この新しい多層アーキテクチャには、ホットとウォームの 2 つの層があります。ホット層は頻繁にアクセスされるデータに対応し、ウォーム層はアクセス頻度の低いデータ向けのコスト効率の高いストレージとして Amazon S3 を活用します。 \n  これまでは、Amazon OpenSearch Service は UltraWarm を利用してウォーム層をサポートし、読み取り専用データ向けのコスト効率の高いストレージを提供していました。新しいウォーム層は OpenSearch 最適化インスタンスを利用しており、書き込み操作をサポートしているので、データ管理の柔軟性が向上します。インデックス状態管理機能を使用して、データが古くなるにつれてホットからウォームへと自動的にローテーションできます。\n \nウォーム層のデプロイでは、OpenSearch 最適化 (OI2) インスタンス (「large」から「8xlarge」までのサイズ) と、ローカルキャッシュサイズの最大 5 倍のアドレス可能なウォームを併用できます。ウォームデータには標準的なマネージドストレージの料金が適用されます。この新しい多層環境は OpenSearch 3.3 以降で利用可能です。詳細については、ドキュメントをご参照ください。\n  OI2 インスタンスファミリーの新しい多層環境は、米国東部 (バージニア北部、オハイオ)、米国西部 (オレゴン)、カナダ (中部)、アジアパシフィック (ムンバイ、シンガポール、シドニー、東京)、欧州 (フランクフルト、アイルランド、ロンドン、スペイン) の世界 12 リージョンで Amazon OpenSearch Service 上で利用できるようになりました。  料金の詳細については、Amazon OpenSearch Service の料金ページをご覧ください",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "ff982b94f52aba0aceed5820050ddfc6292e9a96",
+      "title": "Amazon EC2 M8g インスタンスを利用可能なリージョンが増加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-m8g-additional-regions/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) M8g インスタンスが、アジアパシフィック (タイ、ジャカルタ、メルボルン) および AWS 中東 (UAE) リージョンで利用可能になりました。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、Graviton3 ベースのインスタンスよりも最大 30% 高いパフォーマンスを発揮します。Amazon EC2 M8g は一般用途のワークロードに特化したインスタンスです。利用目的としては、アプリケーションサーバー、マイクロサービス、ゲームサーバー、中規模データストア、キャッシュフリートなどがあります。これらのインスタンスは、CPU 仮想化、ストレージ、およびネットワーク機能を専用のハードウェアとソフトウェアにオフロードして、ワークロードのパフォーマンスとセキュリティを強化する AWS Nitro System 上に構築されています。\n  AWS Graviton4 ベースの Amazon EC2 インスタンスは、Amazon EC2 で実行される幅広いワークロードに最高のパフォーマンスとエネルギー効率をもたらします。これらのインスタンスは、Graviton3 ベースの Amazon M7g インスタンスと比較して、インスタンスサイズが大きく、最大 3 倍の vCPU とメモリを備えています。AWS Graviton4 プロセッサは、AWS Graviton3 プロセッサに比べて、データベースでは最大 40%、ウェブアプリケーションでは 30%、大規模な Java アプリケーションでは 45% 高速です。M8g インスタンスには、2 つのベアメタルサイズを含む 12 種類のサイズがあります。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。\n  詳細については、Amazon EC2 M8g Instances を参照してください。ワークロードをどのように Graviton ベースのインスタンスに移行するかを調べるには、AWS Graviton Fast Start プログラムと Porting Advisor for Graviton をご覧ください。使用を開始するには、AWS マネジメントコンソールをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "083ef842c44b7e6c0fb1fb3c1783000daffd4034",
+      "title": "Amazon EC2 R8g インスタンスを利用可能なリージョンが増加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-r8g-instances-additional-regions/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) R8g インスタンスが AWS 欧州 (パリ) およびアジアパシフィック (ハイデラバード) リージョンで利用可能になりました。これらのインスタンスは AWS Graviton4 プロセッサを搭載しており、Graviton3 ベースのインスタンスよりも最大 30% 高いパフォーマンスを発揮します。Amazon EC2 R8g インスタンスは、データベース、インメモリキャッシュ、リアルタイムビッグデータ分析などのメモリ集中型ワークロードに最適です。これらのインスタンスは、CPU 仮想化、ストレージ、およびネットワーク機能を専用のハードウェアとソフトウェアにオフロードして、ワークロードのパフォーマンスとセキュリティを強化する AWS Nitro System 上に構築されています。\n  AWS Graviton4 ベースの Amazon EC2 インスタンスは、Amazon EC2 で実行される幅広いワークロードに最高のパフォーマンスとエネルギー効率をもたらします。AWS Graviton4 ベースの R8g インスタンスは、Graviton3 ベースの R7g インスタンスよりも最大 3 倍大きい vCPU (最大 48xlarge) とメモリ (最大 1.5 TB) を備えた、より大きなインスタンスサイズを提供します。これらのインスタンスは、AWS Graviton3 ベースの R7g インスタンスと比較して、ウェブアプリケーションでは最大 30%、データベースでは最大 40%、大規模な Java アプリケーションでは最大 45% 高速です。R8g インスタンスは、2 つのベアメタルサイズを含む 12 種類のインスタンスサイズで利用できます。これらは、Amazon Elastic Block Store (Amazon EBS) に最大 50 Gbps の拡張ネットワーク帯域幅と最大 40 Gbps の帯域幅を提供します。\n  詳細については、Amazon EC2 R8g インスタンスをご覧ください。ワークロードをどのように Graviton ベースのインスタンスに移行するかを調べるには、AWS Graviton Fast Start プログラムと Porting Advisor for Graviton をご覧ください。使用を開始するには、AWS マネジメントコンソールをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "3601c96633e540851dcd5e5b1c03453f218f95ad",
+      "title": "Amazon EC2 C8i および C8i-flex インスタンスがアジアパシフィック (シンガポール) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-c8i-c8i-flex-instances-singapore-region/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "本日より、Amazon Elastic Compute Cloud (Amazon EC2) C8i および C8i-flex インスタンスがアジアパシフィック (シンガポール) リージョンで利用できるようになります。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。C8i インスタンスと C8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。C7i および C7i-flex インスタンスと比較した場合、パフォーマンスは最大で 20% 向上し、一部のワークロードではより高いパフォーマンスが実現します。C8i および C8i-flex は、C7i および C7i-flex と比較して、NGINX ウェブアプリケーションでは最大 60％、AI 深層学習推奨モデルでは最大 40％、Memcached ストアでは最大 35％ 高速です。\n  C8i-flex は、ウェブサーバーやアプリケーションサーバー、データベース、キャッシュ、Apache Kafka、Elasticsearch、エンタープライズアプリケーションなど、コンピューティング負荷の高いワークロードの大部分で価格パフォーマンスのメリットを得る最も簡単な方法です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。\n  C8i インスタンスは、メモリ負荷の高いワークロード全般に適しています。特に、最大のインスタンスサイズや継続的に高い CPU 使用率を必要とするワークロードに最適です。C8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタルサイズで、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。\n  使用を開始するには、AWS マネジメントコンソールにサインインしてください。このインスタンスは、Savings Plans、オンデマンドインスタンス、スポットインスタンスでご購入いただけます。この新しい C8i と C8i-flex のインスタンスの詳細については、AWS ニュースブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "225bd32334d48e813746bb2b0737e3928b8093cf",
+      "title": "AWS Marketplace が必須の発注書とカスタムのメッセージのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-marketplace-mandatory-purchase-orders-custom-messaging",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "AWS Marketplace で、購入時の必須の発注書の要求とカスタムのメッセージのサポートが開始されたので、組織は調達のガバナンスを強化できます。これらの機能は、調達、ソフトウェア資産管理、クラウドガバナンスのチームが、すばやく購入の判断や行動ができる状態を維持しながらコンプライアンスポリシーを順守させるのに役立ちます。\n  管理者は、購入者が AWS Marketplace を通じて製品にサブスクライブする際に発注書を提出するよう要求することで、義務的な発注ポリシーを順守させることができるようになりました。このような要求は、さまざまな料金タイプにわたるプライベートオファーやパブリックオファーを通じて行う購入に適用できます。さらに管理者は、調達ページにカスタムメッセージを追加して、ポリシーの要件やサポートの連絡先について案内できます。組織は、カスタムメッセージを実装せずに発注書の要求を実装したり、カスタムメッセージを使用して購入者に調達プロセスを案内したり、両方の機能を組み合わせてより包括的なガバナンスを実現したりできます。これらの機能は Private Marketplace とも併用できるので、AWS 組織内の特定のユーザーやグループに対して承認した製品の厳選されたカタログを作成できます。このような柔軟性があるので、財務や調達のチームは、購入時にコンプライアンスを順守させ、コスト配分の精度を改善し、調達から支払いまでのサイクルを合理化することができます。\n  これらの機能は現在、AWS Marketplace がサポートされているすべての AWS リージョンで利用できます。\n  発注書の要求とカスタムメッセージについては、AWS Marketplace の購入者ガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "55826a0f521fa0b180aa56cab0a8c9c3b6d6cf3b",
+      "title": "AWS Payment Cryptography がアジアパシフィック (ハイデラバード) と欧州 (パリ) で利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-payment-cryptography-available-in-hyderabad-paris/",
+      "pubDate": "2025-12-17T08:00:00.000Z",
+      "contentSnippet": "AWS Payment Cryptography は、アジアパシフィック (ハイデラバード) と欧州 (パリ) の 2 つの新しいリージョンで提供を開始し、より多くの国や地域で利用できるようになりました。こうしたリージョンの拡大により、クロスリージョン構成を使用することなく、レイテンシーの影響を受けやすい支払いアプリケーションを新しい AWS リージョンで構築、デプロイしたり、新しい AWS リージョンに移行できるようになります。これらのリージョンでは、欧州とインドでのマルチリージョンの高可用性を実現するためのオプションが追加されています。\n  AWS Payment Cryptography は、クラウドホスト型決済アプリケーションの支払い固有の暗号化操作とキー管理を簡素化するフルマネージドサービスです。このサービスはお客様のビジネスニーズに合わせて柔軟にスケールすることができ、PCI PIN 要件と PCI P2PE 要件に準拠していると評価されているため、専用の支払い HSM インスタンスを維持する必要がありません。加盟店契約会社、決済代行業者、決済ネットワーク運営者、決済ルーティングシステム運営者、決済処理業者、銀行などの決済機能を実行する組織は、専用の支払い HSM を備えた補助データセンターへの依存を減らしながら、アプリケーションに近い場所で決済暗号化オペレーションを実行できるようになりました。\n  AWS Payment Cryptography は、カナダ (モントリオール)、米国東部 (オハイオ、バージニア北部)、米国西部 (オレゴン)、欧州 (アイルランド、フランクフルト、ロンドン、パリ)、アフリカ (ケープタウン)、アジアパシフィック (シンガポール、東京、大阪、ムンバイ、ハイデラバード) の AWS リージョンでご利用いただけます。\n  サービスの使用を開始するには、最新の AWS CLI/SDK をダウンロードし、詳細については AWS Payment Cryptography ユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "effde40fdda484e3280983ede455f754ad0b72a9",
+      "title": "AWS IoT Device Management のコマンドが動的ペイロードをサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-iot-device-management-commands-dynamic-payload/",
+      "pubDate": "2025-12-16T20:00:00.000Z",
+      "contentSnippet": "AWS IoT Device Management のコマンドが動的ペイロード機能をサポートするようになったため、開発者はコマンド実行中に別の値に置き換えることができるプレースホルダー付きの再利用可能なコマンドテンプレートを作成できます。この拡張機能には、実行前にパラメーター値が指定された条件に準拠していることを確認するパラメーター検証ルールも含まれています。今回の更新により、開発者は実行時にコマンドのパラメーターを設定できるようになり、コマンドを再利用しやすくなりました。\n  この機能は、パラメータ値が異なる類似のコマンドを IoT デバイスに送信する必要がある場合に最適です。たとえば、サーモスタットのさまざまな温度値を設定する個別のコマンドを作成する代わりに、温度プレースホルダーを含む 1 つのテンプレートを作成し、実行時に実際の値を指定できるようになります。このテンプレートベースのアプローチは、デバイス構成の調整や可変設定によるスマートホームデバイスの制御など、アプリケーションのコマンド管理を合理化するのに役立ちます。 \n \n動的ペイロードをサポートする AWS IoT Device Management のコマンドは、AWS IoT Device Management が現在利用可能なすべての AWS リージョンで利用できます。動的ペイロードとペイロードテンプレートの詳細については、AWS IoT Device Management コマンドのデベロッパーガイドをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "fdcd36bd056b33a3e14dc6720658e6f626d954f1",
+      "title": "Amazon Connect がリアルタイムのメトリクスアラートに詳細情報を追加",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-connect-additional-details-real-time-metric-alerts/",
+      "pubDate": "2025-12-16T18:00:00.000Z",
+      "contentSnippet": "リアルタイムメトリクスの Amazon Connect アラートが、しきい値を超えてアラートをトリガーした特定のエージェント、キュー、フロー、ルーティングプロファイルを提供するようになりました。これにより、マネージャーはアラートの根本原因を手動で調査する必要がなくなるため、カスタマーエクスペリエンスや運用上の問題に迅速に対応できます。たとえば、キュー待機時間の増加に関するアラートには、影響を受ける正確なキューが含まれるようになったため、管理者はエージェントをそれらのキューに再割り当てできます。これらの詳細なアラートは、メール、タスク、Amazon EventBridge を通じて送信できます。\n  この機能は、Amazon Connect が提供されているすべてのリージョンで利用できます。詳細については、ドキュメントとウェブページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "ea0cac0a5b1a52ce5339d229ee5503faf93329ce",
+      "title": "ベトナムのハノイで新しい AWS Direct Connect ロケーションが利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-direct-connect-hanoi/",
+      "pubDate": "2025-12-16T17:00:00.000Z",
+      "contentSnippet": "本日、AWS はベトナムのハノイにある CMC Tower 内に新しい AWS Direct Connect ロケーションを開設したことを発表しました。これにより、このロケーションからすべてのパブリック AWS リージョン (中国を除く)、AWS GovCloud リージョン、AWS Local Zones へのプライベートな直接ネットワークアクセスを確立できるようになりました。このサイトは、ベトナムで最初の AWS Direct Connect ロケーションです。この Direct Connect ロケーションでは、1 Gbps、10 Gbps、100 Gbps の専用接続が可能で、10 Gbps 接続と 100 Gbps 接続では MACsec 暗号化を使用できます。 \n  Direct Connect サービスは、AWS とお客様のデータセンター/オフィス/コロケーション環境との間に、プライベート物理ネットワーク接続を確立します。このプライベート接続では、パブリックインターネット経由の接続よりも安定したネットワークエクスペリエンスを提供できます。 \n  世界中の 149 を超える Direct Connect ロケーションの詳細については、Direct Connect 製品詳細ページのロケーションのセクションをご覧ください。Direct Connect の購入およびデプロイ方法の詳細については、開始方法のページを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "ae246e694201c137c7d9fb8ec430e399c3b59c73",
+      "title": "Amazon EC2 M8i インスタンスの利用可能なリージョンが拡大",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-ec2-m8i-instances-additional-regions",
+      "pubDate": "2025-12-16T15:00:00.000Z",
+      "contentSnippet": "本日より、Amazon EC2 M8i インスタンスがアジアパシフィック (ソウル)、アジアパシフィック (東京)、アジアパシフィック (シドニー)、アジアパシフィック (シンガポール)、およびカナダ (中部) の各リージョンで利用できるようになりました。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。M8i インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。M7i インスタンスと比較した場合、パフォーマンスは最大で 20% 向上し、特定のワークロードではより高いパフォーマンスが実現します。M8i インスタンスは、M7i インスタンスと比較して、PostgreSQL データベースでは最大 30%、NGINX ウェブアプリケーションでは最大 60%、AI 深層学習レコメンデーションモデルでは最大 40%高速化されます。\n  M8i インスタンスは、汎用ワークロード全般に適しています。特に、最大のインスタンスサイズや、継続的に高い CPU 使用率を必要とするワークロードに最適です。SAP 認定の M8i インスタンスは、13 種類のサイズで提供されています。そのうち 2 つはベアメタル型で、大規模なアプリケーションに対応する新しいサイズ 96xlarge も追加されています。\n  使用を開始するには、AWS マネジメントコンソールにサインインしてください。この新しいインスタンスの詳細については、M8i インスタンスのページまたは AWS ニュースブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "373318b099bf35e2cebb913b5f3a639711f083c3",
+      "title": "AWS が二酸化炭素排出量データ公開までの時間を 21 日以下に短縮",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-reduces-publishing-time-carbon-footprint-data",
+      "pubDate": "2025-12-16T15:00:00.000Z",
+      "contentSnippet": "AWS は、二酸化炭素排出量データを 21 日以内公開するようになりました。以前は、二酸化炭素排出量のデータは最大 3 か月のデータラグを伴って公開されていました。今後は、使用の翌月の 15 日から 21 日の間に公開される、推定値を含む二酸化炭素排出量データにアクセスできるようになります。\n  二酸化炭素排出量データをより早く入手できることで、アプリケーションの実行方法と実行場所についてよりタイムリーな意思決定を行い、資源効率の向上を通じて排出量とコストを削減する機会を特定するために必要な分析情報が得られます。また、CCFT ダッシュボードには 38 か月分のデータが保存されているため、二酸化炭素使用量の経時的な傾向を確認できます。\n  二酸化炭素排出量データを表示するには、AWS Billing and Cost Management コンソールから二酸化炭素排出量データに移動します。CCFTの詳細については、CCFT の機能と特徴のページにアクセスするか、CCFT ユーザーガイドを確認するか、CCFT のウェブページにアクセスしてください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "5d30e19d3e85d699bb94187b2b423229f5d92def",
+      "title": "AWS Security Incident Response が Slack との連携機能を導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-security-incident-response-integration-slack",
+      "pubDate": "2025-12-16T15:00:00.000Z",
+      "contentSnippet": "AWS Security Incident Response では、クラウドベースのチームコラボレーションプラットフォーム Slack との統合が可能になりました。これにより、既存の通知とコミュニケーションのワークフローを維持しながら、セキュリティイベントへの準備、対応、復旧をより迅速かつ効果的に行うことができます。この双方向統合により、Security Incident Response コンソールと Slack の両方で、自動データ複製を使用してケースを作成および更新できます。各 Security Incident Response ケースは専用の Slack チャンネルとして表示され、コメントや添付ファイルは即座に同期されます。これにより、対応者は重要なケース情報にすぐにアクセスでき、使用するツールに関係なく、より効率的なコラボレーションを実現できます。\n  この統合により、Security Incident Response ウォッチャーが対応する Slack チャンネルに自動的に追加されるため、セキュリティチームはより迅速に対応し、応答時間を短縮できます。この統合は GitHub でオープンソースソリューションとして提供されており、お客様やパートナーは機能をカスタマイズしたり拡張したりすることができます。この統合では EventBridge を活用することで、お客様は AWS Security Incident Response の機能を活用しながら、既存のセキュリティインシデント管理および通知ツールを引き続き使用できます。このソリューションはモジュラーアーキテクチャを特徴としており、Amazon Q Developer、Kiro、または同様の AI アシスタントの使用方法に関するガイダンスが用意されているため、Slack 以外にも新しい統合ターゲットを簡単に追加できます。\n  AWS Security Incident Response と Slack の連携を開始するには、GitHub リポジトリにアクセスしてください。実装の詳細については、Slack 用の技術文書をご覧ください。AWS Security Incident Response の詳細については、サービスのユーザーガイドをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "2d3cf2e29ea55d15cb5369f03ec3d03b6b60a665",
+      "title": "Amazon SageMaker AI がアジアパシフィック (ニュージーランド) で利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-sagemaker-ai-asia-pacific-new-zealand",
+      "pubDate": "2025-12-16T15:00:00.000Z",
+      "contentSnippet": "本日より、アジアパシフィック (ニュージーランド) で機械学習モデルを構築、トレーニング、デプロイできるようになりました。\n  Amazon SageMaker AI は、あらゆるデベロッパーやデータサイエンティスト向けのフルマネージドプラットフォームです。機械学習モデルを迅速に構築、トレーニング、デプロイできます。SageMaker AI を使用すると、機械学習の各プロセスの面倒な作業を削減し、高品質のモデルを簡単に開発できます。\n \n詳細と使用開始方法については、SageMaker AI のドキュメントおよび料金のページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "26284e0e9bc7ff900bfd2c619afafd1c550a5c77",
+      "title": "AWS Artifact で以前のバージョンのコンプライアンスレポートにアクセス可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-artifact-access-previous-versions-compliance-reports",
+      "pubDate": "2025-12-16T15:00:00.000Z",
+      "contentSnippet": "AWS Artifact では、以前のバージョンの AWS コンプライアンスレポートに直接アクセスできるようになり、AWS サポートやアカウント担当者に連絡する必要がなくなりました。このセルフサービス機能により、お客様はコンプライアンス文書要件を効率的に管理できます。特に、過去のコンプライアンス証拠を必要とする監査やベンダー評価の際に役立ちます。\n  以前のバージョンのレポートにアクセスするには、AWS マネージドポリシー 「AWSArtifactReportsReadOnlyAccess」に含まれている「artifact:ListReportVersions」の IAM アクセス許可が必要です。AWS Artifact コンソールで以前のバージョンのレポートを表示できない場合は、AWS アカウント管理者に連絡してこのアクセス許可をリクエストしてください。\n  承認されると、AWS Artifact コンソールから以前のバージョンのコンプライアンスレポート (SOC、ISO、C5 など) に直接アクセスできます。レポートページに移動して任意のレポートを選択するだけで、利用可能なバージョンが表示されます。以前のバージョンのレポートが利用可能かどうかはコンプライアンスプログラムによって異なります。過去数年のバージョンを提供するレポートもあれば、履歴の対象範囲が限定されているレポートもあります。\n  この機能は、米国東部 (バージニア北部) および AWS GovCloud (米国西部) リージョンで一般提供が開始されました。\n  以前のバージョンのコンプライアンスレポートへのアクセス方法の詳細については、AWS Artifact のドキュメントをご覧ください。AWS Artifact に関する一般的な情報については、AWS Artifact 製品ページを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "6b0be18fa9ac1b9ae04ffda284741bbb100850e4",
+      "title": "Amazon Quick Suite のブラウザ拡張機能が Quick Flows をサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/quick-suite-browser-extension-quick-flows/",
+      "pubDate": "2025-12-16T08:00:00.000Z",
+      "contentSnippet": "Amazon Quick Suite のブラウザ拡張機能が Amazon Quick Flows をサポートするようになり、ウェブブラウザ内でワークフローを直接実行できるようになりした。これにより、各ウェブページから手動で情報を抽出する必要がなくなります。作成したワークフローや共有されたワークフローを呼び出したり、ウェブページのコンテンツを入力として渡したりできます。これらはすべて、ブラウザを離れることなく実行できます。\n  この機能は、契約書を分析して重要な条件を抽出したり、関係者に自動的に通知を送信するプロジェクトダッシュボードから週次レポートを生成したりするなど、日常的なタスクを実行するのに最適です。\n  ブラウザ拡張機能での Quick Flows は、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (シドニー)、欧州 (アイルランド) で利用できるようになりました。ブラウザ拡張機能を使用しても、標準の Quick Flows の使用以外に追加料金はかかりません。\n  使用を開始するには、Chrome、Firefox、Edge のストアページにアクセスしてブラウザ拡張機能をインストールし、Quick Suite アカウントでサインインしてください。サインインしたら、チャットボックスの下にある Flows アイコンを見つけてフローを呼び出します。ブラウザ拡張機能での Quick Flows の呼び出しについて詳しくは、ドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "a262e5188d1d6df401084e37b000b066b2a52cfe",
+      "title": "Amazon EC2 M8i-flex インスタンスがアジアパシフィック (シドニー) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-m8i-flex-instances-sydney-region/",
+      "pubDate": "2025-12-16T08:00:00.000Z",
+      "contentSnippet": "本日より、Amazon EC2 M8i-flex インスタンスがアジアパシフィック (シドニー) リージョンで利用できるようになりました。これらのインスタンスは、AWS でのみ利用可能なカスタム Intel Xeon 6 プロセッサを搭載しており、クラウド内の同等の Intel プロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。M8i-flex インスタンスは、前世代の Intel ベースのインスタンスと比較して、コストパフォーマンスが最大 15% 向上し、メモリ帯域幅も 2.5 倍向上しています。M7i-flex インスタンスと比較した場合、パフォーマンスは最大で 20% 向上し、特定のワークロードではより高いパフォーマンスが実現します。M8i-flex インスタンスは、M7i-flex インスタンスと比較して、PostgreSQL データベースでは最大 30%、NGINX ウェブアプリケーションでは最大 60%、AI 深層学習レコメンデーションモデルでは最大 40% 高速化されます。\n  M8i-flex インスタンスは、ウェブサーバーやアプリケーションサーバー、マイクロサービス、中小規模データストア、仮想デスクトップ、エンタープライズアプリケーションなどのほとんどの汎用ワークロードでコストパフォーマンスのメリットが得られる最も簡単な方法です。large から 16xlarge までの非常に一般的なサイズを提供しており、すべてのコンピューティングリソースをフルに活用しきれていないアプリケーションに最適な選択肢です。\n  使用を開始するには、AWS マネジメントコンソールにサインインしてください。この新しいインスタンスの詳細については、M8i-flex インスタンスのページまたは AWS ニュースブログをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "d540755f76150767a24609b4c219919128226c2a",
+      "title": "Amazon Quick Suite がチャットエージェントでメモリをサポート",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-quick-suite-memory-chat-agents/",
+      "pubDate": "2025-12-16T08:00:00.000Z",
+      "contentSnippet": "Amazon Quick Suiteのチャットエージェント向けメモリを発表いたします。この機能により、ユーザーは以前の会話に基づいてパーソナライズされた回答を得ることができます。この機能により、Quick Suite はユーザーがチャットで指定した設定を記憶し、ユーザーに合わせた回答を生成します。また、ユーザーは推論された設定を確認して、Quick チャットエージェントに使用させたくないメモリを削除することもできます。\n  以前は、チャットユーザーは、すべての会話で回答の形式、略語、ダッシュボード、統合に関する好みを繰り返す必要がありました。また、チャットで曖昧なトピックやエンティティを明確にする必要があったため、正確で洞察に満ちた回答を得るために必要な面倒なやり取りが増えていました。メモリは、この課題を解決するために、ユーザーに関する事実と詳細を記憶し、ユーザーに提供される回答が継続的に学習および改善されるようにします。また、Quick Suite がユーザーについて記憶する内容もユーザーが制御できます。すべてのメモリをユーザーは表示および削除することができ、ユーザーはプライベートモードでチャットを開始することもできます。プライベートモードの会話はメモリの推論に使用されません。\n  Quick Suite チャットエージェントのメモリは、米国東部 (バージニア北部) と米国西部 (オレゴン) でご利用いただけます。詳細については、Amazon Quick Suite ユーザーガイドを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "63e6967b5ea301c294a7ab7bedde2d0af55140ea",
+      "title": "Amazon Route 53 が Resolver エンドポイントの詳細なメトリクスを導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/route-53-detailed-metrics-resolver-endpoints/",
+      "pubDate": "2025-12-16T08:00:00.000Z",
+      "contentSnippet": "本日より、Route 53 のための Amazon CloudWatch メトリクスを有効にして、Route 53 Resolver エンドポイントと、アウトバウンド Resolver エンドポイントに関連付けられているすべてのターゲットネームサーバーのパフォーマンスと状態を監視できます。\n  Amazon Route 53 Resolver のエンドポイントは、オンプレミスのデータセンターと Amazon Virtual Private Cloud (Amazon VPC) の間でシームレスな DNS クエリ解決を可能にすることで、ハイブリッドクラウド設定の管理を容易にします。CloudWatch では、Resolver エンドポイントごとに新しいメトリクスを有効にできます。これにより、Resolver エンドポイントが受信した DNS クエリの応答レイテンシー、SERVFAIL、NXDOMAIN、REFUSED、または FORMERR ステータスになったクエリ応答の数を評価できます。また、ターゲットサーバーの応答レイテンシーとタイムアウトになったクエリの数を表示することで、アウトバウンド Resolver エンドポイントに関連付けられているターゲットネームサーバーの可用性を確認することもできます。新しいメトリクスにより、Route 53 Resolver エンドポイントと関連するターゲットネームサーバーの状態を簡単に評価できます。\n  このメトリクスの詳細については、ドキュメントを参照するか、Route 53 VPC Resolver のページをご覧ください。Route 53 Resolver エンドポイントの詳細メトリクスの使用には、標準の CloudWatch および Resolver エンドポイントの料金が適用されます。詳細については、Amazon CloudWatch の料金と Resolver エンドポイントの料金を参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "1c18dc60274e21e555749c5f4099b2a6c775cc25",
+      "title": "AWS Clean Rooms がメンバー招待とテーブル準備のイベントを EventBridge に公開",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/clean-rooms-events-member-invitations-table-readiness/",
+      "pubDate": "2025-12-16T08:00:00.000Z",
+      "contentSnippet": "AWS Clean Rooms では、新規メンバーの招待やテーブル準備に関するイベントを Amazon EventBridge に公開するようになりました。これにより、リアルタイムのインサイトが提供され、コラボレーションメンバーへの透明性が高まります。コラボレーションに招待されたメンバーは、Clean Rooms コラボレーションに招待されたときに EventBridge の通知を受け取るようになります。これにより、メンバーは新しい招待を簡単に確認し、コラボレーションに参加することができます。また、ID マッピングテーブルや ID 名前空間などの AWS Entity Resolution リソースがコラボレーションに関連付けられると、コラボレーションメンバーに通知が届きます。これにより、コラボレーターのデータセット全体の関連レコードを使用する分析を自動的に開始できます。たとえば、パブリッシャーが広告主をコラボレーションに招待した場合、広告主がコラボレーションで ID マッピングテーブルを作成するとすぐに、パブリッシャーはメディアプランニング分析を自動的に実行できます。これにより、アクションまでの時間が数時間から数分に短縮され、コラボレーションメンバー間の透明性が高まります。\n  AWS Clean Rooms を利用すると、お客様は安全なデータクリーンルームを数分で作成でき、AWS または Snowflake 上で他の企業と協力して、広告キャンペーン、投資についての意思決定、および研究開発に関する独自のインサイトを得ることができます。AWS Clean Rooms を利用できる AWS リージョンの詳細については、AWS リージョン表をご覧ください。AWS Clean Rooms を使用したコラボレーションの詳細については、AWS Clean Rooms または AWS Entity Resolution をご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "f2eba0efa3c00847fe1ac4881506b064d3e24799",
+      "title": "Amazon Managed Service for Apache Flink が AWS アジアパシフィック (オークランド) リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-managed-service-apache-flink-aws-asia-pacific-auckland-region/",
+      "pubDate": "2025-12-15T18:00:00.000Z",
+      "contentSnippet": "本日より、アジアパシフィック (オークランド) リージョンで Amazon Managed Service for Apache Flink を使用して、リアルタイムのストリーム処理アプリケーションを構築できます。\n  Amazon Managed Service for Apache Flink を使用すると、Apache Flink を使用してストリーミングデータをリアルタイムで簡単に変換および分析できます。Apache Flink はオープンソースのフレームワークであり、データストリームを処理するためのエンジンです。Amazon Managed Service for Apache Flink は、Apache Flink アプリケーションの構築と管理の複雑さを軽減し、組み込みのコネクタを使用して、Amazon Managed Streaming for Apache Kafka (Amazon MSK)、Amazon Kinesis Data Streams、Amazon OpenSearch Service、Amazon DynamoDB Streams、Amazon Simple Storage Service (Amazon S3)、カスタム統合などと統合します。\n  Amazon Managed Service for Apache Flink の詳細については、こちらをご覧ください。Amazon Managed Service for Apache Flink を利用可能なリージョンについては、AWS リージョン表を参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "fe168a228b4fe066386b213e2fc1574d3c2632fb",
+      "title": "ユーザーの属性を使用したコスト配分の発表",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/cost-allocation-using-users-attributes",
+      "pubDate": "2025-12-15T18:00:00.000Z",
+      "contentSnippet": "AWS は、コストセンター、部門、組織、部署などの既存のワークフォースユーザーの属性を使用して、AWS アプリケーションの使用状況とコストを追跡および分析する、新しいコスト配分機能を発表しました。この新機能により、お客様は Amazon Q Business、Amazon Q Developer、Amazon QuickSight などの AWS アプリケーションのユーザーごとの月額サブスクリプション料金とオンデマンド料金を、それぞれの社内ビジネスユニットに割り当てることができます。\n  お客様は、ワークフォースユーザーの属性を IAM Identity Center にインポートする必要があります。IAM Identity Center は、AWS アプリケーションへのワークフォースアクセスを管理するための推奨サービスです。属性をインポートした後、お客様は AWS Billing and Cost Management コンソールからこれらの属性の 1 つ以上をコスト配分タグとして有効にできます。ユーザーが AWS アプリケーションにアクセスすると、その使用状況とコストは選択した属性で自動的に記録されます。Cloud Financial Operations (FinOps) の専門家は、AWS Cost Explorer と AWS CUR 2.0 でコストを表示および分析できるため、さまざまなチームが AWS の使用状況とコストをどのように関与しているのかを把握できます。\n  ユーザー属性を使用したコスト配分のサポートは、GovCloud (米国) リージョンと中国 (北京) と中国 (寧夏) リージョンを除くすべての AWS リージョンで一般提供されます。\n  詳細については、「AWS コスト配分タグを使用したコストの整理と追跡」を参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "736fe4622b5be878a68e461f73a0143a0644bf68",
+      "title": "Amazon Elastic VMware Service (Amazon EVS) が利用可能なリージョンが追加されました",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-evs-available-in-additional-regions/",
+      "pubDate": "2025-12-15T18:00:00.000Z",
+      "contentSnippet": "本日、Amazon Elastic VMware Service (Amazon EVS) が、米国西部 (北カリフォルニア)、アジアパシフィック (ハイデラバード)、アジアパシフィック (マレーシア)、カナダ西部 (カルガリー)、欧州 (ミラノ)、メキシコ (中部)、南米 (サンパウロ) の各リージョンのすべてのアベイラビリティーゾーンで利用できるようになったことをお知らせします。この拡張により、クラウドで VMware ワークロードを実行する際に AWS のスケールと柔軟性を活用するためのオプションが増えました。\n  Amazon EVS では、AWS Nitro を活用して、EC2 ベアメタルインスタンス上の Amazon Virtual Private Cloud (VPC) 内で VMware Cloud Foundation (VCF) を直接実行できます。ステップバイステップの設定ワークフローまたは自動デプロイ機能を備えた AWS コマンドラインインターフェイス (CLI) のいずれかを使用すると、完全な VCF 環境をわずか数時間で設定できます。この迅速なデプロイにより、AWS へのワークロードの移行が迅速になり、老朽化したインフラストラクチャの排除、運用上のリスクの軽減、データセンターの終了に関する重要なタイムラインの遵守が可能になります。\n  これらのリージョンでさらに利用可能になったため、エンドユーザーとの距離が近くなって VMware ワークロードのレイテンシーが低減され、データレジデンシーまたは主権の要件への準拠が可能になり、冗長戦略を強化するための高可用性と耐障害性のオプションが増えます。\n  使用を開始するには、Amazon EVS 製品詳細ページとユーザーガイドをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "1298ecc04f44ecbac0b2c70a59f4b37aa56b2671",
+      "title": "Amazon Connect で評価フォームでの複数の選択肢および日付の質問のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-connect-multiple-choice-date-questions-evaluation-forms/",
+      "pubDate": "2025-12-15T18:00:00.000Z",
+      "contentSnippet": "Amazon Connect で、人間と AI エージェントのパフォーマンスに関するより深いインサイトを得るための 2 つの新しい評価に関する質問のタイプが用意されました。マネージャーは、営業の会話で顧客が興味を持った製品など、複数の回答を選択できる質問を作成できるようになりました。さらに、マネージャーは顧客とエージェントのアクションの日付を評価フォームで得ることができます。たとえば、顧客がいつローンを申し込んだか、いつ承認されたかを記録できます。\n  この機能は、Amazon Connect が提供されているすべてのリージョンで利用できます。詳細については、ドキュメントとウェブページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "b7997a42c10601969c67fa6477ff1f70f43d86cb",
+      "title": "AWS Billing and Cost Management でダッシュボードの PDF エクスポートと CSV データのダウンロードのサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-billing-cost-management-pdf-export-csv-data-download-dashboards",
+      "pubDate": "2025-12-15T15:00:00.000Z",
+      "contentSnippet": "本日、AWS は AWS Billing and Cost Management ダッシュボードの PDF エクスポートと CSV データのダウンロードの機能を発表しました。これらの新機能により、カスタマイズしたダッシュボードを PDF ファイルとしてエクスポートしてオフラインで分析および共有したり、個々のウィジェットデータを CSV 形式でダウンロードしてスプレッドシートアプリケーションで詳細に調べたりすることができます。これらの機能により、閲覧可能または編集可能なアクセス権を持つダッシュボードを共有できるだけでなく、組織全体に AWS コストに関するインサイトを配布する方法が増えました。\n  Billing and Cost Management ダッシュボードでは、ダッシュボード全体または個々のウィジェットをコンソールから直接 PDF ファイルとしてエクスポートできるため、スクリーンショットや手動でフォーマットする必要がなくなります。PDF エクスポート機能では、一貫した外観を維持し、ダッシュボードのレイアウトを維持するようにフォーマットされたレポートを作成できるため、取締役会、レビュー、戦略的な計画セッションでステークホルダーと共有するのに理想的です。詳細なデータ分析が必要な場合は、個々のウィジェットデータを CSV 形式でエクスポートできます。これにより、アナリストは好みのスプレッドシートツールで特定のコスト指標を詳細に調べることができます。\n  AWS Billing and Cost Management ダッシュボードの PDF および CSV のエクスポート機能は、AWS 中国リージョンを除く、すべての AWS 商用リージョンにて、追加料金なしでご利用いただけます。\n  使用を開始するには、AWS Billing and Cost Management コンソールにアクセスし、左側のナビゲーションメニューから [ダッシュボード] をクリックします。詳細については、AWS Billing and Cost Management のユーザーガイドでのダッシュボードのエクスポートを参照してください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "181972ced53a0b910f4b14ba522a609b7f0243ac",
+      "title": "強化されたネットワークセキュリティポリシーを Amazon EKS で導入",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-eks-enhanced-network-security-policies",
+      "pubDate": "2025-12-15T15:00:00.000Z",
+      "contentSnippet": "本日、Amazon Elastic Kubernetes Service (EKS) のネットワークポリシー機能が強化されたことを発表します。これにより、お客様が Kubernetes ワークロードのネットワークセキュリティ体制を改善し、クラスター外部の宛先と統合できるようになります。この拡張は、EKS で以前サポートされていたネットワークセグメンテーション機能を基盤としています。これで、クラスター全体にネットワークアクセスフィルターを一元的に適用できるだけでなく、ドメインネームシステム (DNS) ベースのポリシーを活用して、クラスター環境からの送信トラフィックを保護できます。\n  お客様が EKS を使用して継続的にアプリケーション環境をスケールするのに伴い、クラスター内外のリソースへの不正アクセスを防ぐために、ネットワークトラフィックの分離がますます重要になっています。これに対処するため、EKS は Amazon VPC Container Network Interface (VPC CNI) プラグイン に Kubernetes NetworkPolicies のサポートを導入しました。これにより、ポッド間通信を名前空間レベルでセグメント化できるようになりました。クラスター全体のネットワークフィルターを一元管理することで、Kubernetes ネットワーク環境の防御態勢をさらに強化できるようになりました。また、クラスター管理者は、完全修飾ドメイン名 (FQDN) に基づいて外部エンドポイントへのトラフィックをフィルタリングする送信ルールを使用して、クラウドまたはオンプレミスのクラスター外部リソースへの不正アクセスを防止するためのより安定した予測可能なアプローチを利用できるようになりました。\n  これらの新しいネットワークセキュリティ機能は、Kubernetes バージョン 1.29 以降を実行する新しい EKS クラスターのすべての商用 AWS リージョンで利用でき、既存のクラスターも今後数週間以内にサポートされる予定です。ClusterNetworkPolicy は、VPC CNI v1.21.0 以降を使用するすべての EKS クラスター起動モードで使用できます。DNS ベースのポリシーは、EKS オートモードによって起動された EC2 インスタンスでのみサポートされます。詳細については、Amazon EKS のドキュメントをご覧になるか、こちらのローンチブログ投稿をお読みください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "e67a4c669b9bdd577901c3882c5c591e336b4b42",
+      "title": "ACM で Kubernetes の自動化された証明書管理のサポートを開始",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/acm-automated-certificate-management-kubernetes/",
+      "pubDate": "2025-12-15T08:00:00.000Z",
+      "contentSnippet": "AWS Certificate Manager (ACM) は、AWS Controllers for Kubernetes (ACK) を通じて Kubernetes ワークロードの証明書のプロビジョニングと配布を自動化するようになりました。以前から、ACM は Application Load Balancer や CloudFront などの AWS 統合サービスの証明書管理を自動化していました。しかし、Kubernetes で TLS を終了するアプリケーションで ACM 証明書を使用するには、API 経由で証明書とプライベートキーをエクスポートし、Kubernetes シークレットを作成し、更新時に更新するという手動の手順が必要でした。この統合により、ACM の自動化がパブリック証明書とプライベート証明書の両方の Kubernetes ワークロードに拡張され、ネイティブ Kubernetes API を使用して証明書を管理できるようになりました。\n  ACK では、証明書を Kubernetes リソースとして定義すると、ACK コントローラーが証明書ライフサイクル全体を自動化します。つまり、ACM から証明書をリクエストし、検証後にエクスポートし、証明書とプライベートキーで Kubernetes シークレットを更新し、更新時にそれらのシークレットを自動的に更新します。これにより、ACM のエクスポート可能なパブリック証明書 (2025 年 6 月に開始) をインターネットに接続するワークロードに使用したり、AWS Private CA のプライベート証明書を Amazon EKS やその他の Kubernetes 環境の内部サービスに使用したりできます。ユースケースには、アプリケーションポッド (NGINX、カスタムアプリケーション) での TLS の終了、サービスメッシュ通信 (Istio、Linkerd) の保護、サードパーティのイングレスコントローラー (NGINX Ingress、Traefik) の証明書の管理などがあります。証明書をハイブリッドおよびエッジの Kubernetes 環境に配布することもできます。\n  この機能は、ACM を利用できるすべての商用、AWS GovCloud (米国)、および AWS 中国リージョンで利用できます。\n 詳細については、GitHub のリンクにアクセスするか、ドキュメントおよび価格ページをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "49ed6f42489a8748b5022fd6fb6744e111104253",
+      "title": "Amazon EC2 M7a インスタンスが欧州 (ロンドン) リージョンで使用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/ec2-m7a-instances-europe-london-region/",
+      "pubDate": "2025-12-15T08:00:00.000Z",
+      "contentSnippet": "本日より、汎用 Amazon EC2 M7a インスタンスが AWS 欧州 (ロンドン) リージョンで利用可能になりました。M7a インスタンスは、最大周波数が 3.7 GHz の第 4 世代 AMD EPYC プロセッサ (コードネーム Genoa) を搭載しており、M6a インスタンスと比較して最大 50% 高いパフォーマンスを発揮します。\n \n今回のリージョン追加により、M7a インスタンスは、米国東部 (オハイオ)、米国東部 (バージニア北部)、米国西部 (オレゴン)、アジアパシフィック (シドニー、東京)、欧州 (フランクフルト、アイルランド、スペイン、ストックホルム、ロンドン) の各 AWS リージョンでご利用いただけるようになりました。これらのインスタンスは、Savings Plans、リザーブド、オンデマンド、およびスポットインスタンスとして購入できます。使用を開始するには、AWS マネジメントコンソール、AWS コマンドラインインターフェイス (CLI)、および AWS SDK にアクセスしてください。詳細については、M7a インスタンスのページをご覧ください。",
       "siteName": "AWS What's New"
     },
     {
@@ -119,7 +583,7 @@
       "title": "Amazon EMR Managed Scaling がさらに 7 つの AWS リージョンで利用可能に",
       "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-emr-managed-scaling-additional-regions",
       "pubDate": "2025-12-12T15:00:00.000Z",
-      "contentSnippet": "Amazon EMR Managed Scaling が、アジアパシフィック (マレーシア、ニュージーランド、台北、タイ)、カナダ西部 (カルガリー)、メキシコ (中部)、US Gameday Northeast (イリノイ) の AWS リージョンで EC2 の EMR を使用しているお客様にご利用いただけるようになりました。Amazon EMR Managed Scaling は、可能な限り最小のコストで最高のパフォーマンスを発揮できるよう、EMR クラスターでの EC2 インスタンスのサイズを自動的に変更します。\n  Amazon EMR Managed Scaling を使用すると、クラスターの最小コンピューティング制限と最大コンピューティング制限を指定するだけで、パフォーマンスとリソース使用率が最適になるように、EC2 上の Amazon EMR によってクラスターのサイズが自動的に変更されます。Amazon EMR Managed Scaling は、ワークロード関連の主要なメトリックスを常に監視し、リソースを最大限に活用できるようにクラスターサイズを最適化するアルゴリズムを使用します。このアルゴリズムを使用すると、Amazon EMR では、ピーク時に EC2 クラスターをスケールアップし、アイドル時にスケールダウンできるため、コストを削減し、クラスター容量を最適化して最高のパフォーマンスを実現できます。Amazon EMR Managed Scaling は Amazon EC2 スポットインスタンスと併用することもできます。そのようにすると、未使用の EC2 容量をオンデマンド料金と比較して割引価格で活用できます。\n  Amazon EMR Managed Scaling がすべての AWS 商用リージョンで利用可能になりました。\n  Amazon EMR Managed Scaling は、EC2 バージョン 6.14 以降の Amazon EMR 上の Apache Spark、Apache Hive、および YARN ベースのワークロードでサポートされています。詳細と開始方法については、Amazon EMR Managed Scalingの ユーザーガイドをご覧ください。",
+      "contentSnippet": "Amazon EMR Managed Scaling が、アジアパシフィック (マレーシア、メルボルン、ニュージーランド、台北、タイ)、カナダ西部 (カルガリー)、メキシコ (中部) の AWS リージョンで EC2 の EMR を使用しているお客様にご利用いただけるようになりました。Amazon EMR Managed Scaling は、可能な限り最小のコストで最高のパフォーマンスを発揮できるよう、EMR クラスターでの EC2 インスタンスのサイズを自動的に変更します。\n  Amazon EMR Managed Scaling を使用すると、クラスターの最小コンピューティング制限と最大コンピューティング制限を指定するだけで、パフォーマンスとリソース使用率が最適になるように、EC2 上の Amazon EMR によってクラスターのサイズが自動的に変更されます。Amazon EMR Managed Scaling は、ワークロード関連の主要なメトリックスを常に監視し、リソースを最大限に活用できるようにクラスターサイズを最適化するアルゴリズムを使用します。このアルゴリズムを使用すると、Amazon EMR では、ピーク時に EC2 クラスターをスケールアップし、アイドル時にスケールダウンできるため、コストを削減し、クラスター容量を最適化して最高のパフォーマンスを実現できます。Amazon EMR Managed Scaling は Amazon EC2 スポットインスタンスと併用することもできます。そのようにすると、未使用の EC2 容量をオンデマンド料金と比較して割引価格で活用できます。\n  Amazon EMR Managed Scaling がすべての AWS 商用リージョンで利用可能になりました。\n  Amazon EMR Managed Scaling は、EC2 バージョン 6.14 以降の Amazon EMR 上の Apache Spark、Apache Hive、および YARN ベースのワークロードでサポートされています。詳細と開始方法については、Amazon EMR Managed Scaling の ユーザーガイドをご覧ください。",
       "siteName": "AWS What's New"
     },
     {
@@ -128,6 +592,14 @@
       "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/aws-datasync-scalability-performance-on-premises-file-transfers",
       "pubDate": "2025-12-12T15:00:00.000Z",
       "contentSnippet": "AWS DataSync の拡張モードは、オンプレミスのファイルサーバーと Amazon S3 の間のデータ転送をサポートするようになりました。これにより、お客様は DataSync 基本モードよりも高いパフォーマンスで、事実上無制限のファイル数までスケールするデータセットを転送できます。\n  AWS DataSync は、ネットワーク上のデータ移動を最適化する安全で高速なファイル転送サービスです。拡張モードでは、並列処理を使用してあらゆるサイズのデータセットのパフォーマンスとスケーラビリティを向上させながら、ファイル数の制限を排除し、詳細な転送メトリクスを提供することでモニタリングと管理を強化します。これまでは、Amazon S3 ロケーション間のデータ転送とマルチクラウド転送に拡張モードを使用できました。今回の発表により、拡張モードの機能が拡張され、オンプレミスの NFS または SMB ファイルサーバーと Amazon S3 間の転送がサポートされるようになりました。拡張モードを使用すると、お客様はトレーニングデータセットを AWS に迅速に移動することで生成 AI ワークロードを加速し、オンプレミスのデータをクラウドベースのパイプラインと同期することでデータレイク分析を強化し、アーカイブとクラウドモダナイズのための大規模な移行を推進できます。\n  この新しい機能は、AWS DataSync が提供されているすべての AWS リージョンでご利用いただけます。使用を開始するには、AWS DataSync コンソールにアクセスしてください。詳細については、AWS DataSync のドキュメントをご覧ください。",
+      "siteName": "AWS What's New"
+    },
+    {
+      "id": "eb5f6ebbf5180c5b97a71895d5efe062be3c29d3",
+      "title": "Amazon MSK Replicator がさらに 10 の AWS リージョンで利用可能に",
+      "link": "https://aws.amazon.com/jp/about-aws/whats-new/2025/12/amazon-msk-replicator-additional-aws-regions",
+      "pubDate": "2025-12-12T15:00:00.000Z",
+      "contentSnippet": "Amazon MSK Replicator を使用した Amazon Managed Streaming for Apache Kafka (Amazon MSK) クラスター全体でのストリーミングデータのレプリケートが、以下のさらに 10 の AWS リージョンで利用できるようになりました: 中東 (バーレーン)、中東 (UAE)、アジアパシフィック (ジャカルタ)、アジアパシフィック (香港)、アジアパシフィック (大阪)、アジアパシフィック (メルボルン)、アフリカ (ケープタウン)、欧州 (ミラノ)、欧州 (チューリッヒ)、イスラエル (テルアビブ)。\n  MSK Replicator は Amazon MSK の機能で、数回クリックするだけで、異なる、または同じ AWS リージョンにある Amazon MSK クラスター間でデータを確実にレプリケートできます。MSK Replicator を使用すると、リージョンでの耐障害性に優れたストリーミングアプリケーションを簡単に構築し、可用性とビジネス継続性を向上させることができます。MSK Replicator では MSK クラスター間の自動非同期レプリケーションを実現できるため、カスタムコードの記述、インフラストラクチャの管理、クロスリージョンのネットワーク設定が不要になります。MSK Replicator は基盤となるリソースを自動的にスケールするため、容量をモニタリングまたは拡張しなくてもオンデマンドでデータをレプリケートできます。MSK Replicator では、トピック構成、アクセスコントロールリスト (ACL)、コンシューマーグループのオフセットなど、必要な Kafka メタデータもレプリケートされます。あるリージョンで予期しないイベントが発生した場合は、他の AWS リージョンにフェイルオーバーして、シームレスに処理を再開できます。\n  Amazon MSK コンソールまたは Amazon CLI から MSK Replicator の利用を開始できます。今回のリリースにより、MSK Replicator は 35 の AWS リージョンで利用できるようになりました。詳細については、MSK Replicator のドキュメント、製品ページ、価格ページをご覧ください。",
       "siteName": "AWS What's New"
     },
     {
@@ -907,5 +1379,5 @@
       "siteName": "AWS What's New"
     }
   ],
-  "lastUpdated": "2026-01-02T21:10:59.128Z"
+  "lastUpdated": "2026-01-03T18:18:47.275Z"
 }
