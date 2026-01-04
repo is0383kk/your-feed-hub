@@ -47,16 +47,20 @@ export async function saveHistory(postedIds, validIds) {
 
     // 既存ファイルを読み込む
     let existingIds = [];
+    let fileExists = true;
     try {
       const data = await fs.readFile(HISTORY_FILE, 'utf-8');
       const existing = JSON.parse(data);
       existingIds = existing.postedIds || [];
     } catch (error) {
-      // ファイルが存在しない場合は新規作成
+      // ファイルが存在しない場合は新規作成フラグを立てる
+      fileExists = false;
     }
 
     // 配列の内容を比較（順序は無視）
+    // ファイルが存在しない場合は必ず作成
     const hasChanges =
+      !fileExists ||
       filteredIds.length !== existingIds.length ||
       !filteredIds.every(id => existingIds.includes(id));
 
@@ -67,7 +71,11 @@ export async function saveHistory(postedIds, validIds) {
         lastUpdated: new Date().toISOString(),
       };
       await fs.writeFile(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf-8');
-      console.log(`投稿履歴を更新しました（${filteredIds.length}件）`);
+      if (!fileExists) {
+        console.log(`投稿履歴ファイルを作成しました（${filteredIds.length}件）`);
+      } else {
+        console.log(`投稿履歴を更新しました（${filteredIds.length}件）`);
+      }
     } else {
       console.log(`投稿履歴に変更はありません（${filteredIds.length}件）`);
     }
