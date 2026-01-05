@@ -19,7 +19,7 @@ RSS フィードから自動収集した記事を GitHub Pages で一覧表示�
 your-feed-hub/
 ├── .github/
 │   └── workflows/
-│       └── collect.yml          # GitHub Actions ワークフロー（3時間ごとに実行）
+│       └── collect.yml          # GitHub Actions ワークフロー
 ├── docs/                         # GitHub Pages 公開ディレクトリ
 │   ├── data/                     # 記事データ（90日間保持、自動更新）
 │   │   ├── {categoryId}.json   # カテゴリ別記事データ
@@ -148,7 +148,7 @@ npm run preview
 
 ```yaml
 schedule:
-  - cron: "0 */3 * * *" # 3時間毎
+  - cron: "0 0,6,12 * * *"
 ```
 
 ### ■ データ保持期間の変更

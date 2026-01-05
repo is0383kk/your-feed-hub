@@ -19,7 +19,7 @@ A tool for automatically collecting articles from RSS feeds and displaying them 
 your-feed-hub/
 ├── .github/
 │   └── workflows/
-│       └── collect.yml          # GitHub Actions workflow (runs every 3 hours)
+│       └── collect.yml          # GitHub Actions workflow
 ├── docs/                         # GitHub Pages publication directory
 │   ├── data/                     # Article data (retained for 90 days, automatically updated)
 │   │   ├── {categoryId}.json   # Category-specific article data
@@ -148,7 +148,7 @@ Modify the `cron` setting in `.github/workflows/collect.yml`:
 
 ```yaml
 schedule:
-  - cron: "0 */3 * * *" # Every 3 hours
+  - cron: "0 0,6,12 * * *"
 ```
 
 ### ■ Change Data Retention Period

@@ -157,6 +157,3 @@ yarn-error.log*
 CLAUDE.md
 prompt.txt
 .claude/
-
-# データファイルをGit管理から除外（GitHub Actions Artifact経由でデプロイ）
-docs/data/*.json
