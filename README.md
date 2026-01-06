@@ -6,45 +6,18 @@
 
 ## 1. Features
 
+![](https://github.com/is0383kk/your-feed-hub/blob/main/img/yourfeedhub.png)
+
 A tool for automatically collecting articles from RSS feeds and displaying them on GitHub Pages.
+
+https://is0383kk.github.io/your-feed-hub/
 
 - Automatic article collection from RSS feeds
 - Article list display on GitHub Pages
 - 90-day data retention (old data is automatically deleted)
 - (Optional) Discord channel posting via Discord Webhook
 
-## 2. Directory Structure
-
-```
-your-feed-hub/
-├── .github/
-│   └── workflows/
-│       └── collect.yml          # GitHub Actions workflow
-├── docs/                         # GitHub Pages publication directory
-│   ├── data/                     # Article data (retained for 90 days, automatically updated)
-│   │   ├── {categoryId}.json   # Category-specific article data
-│   │   └── index.json           # Category list index
-│   ├── index.html               # Main page
-│   ├── app.js                   # Frontend logic
-│   └── style.css                # Stylesheet
-├── src/                         # Backend source code
-│   ├── index.js                 # Main processing (orchestration)
-│   ├── feedCollector.js         # RSS collection
-│   ├── dataManager.js           # Data management (90-day retention policy)
-│   ├── historyManager.js        # Post history management (duplicate post prevention)
-│   └── discordPoster.js         # Discord notification
-├── categories.json              # Category & RSS feed configuration (user-created)
-├── post-history.json            # Discord post history (retained for 90 days, repository-managed)
-├── server.js                    # Local preview server
-└── package.json                 # npm configuration & dependencies
-```
-
-**Important Points:**
-
-- Only the `docs/` directory is published on GitHub Pages
-- Both article data and post history are retained for only 90 days to prevent repository bloat
-
-## 3. Setup
+## 2. Setup
 
 ### ■ Fork the Repository
 
@@ -58,7 +31,7 @@ Configure the following in **Settings > Pages** of your forked repository:
 
 ### ■ Configure Categories
 
-Edit `categories.json` in your forked repository to configure the RSS feeds you want to collect.
+Edit [`categories.json`](https://github.com/is0383kk/your-feed-hub/blob/main/categories.json) in your forked repository to configure the RSS feeds you want to collect.
 
 **Note:** The repository includes `categories.json` as a sample, but this contains `is0383kk`'s personal configuration. Be sure to edit it with your own RSS feeds.
 
@@ -111,7 +84,7 @@ When you edit `categories.json` and commit/push, GitHub Actions will automatical
 Alternatively, you can manually execute the workflow at **Actions > feed-collector-and-poster > Run workflow**.  
 After the workflow execution, check the web page deployed on GitHub Pages.
 
-## 4. Local Environment Testing
+## 3. Local Environment Testing
 
 ### ■ Install Dependencies
 
@@ -140,7 +113,7 @@ Open `http://localhost:3000` in your browser to see the same page as GitHub Page
 
 **Note:** Opening `docs/index.html` directly in a browser will cause CORS errors, so be sure to use the local server.
 
-## 5. Additional Configuration
+## 4. Additional Configuration
 
 ### ■ Change Execution Interval
 
@@ -170,3 +143,34 @@ To change the number of posts on initial execution, modify the constant in `src\
 ```javascript
 const FILTER_DAYS = 30; // Number of days to look back on initial execution
 ```
+
+### ■ Directory Structure
+
+```
+your-feed-hub/
+├── .github/
+│   └── workflows/
+│       └── collect.yml          # GitHub Actions workflow
+├── docs/                         # GitHub Pages publication directory
+│   ├── data/                     # Article data (retained for 90 days, automatically updated)
+│   │   ├── {categoryId}.json   # Category-specific article data
+│   │   └── index.json           # Category list index
+│   ├── index.html               # Main page
+│   ├── app.js                   # Frontend logic
+│   └── style.css                # Stylesheet
+├── src/                         # Backend source code
+│   ├── index.js                 # Main processing (orchestration)
+│   ├── feedCollector.js         # RSS collection
+│   ├── dataManager.js           # Data management (90-day retention policy)
+│   ├── historyManager.js        # Post history management (duplicate post prevention)
+│   └── discordPoster.js         # Discord notification
+├── categories.json              # Category & RSS feed configuration (user-created)
+├── post-history.json            # Discord post history (retained for 90 days, repository-managed)
+├── server.js                    # Local preview server
+└── package.json                 # npm configuration & dependencies
+```
+
+**Important Points:**
+
+- Only the `docs/` directory is published on GitHub Pages
+- Both article data and post history are retained for only 90 days to prevent repository bloat

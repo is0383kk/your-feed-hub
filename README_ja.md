@@ -1,50 +1,23 @@
 # your-feed-hub
 
-<div align="center" style="font-size: 1.1rem; margin-bottom: 1rem;"><sub>
+<div align="center" style="margin-bottom: 2rem;">
 <a href="./README.md">English</a> | <a href="./README_ja.md">日本語</a>
-</sub></div>
+</div>
 
 ## １．機能概要
 
+![](https://github.com/is0383kk/your-feed-hub/blob/main/img/yourfeedhub.png)
+
 RSS フィードから自動収集した記事を GitHub Pages で一覧表示するツールです。
+
+https://is0383kk.github.io/your-feed-hub/
 
 - RSS フィードから記事を自動収集
 - GitHub Pages での記事一覧表示
 - 90 日間のデータ保持（古いデータは自動削除）
 - （オプション）Discord Hook 機能を使って Discord チャンネルに投稿することも可能です
 
-## ２．ディレクトリ構造
-
-```
-your-feed-hub/
-├── .github/
-│   └── workflows/
-│       └── collect.yml          # GitHub Actions ワークフロー
-├── docs/                         # GitHub Pages 公開ディレクトリ
-│   ├── data/                     # 記事データ（90日間保持、自動更新）
-│   │   ├── {categoryId}.json   # カテゴリ別記事データ
-│   │   └── index.json           # カテゴリ一覧インデックス
-│   ├── index.html               # メインページ
-│   ├── app.js                   # フロントエンドロジック
-│   └── style.css                # スタイルシート
-├── src/                         # バックエンドソースコード
-│   ├── index.js                 # メイン処理（オーケストレーション）
-│   ├── feedCollector.js         # RSS収集
-│   ├── dataManager.js           # データ管理（90日保持ポリシー）
-│   ├── historyManager.js        # 投稿履歴管理（重複投稿防止）
-│   └── discordPoster.js         # Discord通知
-├── categories.json              # カテゴリ・RSSフィード設定（ユーザー作成）
-├── post-history.json            # Discord投稿履歴（90日間保持、リポジトリ管理）
-├── server.js                    # ローカルプレビューサーバー
-└── package.json                 # npm設定・依存関係
-```
-
-**重要なポイント:**
-
-- `docs/` 配下のみが GitHub Pages で公開されます
-- 記事データと投稿履歴は両方とも 90 日間のみ保持され、リポジトリ肥大化を防ぎます
-
-## ３．使い方
+## ２．使い方
 
 ### ■ リポジトリをフォーク
 
@@ -58,7 +31,7 @@ your-feed-hub/
 
 ### ■ カテゴリの設定
 
-フォークしたリポジトリの `categories.json` を編集して、収集したい RSS フィードを設定します。
+フォークしたリポジトリの [`categories.json`](https://github.com/is0383kk/your-feed-hub/blob/main/categories.json) を編集して、収集したい RSS フィードを設定します。
 
 **注意:** リポジトリには `categories.json` がサンプルとして含まれていますが、これは`is0383kk`の個人設定です。必ず自分の RSS フィードに編集してください。
 
@@ -111,7 +84,7 @@ env:
 または、**Actions > feed-collector-and-poster > Run workflow** でワークフローを手動実行することも可能です。  
 ワークフロー実行後、GitHub Pages 上にデプロイされた WEB ページを確認します。
 
-## ４．ローカル環境下での動作確認
+## ３．ローカル環境下での動作確認
 
 ### ■ 依存関係のインストール
 
@@ -140,7 +113,7 @@ npm run preview
 
 **注意:** 直接 `docs/index.html` をブラウザで開くと CORS エラーが発生するため、必ずローカルサーバーを使用してください。
 
-## ５．その他
+## ４．その他
 
 ### ■ 実行間隔の変更
 
@@ -170,3 +143,34 @@ const RETENTION_DAYS = 90; // 日数を変更
 ```javascript
 const FILTER_DAYS = 30; // 初回実行時に遡る日数
 ```
+
+### ■ ディレクトリ構造
+
+```
+your-feed-hub/
+├── .github/
+│   └── workflows/
+│       └── collect.yml          # GitHub Actions ワークフロー
+├── docs/                         # GitHub Pages 公開ディレクトリ
+│   ├── data/                     # 記事データ（90日間保持、自動更新）
+│   │   ├── {categoryId}.json   # カテゴリ別記事データ
+│   │   └── index.json           # カテゴリ一覧インデックス
+│   ├── index.html               # メインページ
+│   ├── app.js                   # フロントエンドロジック
+│   └── style.css                # スタイルシート
+├── src/                         # バックエンドソースコード
+│   ├── index.js                 # メイン処理（オーケストレーション）
+│   ├── feedCollector.js         # RSS収集
+│   ├── dataManager.js           # データ管理（90日保持ポリシー）
+│   ├── historyManager.js        # 投稿履歴管理（重複投稿防止）
+│   └── discordPoster.js         # Discord通知
+├── categories.json              # カテゴリ・RSSフィード設定（ユーザー作成）
+├── post-history.json            # Discord投稿履歴（90日間保持、リポジトリ管理）
+├── server.js                    # ローカルプレビューサーバー
+└── package.json                 # npm設定・依存関係
+```
+
+**重要なポイント:**
+
+- `docs/` 配下のみが GitHub Pages で公開されます
+- 記事データと投稿履歴は両方とも 90 日間のみ保持され、リポジトリ肥大化を防ぎます
