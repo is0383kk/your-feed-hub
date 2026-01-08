@@ -22,6 +22,13 @@
       "siteName": "ITmedia AI+"
     },
     {
+      "name": "Claude Code",
+      "id": "zenn_claude_code",
+      "feedUrl": "https://zenn.dev/topics/claudecode/feed",
+      "webhookEnvKey": "",
+      "siteName": "Zenn"
+    },
+    {
       "name": "AWS",
       "id": "aws",
       "feedUrl": "https://aws.amazon.com/jp/about-aws/whats-new/recent/feed/",
