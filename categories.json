@@ -1,6 +1,14 @@
 {
   "categories": [
     {
+      "name": "日経クロステック",
+      "id": "nikkei_xtech",
+      "feedUrl": "https://xtech.nikkei.com/rss/xtech-it.rdf",
+      "webhookEnvKey": "",
+      "siteName": "日経クロステック"
+    },
+
+    {
       "name": "publickey",
       "id": "publickey",
       "feedUrl": "https://www.publickey1.jp/atom.xml",
